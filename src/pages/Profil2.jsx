@@ -64,8 +64,8 @@ const About = () => {
 						</p>
 
 						<p className="py-4 text-xl text-center max-w-lg mt-3">
-							Désormais je souhaite consolider et approfondir mes connaissances
-							en travaillant avec une équipe professionnelle au sein d'une
+							Afin d'intgégrer votre équipe je saurai mettre à profit ma motivation, ma méthodologie ainsi que
+							ma capacité d'adaptation afin de devenir un atout au sein de votre
 							entreprise.
 						</p>
 					</div>

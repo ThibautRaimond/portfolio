@@ -10,10 +10,11 @@ const Navbar = () => {
 	const handleClick = () => setNav(!nav);
 
 	return (
-		<div className="w-full h-[85px] flex justify-between items-center pr-4 pl-3 bg-[#0e1111d3] text-gray-300 shadow-md shadow-[#040c16]">
+		<nav className="w-full h-[85px] flex justify-between items-center pr-4 pl-3 bg-[#0e1111d3] text-gray-300 shadow-md shadow-[#040c16]">
 			<div className="h-[70px] w-[70px] p-[5px] rounded-md flex justify-center hover:shadow-md hover:shadow-[#040c16]">
 				<Link to="/portfolio">
 					<img
+					alt="Logo passion DEV"
 						src={Logo}
 						className="cursor-pointer"
 						alt="Logo Image"
@@ -26,25 +27,25 @@ const Navbar = () => {
 			<div>
 				<ul className="hidden md:flex">
 					<Link to="/portfolio" mooth={true} duration={500}>
-						<li className="hover:font-bold"> Accueil </li>
+						<li alt="Lien vers la page d'accueil" className="hover:font-bold"> Accueil </li>
 					</Link>
 					<Link to="/portfolio/profil" mooth={true} duration={500}>
-						<li className="hover:font-bold"> Profil </li>
+						<li alt="Lien vers la page profil" className="hover:font-bold"> Profil </li>
 					</Link>
 					<Link to="/portfolio/skills" mooth={true} duration={500}>
-						<li className="hover:font-bold"> Compétences </li>
+						<li alt="Lien vers la page compétences" className="hover:font-bold"> Compétences </li>
 					</Link>
 					<Link to="/portfolio/work" mooth={true} duration={500}>
-						<li className="hover:font-bold"> Projets </li>
+						<li alt="Lien vers la page projets" className="hover:font-bold"> Projets </li>
 					</Link>
 					<Link to="/portfolio/contact" mooth={true} duration={500}>
-						<li className="hover:font-bold"> Contact </li>
+						<li alt="Lien vers la page contact" className="hover:font-bold"> Contact </li>
 					</Link>
 				</ul>
 			</div>
 
 			{/* { Bouton Mobile mode} */}
-			<div onClick={handleClick} className="md:hidden z-10">
+			<button alt="bouton pour afficher les liens de différentes pages du site ainsi que le linkedin et le CV de Thibaut Raimond" onClick={handleClick} className="md:hidden z-10">
 				<Link
 					to="/portfolio/menu"
 					mooth={true}
@@ -54,8 +55,8 @@ const Navbar = () => {
 					{/* {!nav ? <FaBars /> : <FaTimes />} */}
 					<FaBars />
 				</Link>
-			</div>
-		</div>
+			</button>
+		</nav>
 	);
 };
 

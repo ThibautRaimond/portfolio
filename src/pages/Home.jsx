@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import {Helmet} from "react-helmet";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -8,12 +9,18 @@ const Home = () => {
 	return (
 		<motion.div
 			name="home"
+			alt="Page d'accueil"
 			className="flex flex-col justify-center align-center w-screen h-screen"
 			initial={{ scaleX: 0.5 }}
 			animate={{ scaleX: 1 }}
 			exit={{ scaleX: 0 }}
 			transition={{ duration: 0.5 }}
 		>
+			<Helmet>
+				<title>Page d'accueil</title>
+				<meta name="description" content="Brève présentation professionnel" />
+				</Helmet>
+			
 			{/* Container */}
 			<div className="max-w-[750px] mx-auto flex flex-col justify-center">
 				<p className="text-3xl text-[#07ed66] title">Bonjours je suis</p>
@@ -31,7 +38,7 @@ const Home = () => {
 					/>
 				</h2>
 				<div>
-					<button>
+					<button alt="Liens vers la page profil">
 						<Link
 							to="/portfolio/profil"
 							mooth={true}
