@@ -1,10 +1,11 @@
 import React from "react";
-import CodeDuDev from "../assets/projects/CodeDuDev.jpg";
-
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { HiArrowNarrowLeft } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+
+import CodeDuDev from "../assets/projects/CodeDuDev.jpg";
+import pokedex from "../assets/projects/pokedex.jpg";
 
 const Work = () => {
 	return (
@@ -26,6 +27,7 @@ const Work = () => {
 
 				{/* Grid item */}
 				<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+					{/* Projet 1 code du dev */}
 					<div
 						style={{ backgroundImage: `url(${CodeDuDev})` }}
 						className="shadow-lg shadow-[#0e1111] group container rounded-md flex justify-center items-center mx-auto projet-div"
@@ -50,6 +52,33 @@ const Work = () => {
 							</div>
 						</div>
 					</div>
+
+					{/* Projet 2 pokedex */}
+					<div
+						style={{ backgroundImage: `url(${pokedex})` }}
+						className="shadow-lg shadow-[#0e1111] group container rounded-md flex justify-center items-center mx-auto projet-div"
+					>
+						{/* hover effect */}
+						<div className="text-center opacity-0 group-hover:opacity-100">
+							<p className="text-2xl font-bold text-white tracking-wider">
+								Pokedex
+							</p>
+							<span className="mt-10">HTML/CSS/REACT</span>
+							<p className="m-1 text-[#132513]">Projet réalisé en autonomie</p>
+							<div className="pt-8 text-center">
+								<a
+									href="https://thibautraimond.github.io/pokedex/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<button className="text-center rounded-lg px-8 py-3 bg-[#23232785] text-white ">
+										URL
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+
 				</div>
 				<div className="flex justify-center align-center">
 					<button className="mt-12 profil-bot-button">
