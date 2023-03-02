@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.27432db5.css",
-    "main.js": "/portfolio/static/js/main.f05ed4f6.js",
+    "main.css": "/portfolio/static/css/main.aca0ad9a.css",
+    "main.js": "/portfolio/static/js/main.b95e78b6.js",
     "static/media/CV-thibaut-raimond.pdf": "/portfolio/static/media/CV-thibaut-raimond.e8cb52bcbe26f15cae65.pdf",
     "static/media/thib.png": "/portfolio/static/media/thib.4fa78691c46cf9164d58.png",
     "static/media/CodeDuDev.jpg": "/portfolio/static/media/CodeDuDev.a11fd53b7b07de435994.jpg",
@@ -16,11 +16,11 @@
     "static/media/css.png": "/portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.27432db5.css.map": "/portfolio/static/css/main.27432db5.css.map",
-    "main.f05ed4f6.js.map": "/portfolio/static/js/main.f05ed4f6.js.map"
+    "main.aca0ad9a.css.map": "/portfolio/static/css/main.aca0ad9a.css.map",
+    "main.b95e78b6.js.map": "/portfolio/static/js/main.b95e78b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.27432db5.css",
-    "static/js/main.f05ed4f6.js"
+    "static/css/main.aca0ad9a.css",
+    "static/js/main.b95e78b6.js"
   ]
 }
