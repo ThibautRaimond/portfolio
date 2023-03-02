@@ -14,7 +14,7 @@ const Contact = () => {
 		>
 			<Helmet>
 				<title>Porfolio: Contact</title>
-				<meta name="contact" content="Contactez-moi par mail" />
+				<meta name="Contact" content="Contactez-moi par mail" />
 			</Helmet>
 
 			<div className="flex flex-col justify-center align-center lg:h-screen mt-12 lg:mt-0">

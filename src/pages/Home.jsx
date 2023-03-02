@@ -18,7 +18,7 @@ const Home = () => {
 		>
 			<Helmet>
 				<title>Portfolio: Accueil</title>
-				<meta name="description" content="Brève présentation professionnel" />
+				<meta name="Description" content="Brève présentation professionnel" />
 				</Helmet>
 			
 			{/* Container */}
