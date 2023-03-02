@@ -7,6 +7,7 @@ import { HiArrowNarrowLeft } from "react-icons/hi";
 import { MdDownload } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const About = () => {
 	return (
@@ -18,6 +19,11 @@ const About = () => {
 			exit={{ scaleX: 0 }}
 			transition={{ duration: 0.5 }}
 		>
+			<Helmet>
+				<title>Portfolio: Profil</title>
+				<meta name="Profil" content="Parcours personnel et CV" />
+			</Helmet>
+
 			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center">
 				<h1 className="text-4xl font-bold inline border-b-4 mb-10 border-[#07ed66]">
 					Profil
@@ -64,9 +70,9 @@ const About = () => {
 						</p>
 
 						<p className="py-4 text-xl text-center max-w-lg mt-3">
-							Afin d'intgégrer votre équipe je saurai mettre à profit ma motivation, ma méthodologie ainsi que
-							ma capacité d'adaptation afin de devenir un atout au sein de votre
-							entreprise.
+							Afin d'intgégrer votre équipe je saurai mettre à profit ma
+							motivation, ma méthodologie ainsi que ma capacité d'adaptation
+							afin de devenir un atout au sein de votre entreprise.
 						</p>
 					</div>
 				</div>

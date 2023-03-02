@@ -17,12 +17,12 @@ const Home = () => {
 			transition={{ duration: 0.5 }}
 		>
 			<Helmet>
-				<title>Page d'accueil</title>
+				<title>Portfolio: Accueil</title>
 				<meta name="description" content="Brève présentation professionnel" />
 				</Helmet>
 			
 			{/* Container */}
-			<div className="max-w-[750px] mx-auto flex flex-col justify-center">
+			<div className="max-w-[750px] mx-auto flex flex-col justify-center lg:h-screen sm:mb-12">
 				<p className="text-3xl text-[#07ed66] title">Bonjours je suis</p>
 				<h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6] title2">
 					Thibaut Raimond

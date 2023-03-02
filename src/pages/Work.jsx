@@ -3,6 +3,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import { HiArrowNarrowLeft } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 import CodeDuDev from "../assets/projects/CodeDuDev.jpg";
 import pokedex from "../assets/projects/pokedex.jpg";
@@ -11,14 +12,19 @@ const Work = () => {
 	return (
 		<motion.div
 			name="work"
-			className="text-gray-300 flex flex-col justify-center align-center w-full h-screen"
+			className="text-gray-300 flex flex-col justify-center align-center h-screen"
 			initial={{ scaleX: 0.5 }}
 			animate={{ scaleX: 1 }}
 			exit={{ scaleX: 0 }}
 			transition={{ duration: 0.5 }}
 		>
+			<Helmet>
+				<title>Portfolio: Projets</title>
+				<meta name="Projets" content="Présentation de mes projets" />
+			</Helmet>
+
 			<div className="max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full h-full">
-				<div className="pb-8 flex flex-col items-center ">
+				<div className="flex flex-col items-center ">
 					<p className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#07ed66] mt-6">
 						Mes projets
 					</p>
@@ -78,7 +84,6 @@ const Work = () => {
 							</div>
 						</div>
 					</div>
-
 				</div>
 				<div className="flex justify-center align-center">
 					<button className="mt-12 profil-bot-button">

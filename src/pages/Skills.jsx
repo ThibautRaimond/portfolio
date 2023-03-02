@@ -12,6 +12,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import { HiArrowNarrowLeft } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const Skills = () => {
 	return (
@@ -23,6 +24,14 @@ const Skills = () => {
 			exit={{ scaleX: 0 }}
 			transition={{ duration: 0.5 }}
 		>
+			<Helmet>
+				<title>Portfolio: Compétences</title>
+				<meta
+					name="Compétences"
+					content="Présentation des principales technos maitrisées"
+				/>
+			</Helmet>
+
 			{/* Container */}
 			<div className="max-w-[1000px] mx-auto flex flex-col pt-4 lg:pt-52">
 				<div className="text-center">

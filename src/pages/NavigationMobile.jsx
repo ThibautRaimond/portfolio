@@ -8,7 +8,7 @@ const NavigationMobile = () => {
 	const [nav, setNav] = useState(false);
 	const handleClick = () => setNav(!nav);
 	return (
-		<div>
+		<nav>
 			<ul
 				className={
 					"bg-gradient-to-r from[#0e1111] to-transparentbg flex flex-col justify-center items-center text-white pt-4"
@@ -105,7 +105,7 @@ const NavigationMobile = () => {
 					</li>
 				</div>
 			</ul>
-		</div>
+		</nav>
 	);
 };
 
