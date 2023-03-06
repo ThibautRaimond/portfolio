@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 
 import CodeDuDev from "../assets/projects/CodeDuDev.jpg";
-import pokedex from "../assets/projects/pokedex.png";
+import pokedex from "../assets/projects/pokedex.jpg";
 
 const Work = () => {
 	return (
