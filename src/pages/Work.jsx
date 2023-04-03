@@ -12,7 +12,7 @@ const Work = () => {
 	return (
 		<motion.div
 			name="work"
-			className="text-gray-300"
+			className="text-gray-300 h-screen-85"
 			initial={{ scaleX: 0.5 }}
 			animate={{ scaleX: 1 }}
 			exit={{ scaleX: 0 }}
@@ -23,7 +23,7 @@ const Work = () => {
 				<meta name="Projets" content="Présentation de mes projets" />
 			</Helmet>
 
-			<div className="max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full lg:h-screen mt-12 lg:mt-0">
+			<div className="h-screen-85 max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full mt-12 lg:mt-0">
 				<div className="flex flex-col items-center ">
 					<p className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#07ed66] mt-6">
 						Mes projets

@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
 		<>
 			<Navbar />
 			<DesktopSocialIcons />
-			<main>{children}</main>
+			{children}
 		</>
 	);
 };

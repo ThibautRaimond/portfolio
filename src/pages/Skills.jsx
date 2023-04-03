@@ -18,7 +18,7 @@ const Skills = () => {
 	return (
 		<motion.div
 			name="skills"
-			className="w-full h-screen bg-gradient-to-r from[#0e1111] to-transparentbg text-gray-300"
+			className="w-full h-screen-85 bg-gradient-to-r from[#0e1111] to-transparentbg text-gray-300"
 			initial={{ scaleX: 0.5 }}
 			animate={{ scaleX: 1 }}
 			exit={{ scaleX: 0 }}

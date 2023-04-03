@@ -1,5 +1,5 @@
 import React from "react";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -10,7 +10,7 @@ const Home = () => {
 		<motion.div
 			name="home"
 			alt="Page d'accueil"
-			className="flex flex-col justify-center align-center w-screen h-screen"
+			className="flex flex-col justify-center items-center h-screen-85"
 			initial={{ scaleX: 0.5 }}
 			animate={{ scaleX: 1 }}
 			exit={{ scaleX: 0 }}
@@ -19,10 +19,10 @@ const Home = () => {
 			<Helmet>
 				<title>Portfolio: Accueil</title>
 				<meta name="Description" content="Brève présentation professionnel" />
-				</Helmet>
-			
+			</Helmet>
+
 			{/* Container */}
-			<div className="max-w-[750px] mx-auto flex flex-col justify-center lg:h-screen sm:mb-12">
+			<main className="">
 				<p className="text-3xl text-[#07ed66] title">Bonjours je suis</p>
 				<h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6] title2">
 					Thibaut Raimond
@@ -37,7 +37,7 @@ const Home = () => {
 						}}
 					/>
 				</h2>
-				<div>
+				<div className="">
 					<button alt="Liens vers la page profil">
 						<Link
 							to="/portfolio/profil"
@@ -50,7 +50,7 @@ const Home = () => {
 					</button>
 				</div>
 				{/* cup container */}
-			</div>
+			</main>
 		</motion.div>
 	);
 };

@@ -17,7 +17,7 @@ const Contact = () => {
 				<meta name="Contact" content="Contactez-moi par mail" />
 			</Helmet>
 
-			<div className="flex flex-col justify-center align-center lg:h-screen mt-12 lg:mt-0">
+			<div className="flex flex-col justify-center align-center mt-12 lg:mt-0 h-screen-85">
 				<form
 					method="POST"
 					action="https://getform.io/f/b647f9b9-5752-4f82-a5c5-7e42ed277826"
