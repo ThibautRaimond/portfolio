@@ -6,7 +6,7 @@ const Contact = () => {
 	return (
 		<motion.div
 			name="contact"
-			className="block"
+			className=""
 			initial={{ scaleX: 0.5 }}
 			animate={{ scaleX: 1 }}
 			exit={{ scaleX: 0 }}
@@ -17,7 +17,7 @@ const Contact = () => {
 				<meta name="Contact" content="Contactez-moi par mail" />
 			</Helmet>
 
-			<div className="flex flex-col justify-center align-center mt-10 lg:mt-0 h-screen-85">
+			<div className="flex justify-center items-center pt-10 lg:pt-40">
 				<form
 					method="POST"
 					action="https://getform.io/f/b647f9b9-5752-4f82-a5c5-7e42ed277826"
