@@ -7,10 +7,9 @@ const Contact = () => {
 		<motion.main
 			name="contact"
 			className=""
-			initial={{ scaleX: 0.5 }}
-			animate={{ scaleX: 1 }}
-			exit={{ scaleX: 0 }}
-			transition={{ duration: 0.5 }}
+			initial={{ opacity: 0, scale: 0.5 }}
+			animate={{ opacity: 1, scale: 1 }}
+			transition={{ duration: 0.75 }}
 		>
 			<Helmet>
 				<title>Porfolio: Contact</title>

@@ -14,8 +14,14 @@
     }
 }
 
-.h-screen-85 {
-	height: calc(100vh - 85px);
+.full-height {
+	height: 100vh;
+}
+
+.flex-grow{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .hidden {

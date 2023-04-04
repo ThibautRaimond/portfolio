@@ -18,7 +18,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="w-full h-[85px] flex justify-between items-center pr-4 pl-3 bg-[#0e1111d3] text-gray-300 shadow-md shadow-[#040c16]">
+		<nav className="w-full h-[85px] flex justify-between items-center pr-4 pl-3 mb-2 bg-[#0e1111d3] text-gray-300 shadow-md shadow-[#040c16]">
 			<div className="h-[70px] w-[70px] p-[5px] rounded-md flex justify-center hover:shadow-md hover:shadow-[#040c16]">
 				<Link to="/portfolio">
 					<img

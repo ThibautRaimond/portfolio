@@ -10,11 +10,10 @@ const Home = () => {
 		<motion.main
 			name="home"
 			alt="Page d'accueil"
-			className="flex flex-col justify-center items-center h-screen-85"
-			initial={{ scaleX: 0.5 }}
-			animate={{ scaleX: 1 }}
-			exit={{ scaleX: 0 }}
-			transition={{ duration: 0.5 }}
+			className="flex flex-col justify-center items-center "
+			initial={{ opacity: 0, scale: 0.5 }}
+			animate={{ opacity: 1, scale: 1 }}
+			transition={{ duration: 0.75 }}
 		>
 			<Helmet>
 				<title>Portfolio: Accueil</title>

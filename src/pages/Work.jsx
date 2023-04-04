@@ -12,22 +12,21 @@ const Work = () => {
 	return (
 		<motion.main
 			name="work"
-			className="text-gray-300 h-screen-85 "
-			initial={{ scaleX: 0.5 }}
-			animate={{ scaleX: 1 }}
-			exit={{ scaleX: 0 }}
-			transition={{ duration: 0.5 }}
+			className="text-gray-300"
+			initial={{ opacity: 0, scale: 0.5 }}
+			animate={{ opacity: 1, scale: 1 }}
+			transition={{ duration: 0.75 }}
 		>
 			<Helmet>
 				<title>Portfolio: Projets</title>
 				<meta name="Projets" content="Présentation de mes projets" />
 			</Helmet>
 
-			<div className="h-screen-85 max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full mt-28 lg:mt-0">
+			<div className="h-screen-85 max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full">
 				<div className="flex flex-col items-center ">
-					<p className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#07ed66] mt-6">
+					<h1 className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#07ed66]">
 						Mes projets
-					</p>
+					</h1>
 					<p className="py-6"> Présentation de mes derniers projets</p>
 				</div>
 
@@ -91,7 +90,7 @@ const Work = () => {
 							to="/portfolio/skills"
 							mooth={true}
 							duration={500}
-							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 my-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
+							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
 							<HiArrowNarrowLeft className="mr-3" /> Retour aux compétences
 						</Link>
@@ -102,7 +101,7 @@ const Work = () => {
 							to="/portfolio/contact"
 							mooth={true}
 							duration={500}
-							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 my-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
+							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
 							Échangeons par mail <HiArrowNarrowRight className="ml-3" />{" "}
 						</Link>

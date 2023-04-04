@@ -18,11 +18,10 @@ const Skills = () => {
 	return (
 		<motion.main
 			name="skills"
-			className="w-full h-screen-85 bg-gradient-to-r from[#0e1111] to-transparentbg text-gray-300"
-			initial={{ scaleX: 0.5 }}
-			animate={{ scaleX: 1 }}
-			exit={{ scaleX: 0 }}
-			transition={{ duration: 0.5 }}
+			className="w-full bg-gradient-to-r from[#0e1111] to-transparentbg text-gray-300"
+			initial={{ opacity: 0, scale: 0.5 }}
+			animate={{ opacity: 1, scale: 1 }}
+			transition={{ duration: 0.75 }}
 		>
 			<Helmet>
 				<title>Portfolio: Compétences</title>
@@ -33,7 +32,7 @@ const Skills = () => {
 			</Helmet>
 
 			{/* Container */}
-			<div className="max-w-[1000px] mx-auto flex flex-col pt-4 lg:pt-52">
+			<div className="max-w-[1000px] mx-auto flex flex-col">
 				<div className="text-center">
 					<p className="text-4xl font-bold inline border-b-4 border-[#07ed66]">
 						Compétences
@@ -89,7 +88,7 @@ const Skills = () => {
 							to="/portfolio/profil"
 							mooth={true}
 							duration={500}
-							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 my-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
+							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
 							<HiArrowNarrowLeft className="mr-3" /> Retour au profil
 						</Link>
@@ -100,7 +99,7 @@ const Skills = () => {
 							to="/portfolio/work"
 							mooth={true}
 							duration={500}
-							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 my-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
+							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
 							Voir mes projets <HiArrowNarrowRight className="ml-3" />{" "}
 						</Link>

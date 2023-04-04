@@ -13,11 +13,10 @@ const About = () => {
 	return (
 		<motion.main
 			name="profil"
-			className="bg-gradient-to-r from[#0e1111] to-transparentbg flex justify-center items-center pt-4 lg:pt-24 text-gray-300"
-			initial={{ scaleX: 0.5 }}
-			animate={{ scaleX: 1 }}
-			exit={{ scaleX: 0 }}
-			transition={{ duration: 0.5 }}
+			className="bg-gradient-to-r from[#0e1111] to-transparentbg flex justify-center items-center text-gray-300"
+			initial={{ opacity: 0, scale: 0.5 }}
+			animate={{ opacity: 1, scale: 1 }}
+			transition={{ duration: 0.75 }}
 		>
 			<Helmet>
 				<title>Portfolio: Profil</title>
@@ -102,7 +101,7 @@ const About = () => {
 							to="/portfolio"
 							mooth={true}
 							duration={500}
-							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 my-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
+							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
 							<HiArrowNarrowLeft className="mr-3" /> Retour à l'accueil
 						</Link>
@@ -113,7 +112,7 @@ const About = () => {
 							to="/portfolio/skills"
 							mooth={true}
 							duration={500}
-							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 my-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
+							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
 							Mes compétences <HiArrowNarrowRight className="ml-3" />{" "}
 						</Link>
