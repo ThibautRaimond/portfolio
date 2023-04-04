@@ -11,9 +11,9 @@ import { Helmet } from "react-helmet";
 
 const About = () => {
 	return (
-		<motion.div
+		<motion.main
 			name="profil"
-			className="bg-gradient-to-r from[#0e1111] to-transparentbg flex justify-center items-center lg:pt-16 text-gray-300"
+			className="bg-gradient-to-r from[#0e1111] to-transparentbg flex justify-center items-center pt-4 lg:pt-24 text-gray-300"
 			initial={{ scaleX: 0.5 }}
 			animate={{ scaleX: 1 }}
 			exit={{ scaleX: 0 }}
@@ -120,7 +120,7 @@ const About = () => {
 					</button>
 				</div>
 			</div>
-		</motion.div>
+		</motion.main>
 	);
 };
 export default About;

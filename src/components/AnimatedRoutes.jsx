@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
@@ -7,8 +8,7 @@ import Skills from "../pages/Skills";
 import Work from "../pages/Work";
 import Profil2 from "../pages/Profil2";
 
-import { AnimatePresence } from "framer-motion";
-import NavigationMobile from "../pages/NavigationMobile";
+
 
 const AnimatedRoutes = () => {
 	const location = useLocation();
@@ -20,7 +20,6 @@ const AnimatedRoutes = () => {
 				<Route path="/portfolio/skills" element={<Skills />} />
 				<Route path="/portfolio/work" element={<Work />} />
 				<Route path="/portfolio/contact" element={<Contact />} />
-				<Route path="/portfolio/menu" element={<NavigationMobile />} />
 			</Routes>
 		</AnimatePresence>
 	);

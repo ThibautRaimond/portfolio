@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
 	return (
-		<motion.div
+		<motion.main
 			name="home"
 			alt="Page d'accueil"
 			className="flex flex-col justify-center items-center h-screen-85"
@@ -22,7 +22,7 @@ const Home = () => {
 			</Helmet>
 
 			{/* Container */}
-			<main className="">
+			<div>
 				<p className="text-3xl text-[#07ed66] title">Bonjours je suis</p>
 				<h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6] title2">
 					Thibaut Raimond
@@ -50,8 +50,8 @@ const Home = () => {
 					</button>
 				</div>
 				{/* cup container */}
-			</main>
-		</motion.div>
+			</div>
+		</motion.main>
 	);
 };
 

@@ -16,7 +16,7 @@ import { Helmet } from "react-helmet";
 
 const Skills = () => {
 	return (
-		<motion.div
+		<motion.main
 			name="skills"
 			className="w-full h-screen-85 bg-gradient-to-r from[#0e1111] to-transparentbg text-gray-300"
 			initial={{ scaleX: 0.5 }}
@@ -107,7 +107,7 @@ const Skills = () => {
 					</button>
 				</div>
 			</div>
-		</motion.div>
+		</motion.main>
 	);
 };
 

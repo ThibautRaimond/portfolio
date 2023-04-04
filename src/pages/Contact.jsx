@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 const Contact = () => {
 	return (
-		<motion.div
+		<motion.main
 			name="contact"
 			className=""
 			initial={{ scaleX: 0.5 }}
@@ -17,7 +17,7 @@ const Contact = () => {
 				<meta name="Contact" content="Contactez-moi par mail" />
 			</Helmet>
 
-			<div className="flex justify-center items-center pt-10 lg:pt-40">
+			<div className="flex justify-center items-center pt-6 lg:p-40">
 				<form
 					method="POST"
 					action="https://getform.io/f/b647f9b9-5752-4f82-a5c5-7e42ed277826"
@@ -63,7 +63,7 @@ const Contact = () => {
 					</div>
 				</form>
 			</div>
-		</motion.div>
+		</motion.main>
 	);
 };
 
