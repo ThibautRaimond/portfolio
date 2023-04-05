@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.33ecdf43.css",
+    "main.css": "/portfolio/static/css/main.857eb331.css",
     "main.js": "/portfolio/static/js/main.26523ece.js",
     "static/media/CV-thibaut-raimond.pdf": "/portfolio/static/media/CV-thibaut-raimond.e8cb52bcbe26f15cae65.pdf",
     "static/media/thib.png": "/portfolio/static/media/thib.4fa78691c46cf9164d58.png",
@@ -16,11 +16,11 @@
     "static/media/css.png": "/portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.33ecdf43.css.map": "/portfolio/static/css/main.33ecdf43.css.map",
+    "main.857eb331.css.map": "/portfolio/static/css/main.857eb331.css.map",
     "main.26523ece.js.map": "/portfolio/static/js/main.26523ece.js.map"
   },
   "entrypoints": [
-    "static/css/main.33ecdf43.css",
+    "static/css/main.857eb331.css",
     "static/js/main.26523ece.js"
   ]
 }
