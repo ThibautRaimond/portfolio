@@ -23,13 +23,13 @@ const About = () => {
 				<meta name="Profil" content="Parcours personnel et CV" />
 			</Helmet>
 
-			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center mt-4">
-				<h1 className="text-4xl font-bold inline border-b-4 mb-10 border-[#07ed66]">
+			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center">
+				<h1 className="text-4xl font-bold inline border-b-4 mb-12 border-[#07ed66]">
 					Profil
 				</h1>
 
-				<div className="flex items-center shadow-md shadow-[#040c16] pt-4 px-2">
-					<div className="profil-left-container flex flex-col items-center mr-6">
+				<div className="flex items-center shadow-md shadow-[#040c16] px-2">
+					<div className="profil-left-container flex flex-col items-center mr-6 pt-4">
 						<img src={thib} alt="Picture" className="thib" />
 
 						{/* desktop button */}
@@ -42,18 +42,19 @@ const About = () => {
 								download
 								className="flex justify-center align-center"
 							>
-								Télécharger mon CV <MdDownload className="w-[20px] h-[20px] mt-1" />
+								Télécharger mon CV{" "}
+								<MdDownload className="w-[20px] h-[20px] mt-1" />
 							</a>
 						</button>
 					</div>
 
-					<div className="profil-textSection">
+					<div className="">
 						<p className="text-xl text-center max-w-lg ">
 							Enchanté je m'appelle Thibaut et j'ai récemment découvert une
 							passion pour le développement web. J'ai donc choisi de suivre la
 							formation FullStack JavaScript chez{" "}
 							<a
-								className="hover:text-[#07ed66]"
+								className="hover:text-[#07ed66] underline "
 								href="https://oclock.io/"
 								target="_blank"
 								rel="noreferrer"
@@ -69,10 +70,10 @@ const About = () => {
 							Web & Mobile de niveau RNCP 5 (BAC +2).
 						</p>
 
-						<p className="py-4 text-xl text-center max-w-lg mt-3">
-							Afin d'intgégrer votre équipe je saurai mettre à profit ma
-							motivation, ma méthodologie ainsi que ma capacité d'adaptation
-							afin de devenir un atout au sein de votre entreprise.
+						<p className="text-xl text-center max-w-lg">
+							Afin de devenir un atout au sein de votre
+							entreprise, je saurai mettre à profit ma motivation, ma méthodologie ainsi que
+							ma capacité d'adaptation.
 						</p>
 					</div>
 				</div>
@@ -86,9 +87,13 @@ const About = () => {
 					href={CV}
 					download
 				>
-					<span></span><span></span><span></span><span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
 					<div className="flex justify-center align-middle">
-						<p>Télécharger mon CV</p>  <MdDownload className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
+						<p>Télécharger mon CV</p>{" "}
+						<MdDownload className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
 					</div>
 				</button>
 
@@ -102,7 +107,8 @@ const About = () => {
 							duration={500}
 							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
-							<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour à l'accueil
+							<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour à
+							l'accueil
 						</Link>
 					</button>
 
@@ -113,7 +119,8 @@ const About = () => {
 							duration={500}
 							className="group flex items-center px-6 py-3 mb-2 border-2 text-[#ffffff] text-opacity-25 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
-							Mes compétences <HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
+							Mes compétences{" "}
+							<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
 						</Link>
 					</button>
 				</div>
