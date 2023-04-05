@@ -23,25 +23,26 @@ const About = () => {
 				<meta name="Profil" content="Parcours personnel et CV" />
 			</Helmet>
 
-			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center">
+			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center mt-4">
 				<h1 className="text-4xl font-bold inline border-b-4 mb-10 border-[#07ed66]">
 					Profil
 				</h1>
 
 				<div className="flex items-center shadow-md shadow-[#040c16] pt-4 px-2">
-					<div className="profil-left-container flex flex-col items-center mr-2">
+					<div className="profil-left-container flex flex-col items-center mr-6">
 						<img src={thib} alt="Picture" className="thib" />
-						<button
-							className="bg-green-600 opacity-90 text-white active:bg-green-400 font-bold text-xs py-4 w-48
-						rounded outline-none mr-1 mt-6 ease-linear transition-all duration-300 hover:opacity-100 shadow hover:shadow-md hover:shadow-[#179244bb] "
-							type="button"
-						>
+
+						{/* desktop button */}
+						<button className="button py-4 px-8 mt-6 mb-6" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
 							<a
 								href={CV}
 								download
-								className="flex justify-center align-center leading-0 text-sm"
+								className="flex justify-center align-center"
 							>
-								Télécharger mon CV <MdDownload className="w-[20px] h-[20px]" />
+								Télécharger mon CV <MdDownload className="w-[20px] h-[20px] mt-1" />
 							</a>
 						</button>
 					</div>
@@ -78,43 +79,41 @@ const About = () => {
 
 				{/* ------------- MOBILE BUTTON  --------------- */}
 				<button
-					className="profil-mobile-button bg-green-500 text-white active:bg-green-600 font-bold text-xs py-4 w-48
-				rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mt-6 ease-linear"
+					href={CV}
+					download
+					className="profil-mobile-button text-xs py-4 w-48 button mt-6"
 					type="button"
 					href={CV}
 					download
 				>
-					<a
-						href={CV}
-						download
-						className="flex justify-center align-center leading-0 text-sm"
-					>
-						Télécharger mon CV <MdDownload className="w-[20px] h-[20px]" />
-					</a>
+					<span></span><span></span><span></span><span></span>
+					<div className="flex justify-center align-middle">
+						<p>Télécharger mon CV</p>  <MdDownload className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
+					</div>
 				</button>
 
 				{/* ------------- Navigation BUTTON  --------------- */}
 
 				<div className="flex justify-center align-center">
-					<button className="mt-10 profil-bot-button">
+					<button className="mt-10 profil-bot-button leftNavButton">
 						<Link
 							to="/portfolio"
 							mooth={true}
 							duration={500}
 							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
-							<HiArrowNarrowLeft className="mr-3" /> Retour à l'accueil
+							<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour à l'accueil
 						</Link>
 					</button>
 
-					<button className="mt-10 profil-bot-button">
+					<button className="mt-10 profil-bot-button rightNavButton">
 						<Link
 							to="/portfolio/skills"
 							mooth={true}
 							duration={500}
-							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
+							className="group flex items-center px-6 py-3 mb-2 border-2 text-[#ffffff] text-opacity-25 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
-							Mes compétences <HiArrowNarrowRight className="ml-3" />{" "}
+							Mes compétences <HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
 						</Link>
 					</button>
 				</div>

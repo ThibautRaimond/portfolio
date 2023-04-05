@@ -32,7 +32,7 @@ const Skills = () => {
 			</Helmet>
 
 			{/* Container */}
-			<div className="max-w-[1000px] mx-auto flex flex-col">
+			<div className="max-w-[1000px] mx-auto flex flex-col mt-4">
 				<div className="text-center">
 					<p className="text-4xl font-bold inline border-b-4 border-[#07ed66]">
 						Compétences
@@ -83,25 +83,25 @@ const Skills = () => {
 					</div>
 				</div>
 				<div className="flex justify-center">
-					<button className="mt-10 profil-bot-button">
+					<button className="mt-10 profil-bot-button leftNavButton">
 						<Link
 							to="/portfolio/profil"
 							mooth={true}
 							duration={500}
 							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
-							<HiArrowNarrowLeft className="mr-3" /> Retour au profil
+							<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour au profil
 						</Link>
 					</button>
 
-					<button className="mt-10 profil-bot-button">
+					<button className="mt-10 profil-bot-button rightNavButton">
 						<Link
 							to="/portfolio/work"
 							mooth={true}
 							duration={500}
 							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
-							Voir mes projets <HiArrowNarrowRight className="ml-3" />{" "}
+							Voir mes projets <HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
 						</Link>
 					</button>
 				</div>

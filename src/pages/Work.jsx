@@ -22,7 +22,7 @@ const Work = () => {
 				<meta name="Projets" content="Présentation de mes projets" />
 			</Helmet>
 
-			<div className="h-screen-85 max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full">
+			<div className="h-screen-85 max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full mt-4">
 				<div className="flex flex-col items-center ">
 					<h1 className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#07ed66]">
 						Mes projets
@@ -85,25 +85,25 @@ const Work = () => {
 					</div>
 				</div>
 				<div className="flex justify-center align-center">
-					<button className="mt-12 profil-bot-button">
+					<button className="mt-12 profil-bot-button leftNavButton">
 						<Link
 							to="/portfolio/skills"
 							mooth={true}
 							duration={500}
 							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
-							<HiArrowNarrowLeft className="mr-3" /> Retour aux compétences
+							<HiArrowNarrowLeft className="mr-3 leftNavArrow"/> Retour aux compétences
 						</Link>
 					</button>
 
-					<button className="mt-12 profil-bot-button ">
+					<button className="mt-12 profil-bot-button rightNavButton">
 						<Link
 							to="/portfolio/contact"
 							mooth={true}
 							duration={500}
 							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
 						>
-							Échangeons par mail <HiArrowNarrowRight className="ml-3" />{" "}
+							Échangeons par mail <HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
 						</Link>
 					</button>
 				</div>

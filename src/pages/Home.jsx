@@ -36,18 +36,21 @@ const Home = () => {
 						}}
 					/>
 				</h2>
-				<div className="">
-					<button alt="Liens vers la page profil">
-						<Link
-							to="/portfolio/profil"
-							mooth={true}
-							duration={500}
-							className="text-white group items-center hover:text-black hover:bg-[#07ed66] hover:border-[#07ed66] hover:text-#0e1111] flex border-2 px-6 py-3 my-2"
-						>
-							Voir mon profil <HiArrowNarrowRight className="ml-3" />{" "}
-						</Link>
+				<Link
+					to="/portfolio/profil"
+					mooth={true}
+					duration={500}
+				>
+					<button
+						className="rightNavButton bg-gradient-to-b from-green-800 to-green-600 text-white hover:border hover:border-1 border-solid border-white
+						flex px-6 py-3 my-2 relative"
+						alt="Liens vers la page profil"
+					>
+						<div className="flex">
+							Voir mon profil <HiArrowNarrowRight className="rightNavArrow ml-3 mt-1" />
+						</div>
 					</button>
-				</div>
+				</Link>
 				{/* cup container */}
 			</div>
 		</motion.main>
