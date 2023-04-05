@@ -23,11 +23,10 @@ const Contact = () => {
 					className="flex flex-col max-w-[600px] w-full mx-auto px-2"
 				>
 					<div className="pb-4 text-center">
-						
 						<h2 className="text-4xl font-bold inline border-b-4 border-[#07ed66] text-gray-300">
 							Me contacter
 						</h2>
-						
+
 						<p className="text-gray-300 pt-6">
 							Afin de me contacter, remplissez le formulaire ci-dessous ou
 							envoyez moi directement un e-mail à l'adresse suivante:
@@ -54,10 +53,13 @@ const Contact = () => {
 					></textarea>
 					<div className="flex justify-center">
 						{/* --button-- */}
-						<button className="button py-4 px-8 mt-6 sm:mt-10 mb-4"
+						<button
+							className="moovingBorder hover:text-green-500 hover:underline hover:underline-thickness-2 py-4 px-8 mt-6 sm:mt-10 mb-4"
 							type="submit"
 						>
-							<span></span><span></span><span></span>
+							<span></span>
+							<span></span>
+							<span></span>
 							Collaborons ensemble
 						</button>
 					</div>

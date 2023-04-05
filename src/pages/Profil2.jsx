@@ -34,7 +34,7 @@ const About = () => {
 
 						{/* desktop button */}
 						<a href={CV} download>
-							<button className="button py-4 px-8 mt-6 mb-6" type="button">
+							<button className="moovingBorder hover:text-green-500 hover:underline hover:underline-thickness-2 py-4 px-8 mt-6 mb-6" type="button">
 								<span></span>
 								<span></span>
 								<span></span>
@@ -78,7 +78,7 @@ const About = () => {
 
 				{/* ------------- MOBILE BUTTON  --------------- */}
 				<a href={CV} download className="profil-mobile-button text-xs">
-					<button className="button py-4 px-8 mt-6 mb-6" type="button">
+					<button className="moovingBorder py-4 px-8 mt-6 mb-6" type="button">
 						<span></span>
 						<span></span>
 						<span></span>
@@ -96,7 +96,7 @@ const About = () => {
 							to="/portfolio"
 							mooth={true}
 							duration={500}
-							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
+							className="group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
 						>
 							<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour à
 							l'accueil
@@ -108,7 +108,7 @@ const About = () => {
 							to="/portfolio/skills"
 							mooth={true}
 							duration={500}
-							className="group flex items-center px-6 py-3 mb-2 border-2 text-[#ffffff] text-opacity-25 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
+							className="group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
 						>
 							Mes compétences{" "}
 							<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}

@@ -32,6 +32,9 @@ const Work = () => {
 
 				{/* Grid item */}
 				<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+{/* ------- */}
+
 					{/* Projet 1 code du dev */}
 					<div
 						style={{ backgroundImage: `url(${CodeDuDev})` }}
@@ -40,17 +43,21 @@ const Work = () => {
 						{/* hover effect */}
 						<div className="text-center opacity-0 group-hover:opacity-100">
 							<p className="text-2xl font-bold text-white tracking-wider">
-								Le code du dev'
+								Le code du dev
 							</p>
-							<span className="mt-10">HTML/CSS/JS/SQL</span>
+							<span className="mt-10">EJS/NodeJS/SQL/CSS</span>
 							<p className="m-1 text-[#132513]">Projet de groupe</p>
-							<div className="pt-8 text-center">
+							<div className="pt-20 text-center">
 								<a
 									href="https://yannou.philoucorp.fr/"
 									target="_blank"
 									rel="noreferrer"
 								>
-									<button className="text-center rounded-lg px-8 py-3 bg-[#23232785] text-white ">
+									<button className="moovingBorder htext-center rounded-lg px-8 py-3 text-white over:underline hover:font-bold  hover:text-green-500">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
 										URL
 									</button>
 								</a>
@@ -68,15 +75,16 @@ const Work = () => {
 							<p className="text-2xl font-bold text-white tracking-wider">
 								Pokedex
 							</p>
-							<span className="mt-10">HTML/CSS/REACT</span>
-							<p className="m-1 text-[#132513]">Projet réalisé en autonomie</p>
-							<div className="pt-8 text-center">
+							<span className="mt-10">React/Tailwind</span>
+							<p className="m-1 text-[#132513]">Projet perso</p>
+							<div className="pt-20 text-center">
 								<a
 									href="https://thibautraimond.github.io/pokedex/"
 									target="_blank"
 									rel="noreferrer"
 								>
-									<button className="text-center rounded-lg px-8 py-3 bg-[#23232785] text-white ">
+									<button className="moovingBorder text-center rounded-lg px-8 py-3 text-white over:underline hover:font-bold  hover:text-green-500">
+										<span></span><span></span><span></span><span></span>
 										URL
 									</button>
 								</a>
@@ -90,9 +98,10 @@ const Work = () => {
 							to="/portfolio/skills"
 							mooth={true}
 							duration={500}
-							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
+							className="group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
 						>
-							<HiArrowNarrowLeft className="mr-3 leftNavArrow"/> Retour aux compétences
+							<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour aux
+							compétences
 						</Link>
 					</button>
 
@@ -101,9 +110,10 @@ const Work = () => {
 							to="/portfolio/contact"
 							mooth={true}
 							duration={500}
-							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
+							className="group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
 						>
-							Échangeons par mail <HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
+							Échangeons par mail{" "}
+							<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
 						</Link>
 					</button>
 				</div>

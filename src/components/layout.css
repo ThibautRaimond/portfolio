@@ -3,15 +3,14 @@ body {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-  }
-  
-  main {
+}
+
+main {
 	flex-grow: 1;
 	overflow-y: auto;
-  }
-  
-  .navbar {
+}
+
+.navbar {
 	height: 64px;
 	/* Ajoutez vos styles de navbar ici */
-  }
-  
+}

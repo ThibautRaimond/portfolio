@@ -88,9 +88,10 @@ const Skills = () => {
 							to="/portfolio/profil"
 							mooth={true}
 							duration={500}
-							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
+							className="group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
 						>
-							<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour au profil
+							<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour au
+							profil
 						</Link>
 					</button>
 
@@ -99,9 +100,10 @@ const Skills = () => {
 							to="/portfolio/work"
 							mooth={true}
 							duration={500}
-							className="text-[#ffffff] text-opacity-25 group flex items-center border-2 px-6 py-3 mb-2 border-[#999b99] border-opacity-25 hover:text-white hover:border-white"
+							className="group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
 						>
-							Voir mes projets <HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
+							Voir mes projets{" "}
+							<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
 						</Link>
 					</button>
 				</div>
