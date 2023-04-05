@@ -75,7 +75,7 @@ const Work = () => {
 							<p className="text-2xl font-bold text-white tracking-wider">
 								Pokedex
 							</p>
-							<span className="mt-10">React/Tailwind</span>
+							<span className="mt-10">React/CSS</span>
 							<p className="m-1 text-[#132513]">Projet perso</p>
 							<div className="pt-20 text-center">
 								<a
