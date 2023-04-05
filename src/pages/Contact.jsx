@@ -60,6 +60,7 @@ const Contact = () => {
 							<span></span>
 							<span></span>
 							<span></span>
+							<span></span>
 							Collaborons ensemble
 						</button>
 					</div>

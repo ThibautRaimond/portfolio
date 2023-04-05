@@ -38,6 +38,7 @@ const About = () => {
 								<span></span>
 								<span></span>
 								<span></span>
+								<span></span>
 								<div className="flex justify-center align-center">
 									Télécharger mon CV{" "}
 									<MdDownload className="w-[20px] h-[20px] mt-1" />
@@ -79,6 +80,7 @@ const About = () => {
 				{/* ------------- MOBILE BUTTON  --------------- */}
 				<a href={CV} download className="profil-mobile-button text-xs">
 					<button className="moovingBorder py-4 px-8 mt-6 mb-6" type="button">
+						<span></span>
 						<span></span>
 						<span></span>
 						<span></span>
