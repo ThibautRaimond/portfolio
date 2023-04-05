@@ -16,7 +16,7 @@ const Contact = () => {
 				<meta name="Contact" content="Contactez-moi par mail" />
 			</Helmet>
 
-			<div className="flex justify-center items-center pt-4 lg:p-40">
+			<div className="flex justify-center items-center mt-4 sm:mt-0">
 				<form
 					method="POST"
 					action="https://getform.io/f/b647f9b9-5752-4f82-a5c5-7e42ed277826"
@@ -53,7 +53,8 @@ const Contact = () => {
 						placeholder="Message"
 					></textarea>
 					<div className="flex justify-center">
-						<button className="button py-4 px-8 mt-6 mb-4"
+						{/* --button-- */}
+						<button className="button py-4 px-8 mt-6 sm:mt-10 mb-4"
 							type="submit"
 						>
 							<span></span><span></span><span></span>

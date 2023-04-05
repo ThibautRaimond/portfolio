@@ -13,7 +13,7 @@ const About = () => {
 	return (
 		<motion.main
 			name="profil"
-			className="bg-gradient-to-r from[#0e1111] to-transparentbg flex justify-center items-center text-gray-300"
+			className="bg-gradient-to-r from[#0e1111] to-transparentbg flex justify-center items-center text-gray-300 mt-4 sm:mt-0"
 			initial={{ opacity: 0, scale: 0.5 }}
 			animate={{ opacity: 1, scale: 1 }}
 			transition={{ duration: 0.75 }}
@@ -33,19 +33,17 @@ const About = () => {
 						<img src={thib} alt="Picture" className="thib" />
 
 						{/* desktop button */}
-						<button className="button py-4 px-8 mt-6 mb-6" type="button">
-							<span></span>
-							<span></span>
-							<span></span>
-							<a
-								href={CV}
-								download
-								className="flex justify-center align-center"
-							>
-								Télécharger mon CV{" "}
-								<MdDownload className="w-[20px] h-[20px] mt-1" />
-							</a>
-						</button>
+						<a href={CV} download>
+							<button className="button py-4 px-8 mt-6 mb-6" type="button">
+								<span></span>
+								<span></span>
+								<span></span>
+								<div className="flex justify-center align-center">
+									Télécharger mon CV{" "}
+									<MdDownload className="w-[20px] h-[20px] mt-1" />
+								</div>
+							</button>
+						</a>
 					</div>
 
 					<div className="">
@@ -71,36 +69,29 @@ const About = () => {
 						</p>
 
 						<p className="text-xl text-center max-w-lg">
-							Afin de devenir un atout au sein de votre
-							entreprise, je saurai mettre à profit ma motivation, ma méthodologie ainsi que
-							ma capacité d'adaptation.
+							Afin de devenir un atout au sein de votre entreprise, je saurai
+							mettre à profit ma motivation, ma méthodologie ainsi que ma
+							capacité d'adaptation.
 						</p>
 					</div>
 				</div>
 
 				{/* ------------- MOBILE BUTTON  --------------- */}
-				<button
-					href={CV}
-					download
-					className="profil-mobile-button text-xs py-4 w-48 button mt-6"
-					type="button"
-					href={CV}
-					download
-				>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<div className="flex justify-center align-middle">
-						<p>Télécharger mon CV</p>{" "}
-						<MdDownload className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
-					</div>
-				</button>
+				<a href={CV} download className="profil-mobile-button text-xs">
+					<button className="button py-4 px-8 mt-6 mb-6" type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+						<div className="flex justify-center align-center">
+							Télécharger mon CV{" "}
+							<MdDownload className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
+						</div>
+					</button>
+				</a>
 
 				{/* ------------- Navigation BUTTON  --------------- */}
-
 				<div className="flex justify-center align-center">
-					<button className="mt-10 profil-bot-button leftNavButton">
+					<button className="mt-6 sm:mt-10 profil-bot-button leftNavButton">
 						<Link
 							to="/portfolio"
 							mooth={true}
@@ -112,7 +103,7 @@ const About = () => {
 						</Link>
 					</button>
 
-					<button className="mt-10 profil-bot-button rightNavButton">
+					<button className="mt-6 sm:mt-10 profil-bot-button rightNavButton">
 						<Link
 							to="/portfolio/skills"
 							mooth={true}

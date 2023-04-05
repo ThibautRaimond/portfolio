@@ -22,7 +22,7 @@ const Work = () => {
 				<meta name="Projets" content="Présentation de mes projets" />
 			</Helmet>
 
-			<div className="h-screen-85 max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full mt-4">
+			<div className="h-screen-85 max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full mt-4 sm:mt-0">
 				<div className="flex flex-col items-center ">
 					<h1 className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#07ed66]">
 						Mes projets
@@ -85,7 +85,7 @@ const Work = () => {
 					</div>
 				</div>
 				<div className="flex justify-center align-center">
-					<button className="mt-12 profil-bot-button leftNavButton">
+					<button className="mt-10 profil-bot-button leftNavButton">
 						<Link
 							to="/portfolio/skills"
 							mooth={true}
@@ -96,7 +96,7 @@ const Work = () => {
 						</Link>
 					</button>
 
-					<button className="mt-12 profil-bot-button rightNavButton">
+					<button className="mt-10 :mt-6 profil-bot-button rightNavButton">
 						<Link
 							to="/portfolio/contact"
 							mooth={true}

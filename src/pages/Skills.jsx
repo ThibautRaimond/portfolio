@@ -32,7 +32,7 @@ const Skills = () => {
 			</Helmet>
 
 			{/* Container */}
-			<div className="max-w-[1000px] mx-auto flex flex-col mt-4">
+			<div className="max-w-[1000px] mx-auto flex flex-col mt-4 sm:mt-0">
 				<div className="text-center">
 					<p className="text-4xl font-bold inline border-b-4 border-[#07ed66]">
 						Compétences
@@ -83,7 +83,7 @@ const Skills = () => {
 					</div>
 				</div>
 				<div className="flex justify-center">
-					<button className="mt-10 profil-bot-button leftNavButton">
+					<button className="mt-6 sm:mt-10 profil-bot-button leftNavButton">
 						<Link
 							to="/portfolio/profil"
 							mooth={true}
@@ -94,7 +94,7 @@ const Skills = () => {
 						</Link>
 					</button>
 
-					<button className="mt-10 profil-bot-button rightNavButton">
+					<button className="mt-6 sm:mt-10 profil-bot-button rightNavButton">
 						<Link
 							to="/portfolio/work"
 							mooth={true}
