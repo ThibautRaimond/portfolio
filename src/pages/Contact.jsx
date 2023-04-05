@@ -20,7 +20,6 @@ const Contact = () => {
 				<form
 					method="POST"
 					action="https://getform.io/f/b647f9b9-5752-4f82-a5c5-7e42ed277826"
-					target="_blank"
 					className="flex flex-col max-w-[600px] w-full mx-auto px-2"
 				>
 					<div className="pb-4 text-center">
