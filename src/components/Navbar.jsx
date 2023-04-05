@@ -140,7 +140,7 @@ const Navbar = () => {
 
 				{/* -- Réseaux -- */}
 
-				<div className=" flex justify-between mt-4">
+				<div className=" flex justify-between mt-4 moovingBorder">
 					<li className="w-[60px] h-[60px] flex justify-between bg-[#0A66C2]  ">
 						<a
 							className="flex justify-between items-center w-full text-gray-300"
