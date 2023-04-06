@@ -28,7 +28,7 @@ const About = () => {
 					Profil
 				</h1>
 
-				<div className="flex items-center shadow-md shadow-[#040c16] px-2">
+				<div className="flex items-center sm:shadow-md sm:shadow-[#040c16] px-2">
 					<div className="profil-left-container flex flex-col items-center mr-6 pt-4">
 						<img src={thib} alt="Picture" className="thib" />
 

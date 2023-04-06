@@ -201,14 +201,17 @@
 
 
 /* ---- */
-.rightNavmoovingBorder:hover .rightNavArrow {
+.rightNavButton:hover .rightNavArrow {
 	transform: translateX(10px);
 }
 .rightNavArrow {
 	transition: transform 0.2s ease-in-out;
 }
 
-.leftNavmoovingBorder:hover .leftNavArrow {
+.leftNavButton:hover .leftNavArrow {
+	transform: translateX(-10px);
+}
+.leftNavButton:hover .leftNavArrow {
 	transform: translateX(-10px);
 }
 .leftNavArrow {
