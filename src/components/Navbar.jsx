@@ -108,7 +108,7 @@ const Navbar = () => {
 				}
 			>
 				<li
-					className={isActive("/portfolio") || isActive("/portfolio/") ? "active" : ""}
+					className={isActive("/portfolio") || isActive("/portfolio/") ? "active py-6 text-4xl" : "py-6 text-4xl"}
 				>
 					<Link
 						onClick={handleClick}
