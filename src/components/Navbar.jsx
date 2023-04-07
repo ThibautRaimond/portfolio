@@ -43,7 +43,7 @@ const Navbar = () => {
 				<ul className="hidden md:flex">
 					<Link to="/portfolio">
 						<li
-							className={isActive("/portfolio") ? "active" : ""}
+							className={isActive("/portfolio") || isActive("/portfolio/") ? "active" : ""}
 							alt="Lien vers la page d'accueil"
 						>
 							Accueil
@@ -108,9 +108,7 @@ const Navbar = () => {
 				}
 			>
 				<li
-					className={
-						isActive("/portfolio") ? "active py-6 text-4xl" : "py-6 text-4xl"
-					}
+					className={isActive("/portfolio") || isActive("/portfolio/") ? "active" : ""}
 				>
 					<Link
 						onClick={handleClick}
