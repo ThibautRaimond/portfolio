@@ -1,11 +1,18 @@
 import React, { useState } from "react";
-import Logo from "../assets/logo.png";
-
+import { useLocation } from "react-router-dom";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineProfile } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
+import Logo from "../assets/logo.png";
+
 const Navbar = () => {
+	const location = useLocation();
+
+	const isActive = (pathname) => {
+		return location.pathname === pathname;
+	};
+
 	const [nav, setNav] = useState(false);
 	const handleClick = () => {
 		setNav(!nav);
@@ -34,34 +41,44 @@ const Navbar = () => {
 			{/* Desktop Menu: */}
 			<div>
 				<ul className="hidden md:flex">
-					<Link to="/portfolio" mooth={true} duration={500}>
-						<li alt="Lien vers la page d'accueil" className="hover:font-bold">
-							{" "}
-							Accueil{" "}
+					<Link to="/portfolio">
+						<li
+							className={isActive("/portfolio") ? "active" : ""}
+							alt="Lien vers la page d'accueil"
+						>
+							Accueil
 						</li>
 					</Link>
-					<Link to="/portfolio/profil" mooth={true} duration={500}>
-						<li alt="Lien vers la page profil" className="hover:font-bold">
-							{" "}
-							Profil{" "}
+					<Link to="/portfolio/profil">
+						<li
+							className={isActive("/portfolio/profil") ? "active" : ""}
+							alt="Lien vers la page profil"
+						>
+							Profil
 						</li>
 					</Link>
-					<Link to="/portfolio/competences" mooth={true} duration={500}>
-						<li alt="Lien vers la page compétences" className="hover:font-bold">
-							{" "}
-							Compétences{" "}
+					<Link to="/portfolio/competences">
+						<li
+							className={isActive("/portfolio/competences") ? "active" : ""}
+							alt="Lien vers la page compétences"
+						>
+							Compétences
 						</li>
 					</Link>
-					<Link to="/portfolio/projets" mooth={true} duration={500}>
-						<li alt="Lien vers la page projets" className="hover:font-bold">
-							{" "}
-							Projets{" "}
+					<Link to="/portfolio/projets">
+						<li
+							className={isActive("/portfolio/projets") ? "active" : ""}
+							alt="Lien vers la page projets"
+						>
+							Projets
 						</li>
 					</Link>
-					<Link to="/portfolio/contact" mooth={true} duration={500}>
-						<li alt="Lien vers la page contact" className="hover:font-bold">
-							{" "}
-							Contact{" "}
+					<Link to="/portfolio/contact">
+						<li
+							className={isActive("/portfolio/contact") ? "active" : ""}
+							alt="Lien vers la page contact"
+						>
+							Contact
 						</li>
 					</Link>
 				</ul>
@@ -90,7 +107,11 @@ const Navbar = () => {
 						: "absolute top-0 left-0 w-full h-full bg-[#0e1111d3] flex flex-col justify-center items-center z-10  "
 				}
 			>
-				<li className="py-6 text-4xl">
+				<li
+					className={
+						isActive("/portfolio") ? "active py-6 text-4xl" : "py-6 text-4xl"
+					}
+				>
 					<Link
 						onClick={handleClick}
 						to="/portfolio"
@@ -101,7 +122,13 @@ const Navbar = () => {
 						Accueil{" "}
 					</Link>{" "}
 				</li>
-				<li className="py-6 text-4xl">
+				<li
+					className={
+						isActive("/portfolio/profil")
+							? "active py-6 text-4xl"
+							: "py-6 text-4xl"
+					}
+				>
 					<Link
 						onClick={handleClick}
 						to="/portfolio/profil"
@@ -112,7 +139,7 @@ const Navbar = () => {
 						Profil{" "}
 					</Link>{" "}
 				</li>
-				<li className="py-6 text-4xl">
+				<li className={isActive("/portfolio/competences") ? "active py-6 text-4xl" : "py-6 text-4xl"}>
 					<Link
 						onClick={handleClick}
 						to="/portfolio/competences"
@@ -123,7 +150,13 @@ const Navbar = () => {
 						Compétences{" "}
 					</Link>{" "}
 				</li>
-				<li className="py-6 text-4xl">
+				<li
+					className={
+						isActive("/portfolio/projets")
+							? "active py-6 text-4xl"
+							: "py-6 text-4xl"
+					}
+				>
 					<Link
 						onClick={handleClick}
 						to="/portfolio/projets"
@@ -134,7 +167,13 @@ const Navbar = () => {
 						Projets{" "}
 					</Link>{" "}
 				</li>
-				<li className="py-6 text-4xl">
+				<li
+					className={
+						isActive("/portfolio/contact")
+							? "active py-6 text-4xl"
+							: "py-6 text-4xl"
+					}
+				>
 					<Link
 						onClick={handleClick}
 						to="/portfolio/contact"
