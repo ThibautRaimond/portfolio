@@ -18,6 +18,7 @@ const Navbar = () => {
 	};
 
 	return (
+		// NavBar:
 		<nav className="w-full h-[85px] flex justify-between items-center pr-4 pl-3 bg-[#0e1111d3] text-gray-300 shadow-md shadow-[#040c16]">
 			<div className="h-[70px] w-[70px] p-[5px] rounded-md flex justify-center hover:shadow-md hover:shadow-[#040c16]">
 				<Link to="/portfolio">
@@ -30,7 +31,7 @@ const Navbar = () => {
 				</Link>
 			</div>
 
-			{/* menu */}
+			{/* Desktop Menu: */}
 			<div>
 				<ul className="hidden md:flex">
 					<Link to="/portfolio" mooth={true} duration={500}>
@@ -66,15 +67,22 @@ const Navbar = () => {
 				</ul>
 			</div>
 
+			{/* ---------------------------------------- Mobile Mode ---------------------------------------- */}
+
 			{/* { Bouton Mobile mode} */}
 			<button
 				alt="bouton pour afficher les liens de différentes pages du site ainsi que le linkedin et le CV de Thibaut Raimond"
 				onClick={handleClick}
 				className="md:hidden z-20"
 			>
-				{!nav ? <FaBars size={30} /> : <FaTimes size={30} />}
+				{!nav ? (
+					<FaBars size={30} alt="Ouvrir le menu pour changer de page" />
+				) : (
+					<FaTimes size={30} alt="Fermer le menu pour changer de page" />
+				)}
 			</button>
 
+			{/* menu mobile mode */}
 			<ul
 				className={
 					!nav
@@ -138,8 +146,7 @@ const Navbar = () => {
 					</Link>{" "}
 				</li>
 
-				{/* -- Réseaux -- */}
-
+				{/* -- Réseaux (mobile mode) -- */}
 				<div className=" flex justify-between mt-4 moovingBorder">
 					<li className="w-[60px] h-[60px] flex justify-between bg-[#0A66C2]  ">
 						<a
@@ -148,7 +155,7 @@ const Navbar = () => {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<FaLinkedin size={30} />
+							<FaLinkedin size={30} alt="Lien vers mon profil Linkedin" />
 						</a>
 					</li>
 					<li className="w-[60px] h-[60px] flex justify-between bg-[#2d333b]">
@@ -158,7 +165,7 @@ const Navbar = () => {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<FaGithub size={30} />
+							<FaGithub size={30} alt="Lien vers ma page Github" />
 						</a>
 					</li>
 					<li className="w-[60px] h-[60px] flex justify-between bg-[#347d39] ">
@@ -168,7 +175,7 @@ const Navbar = () => {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<AiOutlineProfile size={30} />
+							<AiOutlineProfile size={30} alt="Lien vers mon CV en ligne" />
 						</a>
 					</li>
 				</div>
