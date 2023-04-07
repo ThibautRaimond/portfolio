@@ -1,4 +1,9 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
+import { HiArrowNarrowRight } from "react-icons/hi";
+import { HiArrowNarrowLeft } from "react-icons/hi";
+
 import CSS from "../assets/css.png";
 import HTML from "../assets/html.png";
 import JavaScript from "../assets/javascript.png";
@@ -7,17 +12,12 @@ import Node from "../assets/node.png";
 import Sequelize from "../assets/sequelize.png";
 import PSQL from "../assets/psql.png";
 import GitHub from "../assets/github.png";
+import "../styles/buttonsStyles.css"
 
-import { HiArrowNarrowRight } from "react-icons/hi";
-import { HiArrowNarrowLeft } from "react-icons/hi";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { Helmet } from "react-helmet";
-
-const Skills = () => {
+const CompetencesPage = () => {
 	return (
 		<motion.main
-			name="skills"
+			name="Compétences"
 			className="w-full bg-gradient-to-r from[#0e1111] to-transparentbg text-gray-300"
 			initial={{ opacity: 0, scale: 0.5 }}
 			animate={{ opacity: 1, scale: 1 }}
@@ -97,7 +97,7 @@ const Skills = () => {
 
 					<button className="mt-6 sm:mt-10 profil-bot-button rightNavButton">
 						<Link
-							to="/portfolio/work"
+							to="/portfolio/projets"
 							mooth={true}
 							duration={500}
 							className="group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
@@ -112,4 +112,4 @@ const Skills = () => {
 	);
 };
 
-export default Skills;
+export default CompetencesPage;

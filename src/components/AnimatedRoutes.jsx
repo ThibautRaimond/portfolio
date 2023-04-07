@@ -2,24 +2,22 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
-import Contact from "../pages/Contact";
-import Home from "../pages/Home";
-import Skills from "../pages/Skills";
-import Work from "../pages/Work";
-import Profil2 from "../pages/Profil2";
-
-
+import HomePage from "../pages/HomePage";
+import ProfilPage from "../pages/ProfilPage";
+import CompetencesPage from "../pages/CompetencesPage";
+import ProjetsPage from "../pages/ProjetsPage";
+import ContactPage from "../pages/ContactPage";
 
 const AnimatedRoutes = () => {
 	const location = useLocation();
 	return (
 		<AnimatePresence>
 			<Routes location={location.pathname} key={location.pathname}>
-				<Route path="/portfolio" element={<Home />} />
-				<Route path="/portfolio/profil" element={<Profil2 />} />
-				<Route path="/portfolio/skills" element={<Skills />} />
-				<Route path="/portfolio/work" element={<Work />} />
-				<Route path="/portfolio/contact" element={<Contact />} />
+				<Route path="/portfolio" element={<HomePage />} />
+				<Route path="/portfolio/profil" element={<ProfilPage />} />
+				<Route path="/portfolio/competences" element={<CompetencesPage />} />
+				<Route path="/portfolio/projets" element={<ProjetsPage />} />
+				<Route path="/portfolio/contact" element={<ContactPage />} />
 			</Routes>
 		</AnimatePresence>
 	);

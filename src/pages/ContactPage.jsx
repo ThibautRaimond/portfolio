@@ -1,12 +1,12 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+
+import "../styles/buttonsStyles.css"
 
 const Contact = () => {
 	return (
 		<motion.main
-			name="contact"
-			className=""
+			name="Contact"
 			initial={{ opacity: 0, scale: 0.5 }}
 			animate={{ opacity: 1, scale: 1 }}
 			transition={{ duration: 0.75 }}

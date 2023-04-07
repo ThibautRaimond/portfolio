@@ -45,13 +45,13 @@ const Navbar = () => {
 							Profil{" "}
 						</li>
 					</Link>
-					<Link to="/portfolio/skills" mooth={true} duration={500}>
+					<Link to="/portfolio/competences" mooth={true} duration={500}>
 						<li alt="Lien vers la page compétences" className="hover:font-bold">
 							{" "}
 							Compétences{" "}
 						</li>
 					</Link>
-					<Link to="/portfolio/work" mooth={true} duration={500}>
+					<Link to="/portfolio/projets" mooth={true} duration={500}>
 						<li alt="Lien vers la page projets" className="hover:font-bold">
 							{" "}
 							Projets{" "}
@@ -107,7 +107,7 @@ const Navbar = () => {
 				<li className="py-6 text-4xl">
 					<Link
 						onClick={handleClick}
-						to="/portfolio/skills"
+						to="/portfolio/competences"
 						mooth={true}
 						duration={500}
 					>
@@ -118,7 +118,7 @@ const Navbar = () => {
 				<li className="py-6 text-4xl">
 					<Link
 						onClick={handleClick}
-						to="/portfolio/work"
+						to="/portfolio/projets"
 						mooth={true}
 						duration={500}
 					>

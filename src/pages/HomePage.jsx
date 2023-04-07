@@ -1,15 +1,16 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import Typewriter from "typewriter-effect";
+import { HiArrowNarrowRight } from "react-icons/hi";
 
-const Home = () => {
+import "../styles/buttonsStyles.css"
+
+const HomePage = () => {
 	return (
 		<motion.main
 			name="home"
-			alt="Page d'accueil"
+			alt="Accueil"
 			className="flex flex-col justify-center items-center "
 			initial={{ opacity: 0, scale: 0.5 }}
 			animate={{ opacity: 1, scale: 1 }}
@@ -57,4 +58,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default HomePage;

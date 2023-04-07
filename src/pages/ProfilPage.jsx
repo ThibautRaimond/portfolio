@@ -1,7 +1,3 @@
-import React from "react";
-import thib from "../assets/thib.png";
-import CV from "../assets/CV-thibaut-raimond.pdf";
-
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { HiArrowNarrowLeft } from "react-icons/hi";
 import { MdDownload } from "react-icons/md";
@@ -9,10 +5,15 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 
-const About = () => {
+import thib from "../assets/thib.png";
+import CV from "../assets/CV-thibaut-raimond.pdf";
+import "../styles/ProfilPage.css"
+import "../styles/buttonsStyles.css"
+
+const ProfilPage = () => {
 	return (
 		<motion.main
-			name="profil"
+			name="Profil"
 			className="bg-gradient-to-r from[#0e1111] to-transparentbg flex justify-center items-center text-gray-300 mt-4 sm:mt-0"
 			initial={{ opacity: 0, scale: 0.5 }}
 			animate={{ opacity: 1, scale: 1 }}
@@ -20,7 +21,7 @@ const About = () => {
 		>
 			<Helmet>
 				<title>Portfolio: Profil</title>
-				<meta name="Profil" content="Parcours personnel et CV" />
+				<meta name="ProfilPage" content="Parcours personnel et CV" />
 			</Helmet>
 
 			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center">
@@ -107,7 +108,7 @@ const About = () => {
 
 					<button className="mt-6 sm:mt-10 profil-bot-button rightNavButton">
 						<Link
-							to="/portfolio/skills"
+							to="/portfolio/competences"
 							mooth={true}
 							duration={500}
 							className="group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
@@ -121,4 +122,4 @@ const About = () => {
 		</motion.main>
 	);
 };
-export default About;
+export default ProfilPage;

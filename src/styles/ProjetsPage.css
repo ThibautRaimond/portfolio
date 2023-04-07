@@ -1,0 +1,15 @@
+.projet-div {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 250px;
+	width: 250px;
+}
+
+.projet-div:hover {
+	background-image: linear-gradient(
+	to right,
+	#586930ec,
+	#5fac69e3
+	)!important;
+}
