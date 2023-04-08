@@ -25,12 +25,13 @@ const ProfilPage = () => {
 			</Helmet>
 
 			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center">
-				<h1 className="text-4xl font-bold inline border-b-4 mb-4 border-[#07ed66]">
+
+				<div className="card rounded-md pt-2 mx-4 md:py-4 px-2 md:px-12 mt-4 flex items-center flex-col">
+				<h1 className="text-4xl font-bold inline border-b-4 mt-2 mb-4 md:mb-6  border-[#07ed66] text-center">
 					Profil
 				</h1>
-
-				<div className="card flex items-center p-2 md:p-4 m-4 rounded-md">
-					<div className="profil-left-container flex flex-col items-center mr-6 pt-4">
+					<div className="flex">
+					<div className="profil-left-container flex flex-col items-center mr-10 pt-4">
 						<img src={thib} alt="Picture" className="thib" />
 
 						{/* desktop button */}
@@ -52,8 +53,8 @@ const ProfilPage = () => {
 						</a>
 					</div>
 
-					<div className="">
-						<p className="text-xl text-center max-w-lg ">
+					<div className="min-w-[300px]">
+						<p className="text-xl text-center max-w-xl mt-4 md:mt-6">
 							Enchanté je m'appelle Thibaut et j'ai récemment découvert une
 							passion pour le développement web. J'ai donc choisi de suivre la
 							formation FullStack JavaScript chez{" "}
@@ -69,19 +70,19 @@ const ProfilPage = () => {
 							de développeur ainsi que de prendre part à un projet d'équipe en
 							utilisant les méthodes AGILE et SCRUM pour la conception web.
 						</p>
-						<p className="py-4 text-xl text-center max-w-lg">
+						<p className="py-4 text-xl text-center max-w-xl mt-5">
 							Suite à cela j'ai pu obtenir mon diplôme de Développeur FullStack
 							Web & Mobile de niveau RNCP 5 (BAC +2).
 						</p>
 
-						<p className="text-xl text-center max-w-lg">
+						<p className="text-xl text-center max-w-xl mt-5">
 							Afin de devenir un atout au sein de votre entreprise, je saurai
 							mettre à profit ma motivation, ma méthodologie ainsi que ma
 							capacité d'adaptation.
 						</p>
 					</div>
 				</div>
-
+			
 				{/* ------------- MOBILE BUTTON  --------------- */}
 				<a href={CV} download className="profil-mobile-button text-xs">
 					<button className="moovingBorder py-4 px-8 mt-6 mb-6" type="button">
@@ -95,10 +96,10 @@ const ProfilPage = () => {
 						</div>
 					</button>
 				</a>
-
+				</div>
 				{/* ------------- Navigation BUTTON  --------------- */}
 				<div className="flex justify-center align-center">
-					<button className="mt-6 sm:mt-10 profil-bot-button leftNavButton">
+					<button className="w-50vw md:mt-10 mt-6 profil-bot-button leftNavButton">
 						<Link
 							to="/portfolio"
 							mooth={true}
@@ -110,7 +111,7 @@ const ProfilPage = () => {
 						</Link>
 					</button>
 
-					<button className="mt-6 sm:mt-10 profil-bot-button rightNavButton">
+					<button className="w-50vw md:mt-10 mt-6 profil-bot-button rightNavButton">
 						<Link
 							to="/portfolio/competences"
 							mooth={true}
@@ -122,6 +123,7 @@ const ProfilPage = () => {
 						</Link>
 					</button>
 				</div>
+				
 			</div>
 		</motion.main>
 	);

@@ -16,7 +16,7 @@ const Contact = () => {
 				<meta name="Contact" content="Contactez-moi par mail" />
 			</Helmet>
 
-			<div className="flex justify-center items-center mt-4 sm:mt-0">
+			<div className="card rounded-md flex justify-center items-center p-8 m-2 md:m-0">
 				<form
 					method="POST"
 					action="https://getform.io/f/b647f9b9-5752-4f82-a5c5-7e42ed277826"

@@ -32,7 +32,7 @@ const CompetencesPage = () => {
 			</Helmet>
 
 			{/* Container */}
-			<div className="max-w-[1000px] mx-auto flex flex-col mt-4 sm:mt-0">
+			<div className="card rounded-md py-6 px-4 mt-4 mx-4 md:my-0 md:mx-auto md:p-12 max-w-[1000px] flex flex-col">
 				<div className="text-center">
 					<p className="text-4xl font-bold inline border-b-4 border-[#07ed66]">
 						Compétences
@@ -40,16 +40,16 @@ const CompetencesPage = () => {
 					<p className="py-4">Voici les technologies que j'ai déjà utlisées</p>
 				</div>
 
-				<div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center mt-12">
-					<div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+				<div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center mt-4 ">
+					<div className=" bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 						<img className="w-20 mx-auto" src={HTML} alt="HTML icon" />
 						<p className="my-4">HTML</p>
 					</div>
-					<div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+					<div className=" bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 						<img className="w-20 mx-auto" src={CSS} alt="CSS icon" />
 						<p className="my-4">CSS</p>
 					</div>
-					<div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+					<div className=" bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 						<img
 							className="w-20 mx-auto"
 							src={JavaScript}
@@ -57,15 +57,15 @@ const CompetencesPage = () => {
 						/>
 						<p className="my-4">JavaScript</p>
 					</div>
-					<div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+					<div className=" bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 						<img className="w-20 mx-auto" src={ReactImg} alt="React icon" />
 						<p className="my-4">React</p>
 					</div>
-					<div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+					<div className=" bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 						<img className="w-20 mx-auto" src={Node} alt="Node icon" />
 						<p className="my-4">Node JS</p>
 					</div>
-					<div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+					<div className=" bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 						<img
 							className="w-20 mx-auto"
 							src={Sequelize}
@@ -73,14 +73,15 @@ const CompetencesPage = () => {
 						/>
 						<p className="my-4">Sequelize</p>
 					</div>
-					<div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+					<div className=" bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 						<img className="w-20 mx-auto" src={PSQL} alt="PSQL icon" />
 						<p className="my-4">PSQL</p>
 					</div>
-					<div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+					<div className=" bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 						<img className="w-20 mx-auto" src={GitHub} alt="Github icon" />
 						<p className="my-4">Github</p>
 					</div>
+				</div>
 				</div>
 				<div className="flex justify-center">
 					<button className="mt-6 sm:mt-10 profil-bot-button leftNavButton">
@@ -95,7 +96,7 @@ const CompetencesPage = () => {
 						</Link>
 					</button>
 
-					<button className="mt-6 sm:mt-10 profil-bot-button rightNavButton">
+					<button className="md:mt-10 mt-6  profil-bot-button rightNavButton">
 						<Link
 							to="/portfolio/projets"
 							mooth={true}
@@ -106,7 +107,6 @@ const CompetencesPage = () => {
 							<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
 						</Link>
 					</button>
-				</div>
 			</div>
 		</motion.main>
 	);
