@@ -184,7 +184,7 @@ const Navbar = () => {
 				</li>
 
 				{/* -- Réseaux (mobile mode) -- */}
-				<div className=" flex justify-between mt-4 moovingBorder">
+				<div className=" flex justify-between mt-4">
 					<li className="w-[60px] h-[60px] flex justify-between bg-[#0A66C2]  ">
 						<a
 							className="flex justify-between items-center w-full text-gray-300"

@@ -1,6 +1,7 @@
 .thib{
 	background: linear-gradient( 
 	#5f8661a1, transparent);
+	box-shadow:0 20px 50px rgba(10, 10, 10, 0.726);
 	width: 21rem;
 	height: 21rem;
 	left: calc(50% - 11rem);
@@ -31,4 +32,28 @@
 	.profil-mobile-button{
 		display: none;
 	}
+}
+
+.container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	max-width: 1200px;
+	flex-wrap: wrap;
+	z-index: 1;
+}
+
+.card {
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	background: rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+	border-top: 1px solid rgba(255, 255, 255, 0.199);
+	border-left: 1px solid rgba(255, 255, 255, 0.199);
+	backdrop-filter: blur(5px);
+}
+
+.container .card .content {
+	padding: 20px;
+	text-align: center;
+	transition: 0.5s;
 }

@@ -54,7 +54,7 @@ const Contact = () => {
 					<div className="flex justify-center">
 						{/* --button-- */}
 						<button
-							className="moovingBorder hover:text-green-500 hover:underline hover:underline-thickness-2 py-4 px-8 mt-6 sm:mt-10 mb-4"
+							className="moovingBorder bg-[#121614] hover:text-green-500 hover:underline hover:underline-thickness-2 py-4 px-8 mt-6 sm:mt-10 mb-4"
 							type="submit"
 						>
 							<span></span>

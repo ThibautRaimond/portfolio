@@ -7,8 +7,8 @@ import { Helmet } from "react-helmet";
 
 import thib from "../assets/thib.png";
 import CV from "../assets/CV-thibaut-raimond.pdf";
-import "../styles/ProfilPage.css"
-import "../styles/buttonsStyles.css"
+import "../styles/ProfilPage.css";
+import "../styles/buttonsStyles.css";
 
 const ProfilPage = () => {
 	return (
@@ -25,17 +25,21 @@ const ProfilPage = () => {
 			</Helmet>
 
 			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center">
-				<h1 className="text-4xl font-bold inline border-b-4 mb-12 border-[#07ed66]">
+				<h1 className="text-4xl font-bold inline border-b-4 mb-4 border-[#07ed66]">
 					Profil
 				</h1>
 
-				<div className="flex items-center sm:shadow-md sm:shadow-[#040c16] px-2">
+				<div className="card flex items-center p-2 md:p-4 m-4 rounded-md">
 					<div className="profil-left-container flex flex-col items-center mr-6 pt-4">
 						<img src={thib} alt="Picture" className="thib" />
 
 						{/* desktop button */}
 						<a href={CV} download>
-							<button className="moovingBorder hover:text-green-500 hover:underline hover:underline-thickness-2 py-4 px-8 mt-6 mb-6" type="button">
+							<button
+								className="moovingBorder bg-[#121614] py-4 px-8 mt-6 mb-6
+							hover:text-green-500 hover:underline hover:underline-thickness-2"
+								type="button"
+							>
 								<span></span>
 								<span></span>
 								<span></span>

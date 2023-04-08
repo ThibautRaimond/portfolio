@@ -54,7 +54,7 @@ const ProjetsPage = () => {
 									target="_blank"
 									rel="noreferrer"
 								>
-									<button className="moovingBorder htext-center rounded-lg px-8 py-3 text-white over:underline hover:font-bold  hover:text-green-500">
+									<button className="bg-[#30422d] text-center rounded-lg px-8 py-3 text-white over:underline hover:font-bold  hover:text-green-500">
 										<span></span>
 										<span></span>
 										<span></span>
@@ -84,8 +84,8 @@ const ProjetsPage = () => {
 									target="_blank"
 									rel="noreferrer"
 								>
-									<button className="moovingBorder text-center rounded-lg px-8 py-3 text-white over:underline hover:font-bold  hover:text-green-500">
-										<span></span><span></span><span></span><span></span>
+									<button className="bg-[#30422d] text-center rounded-lg px-8 py-3 text-white over:underline hover:font-bold  hover:text-green-500">
+									
 										URL
 									</button>
 								</a>

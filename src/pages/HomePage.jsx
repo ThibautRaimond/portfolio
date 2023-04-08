@@ -43,7 +43,8 @@ const HomePage = () => {
 					duration={500}
 				>
 					<button
-						className="rightNavButton bg-gradient-to-b from-green-800 to-green-600 text-white hover:border hover:border-1 border-solid border-white
+						className="rightNavButton bg-gradient-to-b from-green-800 to-green-600 text-white border border-1 border-[#3e7c48]
+						hover:border hover:border-1 border-solid hover:border-[#adadad]
 						flex px-6 py-3 my-2 relative"
 						alt="Liens vers la page profil"
 					>
