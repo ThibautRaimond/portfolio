@@ -24,7 +24,7 @@ const ProjetsPage = () => {
 			</Helmet>
 
 			<div className="bg-gradient-to-r from[#0e1111] to-transparentbg flex flex-col justify-center items-center text-gray-300 mt-4 px-3">
-				<div className="card rounded-md h-screen-85 max-w-[1000px] m-4 mt-4 p-4 md:p-6 flex flex-col justify-center w-full md:m-0">
+				<div className="card rounded-md h-screen-85 max-w-[1000px] m-4 mt-4 p-4 md:p-10 flex flex-col justify-center w-full md:m-0">
 					<div className="flex flex-col items-center ">
 						<h1 className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#07ed66]">
 							Mes projets
@@ -32,14 +32,13 @@ const ProjetsPage = () => {
 						<p className="py-6"> Présentation de mes derniers projets</p>
 					</div>
 
-					{/* Grid item */}
-					<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+					<div className="flex justify-center items-center flex-wrap">
 						{/* ------- */}
 
 						{/* Projet 1 code du dev */}
 						<div
 							style={{ backgroundImage: `url(${CodeDuDev})` }}
-							className="shadow-lg shadow-[#0e1111] group container rounded-md flex justify-center items-center mx-auto projet-div"
+							className="shadow-lg shadow-[#0e1111] group container rounded-md flex justify-center items-center m-4 md:m-8 projet-div"
 						>
 							{/* hover effect */}
 							<div className="text-center opacity-0 group-hover:opacity-100">
@@ -69,7 +68,7 @@ const ProjetsPage = () => {
 						{/* Projet 2 pokedex */}
 						<div
 							style={{ backgroundImage: `url(${pokedex})` }}
-							className="shadow-lg shadow-[#0e1111] group container rounded-md flex justify-center items-center mx-auto projet-div"
+							className="shadow-lg shadow-[#0e1111] group container rounded-md flex justify-center items-center m-4 md:m-8 projet-div"
 						>
 							{/* hover effect */}
 							<div className="text-center opacity-0 group-hover:opacity-100">
