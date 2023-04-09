@@ -102,20 +102,24 @@ const ProjetsPage = () => {
 							duration={500}
 							className="min-h-[80px] md:min-w-[280px] group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
 						>
-							<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour aux
-							compétences
+							<p className="flex items-center mx-auto">
+								<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour aux
+								compétences
+							</p>
 						</Link>
 					</button>
 
-					<button className="rightNavButton w-50vw md:mt-10 mt-2 profil-bot-button flex-1">
+					<button className="rightNavButton w-50vw md:mt-10 mt-2 profil-bot-button flex-1 text-center ">
 						<Link
 							to="/portfolio/contact"
 							mooth={true}
 							duration={500}
 							className="min-h-[80px] md:min-w-[280px] group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
 						>
-							Contactez moi par mail
-							<HiArrowNarrowRight className="ml-3 rightNavArrow" />
+							<p className="flex items-center mx-auto">
+								Contactez moi par mail
+								<HiArrowNarrowRight className="ml-3 rightNavArrow" />
+							</p>
 						</Link>
 					</button>
 				</div>

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 
-import "../styles/buttonsStyles.css"
+import "../styles/buttonsStyles.css";
 
 const Contact = () => {
 	return (

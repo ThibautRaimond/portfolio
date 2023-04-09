@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import Typewriter from "typewriter-effect";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
-import "../styles/buttonsStyles.css"
+import "../styles/buttonsStyles.css";
 
 const HomePage = () => {
 	return (
@@ -37,11 +37,7 @@ const HomePage = () => {
 						}}
 					/>
 				</h2>
-				<Link
-					to="/portfolio/profil"
-					mooth={true}
-					duration={500}
-				>
+				<Link to="/portfolio/profil" mooth={true} duration={500}>
 					<button
 						className="rightNavButton bg-gradient-to-b from-green-800 to-green-600 text-white border border-1 border-[#3e7c48]
 						hover:border hover:border-1 border-solid hover:border-[#adadad]
@@ -49,7 +45,8 @@ const HomePage = () => {
 						alt="Liens vers la page profil"
 					>
 						<div className="flex">
-							Voir mon profil <HiArrowNarrowRight className="rightNavArrow ml-3 mt-1" />
+							Voir mon profil{" "}
+							<HiArrowNarrowRight className="rightNavArrow ml-3 mt-1" />
 						</div>
 					</button>
 				</Link>

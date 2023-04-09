@@ -106,8 +106,10 @@ const ProfilPage = () => {
 							duration={500}
 							className="min-h-[80px] md:min-w-[220px] group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
 						>
-							<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour à
-							l'accueil
+							<p className="flex items-center mx-auto">
+								<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour à
+								l'accueil
+							</p>
 						</Link>
 					</button>
 
@@ -118,8 +120,10 @@ const ProfilPage = () => {
 							duration={500}
 							className="min-h-[80px] md:min-w-[220px] group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
 						>
-							Mes compétences{" "}
-							<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
+							<p className="flex items-center mx-auto">
+								Mes compétences{" "}
+								<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
+							</p>
 						</Link>
 					</button>
 				</div>

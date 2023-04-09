@@ -108,31 +108,36 @@ const CompetencesPage = () => {
 				</div>
 			</div>
 
-				{/* ------------- Navigation BUTTON  --------------- */}
-				<div className="flex justify-center align-center">
-					<button className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
-						<Link
-							to="/portfolio/profil"
-							mooth={true}
-							duration={500}
-							className="min-h-[80px] md:min-w-[200px] group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
-						>
-							<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour au profil
-						</Link>
-					</button>
+			{/* ------------- Navigation BUTTON  --------------- */}
+			<div className="flex justify-center align-center">
+				<button className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
+					<Link
+						to="/portfolio/profil"
+						mooth={true}
+						duration={500}
+						className="min-h-[80px] md:min-w-[200px] group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
+					>
+						<p className="flex items-center mx-auto">
+							<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour au
+							profil
+						</p>
+					</Link>
+				</button>
 
-					<button className="rightNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
-						<Link
-							to="/portfolio/projets"
-							mooth={true}
-							duration={500}
-							className="min-h-[80px] md:min-w-[200px] group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
-						>
+				<button className="rightNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
+					<Link
+						to="/portfolio/projets"
+						mooth={true}
+						duration={500}
+						className="min-h-[80px] md:min-w-[200px] group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
+					>
+						<p className="flex items-center mx-auto">
 							Voir mes projets
 							<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
-						</Link>
-					</button>
-				</div>
+						</p>
+					</Link>
+				</button>
+			</div>
 		</motion.div>
 	);
 };
