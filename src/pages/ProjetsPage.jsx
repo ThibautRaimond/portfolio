@@ -23,8 +23,8 @@ const ProjetsPage = () => {
 				<meta name="Projets" content="Présentation de mes projets" />
 			</Helmet>
 
-			<div className="bg-gradient-to-r from[#0e1111] to-transparentbg flex flex-col justify-center items-center text-gray-300 mt-4 ">
-				<div className="card rounded-md h-screen-85 max-w-[1000px] mt-4 p-4 md:p-6 flex flex-col justify-center w-full md:m-0">
+			<div className="bg-gradient-to-r from[#0e1111] to-transparentbg flex flex-col justify-center items-center text-gray-300 mt-4 px-3">
+				<div className="card rounded-md h-screen-85 max-w-[1000px] m-4 mt-4 p-4 md:p-6 flex flex-col justify-center w-full md:m-0">
 					<div className="flex flex-col items-center ">
 						<h1 className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#07ed66]">
 							Mes projets
@@ -96,7 +96,7 @@ const ProjetsPage = () => {
 
 				{/* ------------- Navigation BUTTON  --------------- */}
 				<div className="flex justify-center align-center">
-					<button className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
+					<button className="leftNavButton w-50vw md:mt-10 mt-2 profil-bot-button flex-1">
 						<Link
 							to="/portfolio/competences"
 							mooth={true}
@@ -108,15 +108,15 @@ const ProjetsPage = () => {
 						</Link>
 					</button>
 
-					<button className="rightNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
+					<button className="rightNavButton w-50vw md:mt-10 mt-2 profil-bot-button flex-1">
 						<Link
 							to="/portfolio/contact"
 							mooth={true}
 							duration={500}
 							className="min-h-[80px] md:min-w-[280px] group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
 						>
-							Contactez moi par e-mail
-							<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
+							Contactez moi par mail
+							<HiArrowNarrowRight className="ml-3 rightNavArrow" />
 						</Link>
 					</button>
 				</div>
