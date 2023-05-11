@@ -25,8 +25,8 @@ const ProfilPage = () => {
 			</Helmet>
 
 			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center">
-				<div className="card rounded-md pt-2 mx-4 md:py-4 px-2 md:px-12 mt-4 flex items-center flex-col">
-					<h1 className="text-4xl font-bold inline border-b-4 mt-2 mb-4 md:mb-6  border-[#07ed66] text-center">
+				<div className="card rounded-md py-4 mx-4 md:py-4 px-2 md:px-12 mt-4 flex items-center flex-col">
+					<h1 className="text-4xl font-bold inline border-b-4 mb-4 md:mb-6  border-[#07ed66] text-center">
 						Profil
 					</h1>
 					<div className="flex">
@@ -84,6 +84,7 @@ const ProfilPage = () => {
 					</div>
 
 					{/* ------------- MOBILE BUTTON  --------------- */}
+				</div>
 					<a href={CV} download className="profil-mobile-button text-xs">
 						<button className="moovingBorder py-4 px-8 mt-6 mb-6" type="button">
 							<span></span>
@@ -96,7 +97,6 @@ const ProfilPage = () => {
 							</div>
 						</button>
 					</a>
-				</div>
 				{/* ------------- Navigation BUTTON  --------------- */}
 				<div className="flex justify-center align-center">
 					<button className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
