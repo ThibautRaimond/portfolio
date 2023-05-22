@@ -2,33 +2,22 @@
 	background: linear-gradient( 
 	#5f8661a1, transparent);
 	box-shadow:0 20px 50px rgba(10, 10, 10, 0.726);
+	min-width: ;
 	width: 21rem;
 	height: 21rem;
 	left: calc(50% - 11rem);
 	border-radius: 100%;
 	overflow: hidden;
+	object-fit: cover
 }
 
-@media screen and (max-width: 800px){
-	.thib{
-		width: 20rem;
-		height: 20rem;
-	}
-}
-@media screen and (max-width: 740px){
-	.thib{
-		width: 15rem;
-		height: 15rem;
-	}
-}
-
-@media screen and (max-width: 685px){
+@media screen and (max-width: 1023px){
 	.profil-left-container{
 		display: none;
 	}
 }
 
-@media screen and (min-width: 685px){
+@media screen and (min-width: 1023px){
 	.profil-mobile-button{
 		display: none;
 	}

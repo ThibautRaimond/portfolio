@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const DesktopSocialIcons = () => {
 	return (
-		<nav className="hidden lg:flex fixed flex-col top-[35%] left-0">
+		<nav className="hidden lg:flex fixed flex-col top-[35%] left-0 z-50">
 			<ul>
 				<a
 					alt="Lien vers le linkedin de Thibaut Raimond"
@@ -17,7 +17,7 @@ const DesktopSocialIcons = () => {
 				>
 					<li
 						alt="Lien vers mon profil Linkedin"
-						className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0A66C2] "
+						className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0A66C2]"
 					>
 						Linkedin <FaLinkedin size={30} alt="Logo: Linkedin" />
 					</li>
