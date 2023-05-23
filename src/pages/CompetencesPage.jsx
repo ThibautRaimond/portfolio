@@ -32,7 +32,7 @@ const CompetencesPage = () => {
 			</Helmet>
 
 			{/* Container */}
-			<div className="card rounded-md py-6 px-4 mx-4 md:my-0 md:mx-auto md:p-8 flex flex-col justify-center align-middle w-[85vw] md:max-w-[750px]">
+			<div className="card rounded-md py-6 px-4 md:my-0 md:mx-auto md:p-8 flex flex-col justify-center align-middle w-[85vw] md:max-w-[750px]">
 				<div className="text-center">
 					<p className="text-4xl font-bold inline border-b-4 border-[#07ed66]">
 						Compétences
