@@ -94,13 +94,14 @@ const ProjetsPage = () => {
 				</div>
 
 				{/* ------------- Navigation BUTTON  --------------- */}
-				<div className="flex justify-center align-center">
+				<div className="flex justify-center align-center max-[450px]:w-full mb-2">
 					<button className="leftNavButton w-50vw md:mt-10 mt-2 profil-bot-button flex-1">
 						<Link
 							to="/portfolio/competences"
 							mooth={true}
 							duration={500}
-							className="min-h-[80px] md:min-w-[280px] group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
+							className="flex relative min-h-[60px] min-[600px]:min-w-[270px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
+							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
 						>
 							<p className="flex items-center mx-auto">
 								<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour aux
@@ -114,7 +115,8 @@ const ProjetsPage = () => {
 							to="/portfolio/contact"
 							mooth={true}
 							duration={500}
-							className="min-h-[80px] md:min-w-[280px] group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
+							className="flex relative min-h-[60px] min-[600px]:min-w-[270px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
+							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
 						>
 							<p className="flex items-center mx-auto">
 								Contactez moi par mail

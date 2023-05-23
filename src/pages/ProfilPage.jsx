@@ -24,7 +24,7 @@ const ProfilPage = () => {
 				<meta name="ProfilPage" content="Parcours personnel et CV" />
 			</Helmet>
 
-			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center">
+			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center mx-2">
 				<div className="card rounded-md py-4 mx-4 md:py-4 px-2 md:px-12 mt-4 flex items-center flex-col">
 					<h1 className="text-4xl font-bold inline border-b-4 mb-4 md:mb-6  border-[#07ed66] text-center">
 						Profil
@@ -98,13 +98,14 @@ const ProfilPage = () => {
 						</button>
 					</a>
 				{/* ------------- Navigation BUTTON  --------------- */}
-				<div className="flex justify-center align-center">
-					<button className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
+				<div className="flex justify-center align-center max-[450px]:w-full mb-2">
+				<button className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
 						<Link
 							to="/portfolio"
 							mooth={true}
 							duration={500}
-							className="min-h-[80px] md:min-w-[220px] group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
+							className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
+							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
 						>
 							<p className="flex items-center mx-auto">
 								<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour à
@@ -118,7 +119,8 @@ const ProfilPage = () => {
 							to="/portfolio/competences"
 							mooth={true}
 							duration={500}
-							className="min-h-[80px] md:min-w-[220px] group flex items-center border-2 px-6 py-3 mb-2 border-[#ffffff] border-opacity-25 text-[#9b9b9b]  hover:text-white hover:border-white"
+							className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
+							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
 						>
 							<p className="flex items-center mx-auto">
 								Mes compétences{" "}
