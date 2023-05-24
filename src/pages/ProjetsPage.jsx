@@ -104,7 +104,7 @@ const ProjetsPage = () => {
 							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
 						>
 							<p className="flex items-center mx-auto">
-								<HiArrowNarrowLeft className="ml-3 leftNavArrow" /> Retour aux
+								<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour aux
 								compétences
 							</p>
 						</Link>
@@ -120,7 +120,7 @@ const ProjetsPage = () => {
 						>
 							<p className="flex items-center mx-auto">
 								Contactez moi par mail
-								<HiArrowNarrowRight className="mr-3 rightNavArrow" />
+								<HiArrowNarrowRight className="ml-3 rightNavArrow" />
 							</p>
 						</Link>
 					</button>
