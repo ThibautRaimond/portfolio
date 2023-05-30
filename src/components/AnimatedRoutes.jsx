@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
-import HomePage from "../pages/HomePage";
+import HomePage from "../pages/HomePage.tsx";
 import ProfilPage from "../pages/ProfilPage";
 import CompetencesPage from "../pages/CompetencesPage";
 import ProjetsPage from "../pages/ProjetsPage";

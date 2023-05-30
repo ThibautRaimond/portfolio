@@ -103,10 +103,12 @@ const ProjetsPage = () => {
 							className="flex relative min-h-[60px] min-[600px]:min-w-[270px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
 							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
 						>
-							<p className="flex items-center mx-auto">
-								<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour aux
-								compétences
-							</p>
+							<div className="flex items-center mx-auto">
+								<div className="min-w-[40px] flex justify-center content-center">
+									<HiArrowNarrowLeft className="leftNavArrow" />
+								</div>
+								<p>Retour aux compétences</p>
+							</div>
 						</Link>
 					</button>
 
@@ -118,10 +120,12 @@ const ProjetsPage = () => {
 							className="flex relative min-h-[60px] min-[600px]:min-w-[270px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
 							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
 						>
-							<p className="flex items-center mx-auto">
-								Contactez moi par mail
-								<HiArrowNarrowRight className="ml-3 rightNavArrow" />
-							</p>
+							<div className="flex items-center mx-auto">
+								<p>Contactez moi par mail</p>
+								<div className="min-w-[40px] flex justify-center content-center">
+									<HiArrowNarrowRight className="rightNavArrow" />
+								</div>
+							</div>
 						</Link>
 					</button>
 				</div>
