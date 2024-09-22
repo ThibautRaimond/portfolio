@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
@@ -9,8 +10,7 @@ import "../styles/buttonsStyles.css";
 const HomePage = () => {
 	return (
 		<motion.main
-			name="home"
-			alt="Accueil"
+			/* name="home" */
 			className="flex flex-col justify-center items-center "
 			initial={{ opacity: 0, scale: 0.5 }}
 			animate={{ opacity: 1, scale: 1 }}
@@ -37,12 +37,11 @@ const HomePage = () => {
 						}}
 					/>
 				</h2>
-				<Link to="/portfolio/profil" mooth={true} duration={500}>
+				<Link to="/portfolio/profil" /* smooth={true} duration={500} */>
 					<button
 						className="rightNavButton bg-gradient-to-b from-green-800 to-green-600 text-white border border-1 border-[#3e7c48]
 						hover:border hover:border-1 border-solid hover:border-[#adadad]
 						flex px-6 py-3 my-2 relative"
-						alt="Liens vers la page profil"
 					>
 						<div className="flex">
 							Voir mon profil{" "}
@@ -50,11 +49,9 @@ const HomePage = () => {
 						</div>
 					</button>
 				</Link>
-				{/* cup container */}
 			</div>
 		</motion.main>
 	);
 };
 
 export default HomePage;
-/* test */

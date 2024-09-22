@@ -18,7 +18,7 @@ const CompetencesPage = () => {
 	return (
 		<motion.div
 			name="Compétences"
-			className="bg-gradient-to-r from[#0e1111] to-transparentbg flex flex-col justify-center items-center text-gray-300 mt-4 "
+			className="bg-gradient-to-r from[#0e1111] to-transparentbg flex flex-col justify-center items-center text-gray-200 mt-4 "
 			initial={{ opacity: 0, scale: 0.5 }}
 			animate={{ opacity: 1, scale: 1 }}
 			transition={{ duration: 0.75 }}

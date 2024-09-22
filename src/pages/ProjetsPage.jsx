@@ -23,7 +23,7 @@ const ProjetsPage = () => {
 				<meta name="Projets" content="Présentation de mes projets" />
 			</Helmet>
 
-			<div className="bg-gradient-to-r from[#0e1111] to-transparentbg flex flex-col justify-center items-center text-gray-300 mt-4 px-3">
+			<div className="bg-gradient-to-r from[#0e1111] to-transparentbg flex flex-col justify-center items-center text-gray-200 mt-4 px-3">
 				<div className="card rounded-md h-screen-85 max-w-[1000px] m-4 mt-4 p-4 md:p-10 flex flex-col justify-center w-full md:m-0">
 					<div className="flex flex-col items-center ">
 						<h1 className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#07ed66]">
