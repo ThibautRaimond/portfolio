@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import Logo from "../assets/logo.png";
 
-const Navbar = () => {
+const MobileMenu = () => {
 	const location = useLocation();
 	const isActive = (pathname) => {
 		return location.pathname === pathname;
@@ -39,81 +39,7 @@ const Navbar = () => {
 
 	return (
 		<div className="w-full h-[85px] flex justify-between items-center pr-4 pl-3 bg-[#0e1111d3] text-gray-300 shadow-md shadow-[#040c16]">
-			<div className="h-[70px] w-[70px] p-[5px] rounded-md flex justify-center">
-				<img
-					alt="Logo passion DEV"
-					src={Logo}
-					style={{ width: "65px" }}
-				/>
-			</div>
-
-			{/* Desktop Menu: */}
-			<div>
-				<nav>
-					<ul className="hidden md:flex">
-						<Link to="/portfolio">
-							<li
-								className={isActive("/portfolio") || isActive("/portfolio/") ? "active" : ""}
-								aria-label="Retour vers la page d'accueil"
-								aria-current={isActive("/portfolio") || isActive("/portfolio/") ? "page" : undefined}
-							>
-								Accueil
-							</li>
-						</Link>
-						<Link to="/portfolio/profil">
-							<li
-								className={isActive("/portfolio/profil") ? "active" : ""}
-								aria-label="Page profil"
-								aria-current={isActive("/portfolio/profil") ? "page" : undefined}
-							>
-								Profil
-							</li>
-						</Link>
-						<Link to="/portfolio/competences">
-							<li
-								className={isActive("/portfolio/competences") ? "active" : ""}
-								aria-label="Page compétences"
-								aria-current={isActive("/portfolio/competences") ? "page" : undefined}
-							>
-								Compétences
-							</li>
-						</Link>
-						<Link to="/portfolio/projets">
-							<li
-								className={isActive("/portfolio/projets") ? "active" : ""}
-								aria-label="Lien vers la page projets"
-								aria-current={isActive("/portfolio/projets") ? "page" : undefined}
-							>
-								Projets
-							</li>
-						</Link>
-						<Link to="/portfolio/contact">
-							<li
-								className={isActive("/portfolio/contact") ? "active" : ""}
-								aria-label="Lien vers la page contact"
-								aria-current={isActive("/portfolio/contact") ? "page" : undefined}
-							>
-								Contact
-							</li>
-						</Link>
-					</ul>
-				</nav>
-			</div>
-
-			{/* Mobile Menu Button in navbar */}
-			<button
-				onClick={handleClick}
-				className="md:hidden z-20"
-				ref={openButtonRef} // Reference to the button
-			>
-				{!nav ? (
-					<FaBars size={30} aria-label="Ouvrir le menu pour changer de page" />
-				) : (
-					<FaTimes size={30} aria-label="Fermer le menu" />
-				)}
-			</button>
-
-			{/* Mobile Menu dialog */}
+            {/* Mobile Menu dialog */}
 			<ul
 				aria-label="Menu de navigation"
 				aria-modal={nav ? "true" : undefined}
@@ -187,4 +113,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default MobileMenu;

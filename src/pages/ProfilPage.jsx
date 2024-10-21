@@ -24,7 +24,7 @@ const ProfilPage = () => {
 				<meta name="ProfilPage" content="Parcours personnel et CV" />
 			</Helmet>
 
-			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center mx-2">
+			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center md:mx-2">
 				<div className="card rounded-md py-4 md:py-4 px-2 md:px-12 mt-4 flex items-center flex-col">
 					<h1 className="text-4xl font-bold inline border-b-4 mb-4 md:mb-6  border-[#07ed66] text-center">
 						Profil
@@ -101,7 +101,7 @@ const ProfilPage = () => {
 					>
 						<div className="flex items-center mx-auto">
 							<HiArrowNarrowLeft className="mr-3 leftNavArrow" />
-							<p><span className="sr-only">Page précédante</span>Retour à l'accueil</p>
+							<p><span className="sr-only">Page précédante</span>Accueil</p>
 						</div>
 					</Link>
 					</div>
@@ -115,8 +115,8 @@ const ProfilPage = () => {
 							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
 					>
 						<div className="flex items-center mx-auto">
-							<p><span className="sr-only">Page suivante</span>Mes compétences</p>
-							<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
+							<p><span className="sr-only">Page suivante</span>Compétences</p>
+							<HiArrowNarrowRight className="ml-3 rightNavArrow" />
 						</div>
 					</Link>
 					</div>

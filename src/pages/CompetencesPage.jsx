@@ -121,7 +121,7 @@ const CompetencesPage = () => {
 					>
 						<div className="flex items-center mx-auto">
 							<HiArrowNarrowLeft className="mr-3 leftNavArrow" />
-							<p><span className="sr-only">Page précédante</span>Retour au profil</p>
+							<p><span className="sr-only">Page précédante</span>Profil</p>
 						</div>
 					</Link>
 				</div>
@@ -135,8 +135,8 @@ const CompetencesPage = () => {
 							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
 					>
 						<div className="flex items-center mx-auto">
-							<p><span className="sr-only">Page suivante</span>Voir mes projets</p>
-							<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
+							<p><span className="sr-only">Page suivante</span>Mes projets</p>
+							<HiArrowNarrowRight className="ml-3 rightNavArrow" />
 						</div>
 					</Link>
 				</div>

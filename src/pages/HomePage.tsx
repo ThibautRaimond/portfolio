@@ -20,7 +20,7 @@ const HomePage = () => {
 		</Helmet>
 		
 		{/* Container */}
-		<div>
+		<div className="sm: margin-auto">
 		<p>
 		<div className="text-3xl text-[#07ed66] title">Bonjour je suis</div>
 		<div className="text-3xl sm:text-5xl font-bold text-[#ccd6f6] title2">
