@@ -24,7 +24,7 @@ const CompetencesPage = () => {
 			transition={{ duration: 0.75 }}
 		>
 			<Helmet>
-				<title>Portfolio: Compétences</title>
+				<title>Compétences Portfolio de Thibaut Raimond</title>
 				<meta
 					name="Compétences"
 					content="Présentation des principales technos maitrisées"
@@ -34,111 +34,112 @@ const CompetencesPage = () => {
 			{/* Container */}
 			<div className="card rounded-md py-6 px-4 md:my-0 md:mx-auto md:p-8 flex flex-col justify-center align-middle w-[85vw] md:max-w-[750px]">
 				<div className="text-center">
-					<p className="text-4xl font-bold inline border-b-4 border-[#07ed66]">
+					<h1 className="text-4xl font-bold inline border-b-4 border-[#07ed66]">
 						Compétences
-					</p>
+					</h1>
 					<p className="py-4">Voici les technologies que j'ai déjà utlisées</p>
 				</div>
 
-				<div className="text-center flex flex-wrap align-middle justify-center">
-					<div
+				<ul className="text-center flex flex-wrap align-middle justify-center">
+					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md"
+					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
 					>
-						<img className="w-20 mx-auto" src={HTML} alt="HTML icon" />
-						<p className="mt-[1em]">HTML</p>
-					</div>
-					<div
+						<img alt="" className="w-20 mx-auto" src={HTML} />
+						<p className="mt-[1em]">HTML 5</p>
+					</li>
+					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md"
+					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
 					>
-						<img className="w-20 mx-auto" src={CSS} alt="CSS icon" />
-						<p className="mt-[1em]">CSS</p>
-					</div>
-					<div
+						<img alt="" className="w-20 mx-auto" src={CSS} />
+						<p className="mt-[1em]">CSS 3</p>
+					</li>
+					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md"
+					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
+
 					>
-						<img
+						<img alt=""
 							className="w-20 mx-auto"
 							src={JavaScript}
-							alt="JavaScript icon"
 						/>
 						<p className="mt-[1em]">JavaScript</p>
-					</div>
-					<div
+					</li>
+					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md"
+					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
+
 					>
-						<img className="w-20 mx-auto" src={ReactImg} alt="React icon" />
+						<img alt="" className="w-20 mx-auto" src={ReactImg} />
 						<p className="mt-[1em]">React</p>
-					</div>
-					<div
+					</li>
+					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md"
+					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
+
 					>
-						<img className="w-20 mx-auto" src={Node} alt="Node icon" />
+						<img alt="" className="w-20 mx-auto" src={Node} />
 						<p className="mt-[1em]">Node JS</p>
-					</div>
-					<div
+					</li>
+					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md"
+					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
+
 					>
-						<img
+						<img alt=""
 							className="w-20 mx-auto"
 							src={Sequelize}
-							alt="Sequelize icon"
 						/>
 						<p className="mt-[1em]">Sequelize</p>
-					</div>
-					<div
+					</li>
+					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md"
+					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
 					>
-						<img className="w-20 mx-auto" src={PSQL} alt="PSQL icon" />
+						<img alt="" className="w-20 mx-auto" src={PSQL} alt="" />
 						<p className="mt-[1em]">PSQL</p>
-					</div>
-					<div
+					</li>
+					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md"
-					>
-						<img className="w-20 mx-auto" src={GitHub} alt="Github icon" />
+					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default">
+						<img alt="" className="w-20 mx-auto" src={GitHub} />
 						<p className="mt-[1em]">Github</p>
-					</div>
-				</div>
+					</li>
+				</ul>
 			</div>
 
 			{/* ------------- Navigation BUTTON  --------------- */}
 			<div className="flex justify-center align-center max-[450px]:w-full mb-2">
-				<button className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
+				<div className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
 					<Link
 						to="/portfolio/profil"
 						mooth={true}
 						duration={500}
 						className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
 							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
-						>
-						<p className="flex items-center mx-auto">
-							<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour au
-							profil
-						</p>
+					>
+						<div className="flex items-center mx-auto">
+							<HiArrowNarrowLeft className="mr-3 leftNavArrow" />
+							<p><span className="sr-only">Page précédante</span>Retour au profil</p>
+						</div>
 					</Link>
-				</button>
+				</div>
 
-				<button className="rightNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
+				<div className="rightNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
 					<Link
 						to="/portfolio/projets"
 						mooth={true}
 						duration={500}
 						className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
 							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
-						>
-						<p className="flex items-center mx-auto">
-							Voir mes projets
+					>
+						<div className="flex items-center mx-auto">
+							<p><span className="sr-only">Page suivante</span>Voir mes projets</p>
 							<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
-						</p>
+						</div>
 					</Link>
-				</button>
+				</div>
 			</div>
 		</motion.div>
 	);

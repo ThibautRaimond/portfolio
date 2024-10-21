@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-import { AiOutlineProfile } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 import Logo from "../assets/logo.png";
@@ -25,73 +24,70 @@ const Navbar = () => {
 	};
 
 	return (
-		// NavBar:
-		<nav className="w-full h-[85px] flex justify-between items-center pr-4 pl-3 bg-[#0e1111d3] text-gray-300 shadow-md shadow-[#040c16]">
-			<div className="h-[70px] w-[70px] p-[5px] rounded-md flex justify-center hover:shadow-md hover:shadow-[#040c16]">
-				<Link to="/portfolio">
-					<img
-						alt="Logo passion DEV"
-						src={Logo}
-						className="cursor-pointer"
-						style={{ width: "65px" }}
-					/>
-				</Link>
+		<div className="w-full h-[85px] flex justify-between items-center pr-4 pl-3 bg-[#0e1111d3] text-gray-300 shadow-md shadow-[#040c16]">
+			<div className="h-[70px] w-[70px] p-[5px] rounded-md flex justify-center">
+				<img
+					alt="Logo passion DEV"
+					src={Logo}
+					style={{ width: "65px" }}
+				/>
 			</div>
 
 			{/* Desktop Menu: */}
 			<div>
-				<ul className="hidden md:flex">
-					<Link to="/portfolio">
-						<li
-							className={isActive("/portfolio") || isActive("/portfolio/") ? "active" : ""}
-							alt="Lien vers la page d'accueil"
-						>
-							Accueil
-						</li>
-					</Link>
-					<Link to="/portfolio/profil">
-						<li
-							className={isActive("/portfolio/profil") ? "active" : ""}
-							alt="Lien vers la page profil"
-						>
-							Profil
-						</li>
-					</Link>
-					<Link to="/portfolio/competences">
-						<li
-							className={isActive("/portfolio/competences") ? "active" : ""}
-							alt="Lien vers la page compétences"
-						>
-							Compétences
-						</li>
-					</Link>
-					<Link to="/portfolio/projets">
-						<li
-							className={isActive("/portfolio/projets") ? "active" : ""}
-							alt="Lien vers la page projets"
-						>
-							Projets
-						</li>
-					</Link>
-					<Link to="/portfolio/contact">
-						<li
-							className={isActive("/portfolio/contact") ? "active" : ""}
-							alt="Lien vers la page contact"
-						>
-							Contact
-						</li>
-					</Link>
-				</ul>
+				<nav>
+					<ul className="hidden md:flex">
+						<Link to="/portfolio">
+							<li
+								className={isActive("/portfolio") || isActive("/portfolio/") ? "active" : ""}
+								aria-label="Retour vers la page d'accueil"
+								aria-current={isActive("/portfolio") || isActive("/portfolio/") ? "page" : undefined}
+							>
+								Accueil
+							</li>
+						</Link>
+						<Link to="/portfolio/profil">
+							<li
+								className={isActive("/portfolio/profil") ? "active" : ""}
+								aria-label="Page profil"
+								aria-current={isActive("/portfolio/profil") ? "page" : undefined}
+							>
+								Profil
+							</li>
+						</Link>
+						<Link to="/portfolio/competences">
+							<li
+								className={isActive("/portfolio/competences") ? "active" : ""}
+								aria-label="Page compétences"
+								aria-current={isActive("/portfolio/competences") ? "page" : undefined}
+							>
+								Compétences
+							</li>
+						</Link>
+						<Link to="/portfolio/projets">
+							<li
+								className={isActive("/portfolio/projets") ? "active" : ""}
+								aria-label="Lien vers la page projets"
+								aria-current={isActive("/portfolio/projets") ? "page" : undefined}
+							>
+								Projets
+							</li>
+						</Link>
+						<Link to="/portfolio/contact">
+							<li
+								className={isActive("/portfolio/contact") ? "active" : ""}
+								aria-label="Lien vers la page contact"
+								aria-current={isActive("/portfolio/contact") ? "page" : undefined}
+							>
+								Contact
+							</li>
+						</Link>
+					</ul>
+				</nav>
 			</div>
 
-			{/* ---------------------------------------- Mobile Mode ---------------------------------------- */}
-
-			{/* { Bouton Mobile mode} */}
-			<button
-				alt="bouton pour afficher les liens de différentes pages du site ainsi que le linkedin et le CV de Thibaut Raimond"
-				onClick={handleClick}
-				className="md:hidden z-20"
-			>
+			{/* Mobile Menu Button */}
+			<button onClick={handleClick} className="md:hidden z-20">
 				{!nav ? (
 					<FaBars size={30} alt="Ouvrir le menu pour changer de page" />
 				) : (
@@ -99,125 +95,61 @@ const Navbar = () => {
 				)}
 			</button>
 
-			{/* menu mobile mode */}
-			<ul
-				className={
-					!nav
-						? "hidden"
-						: "absolute top-0 left-0 w-full h-full bg-[#0e1111d3] flex flex-col justify-center items-center z-10  "
-				}
-			>
-				<li
-					className={isActive("/portfolio") || isActive("/portfolio/") ? "active py-6 text-4xl" : "py-6 text-4xl"}
-				>
-					<Link
-						onClick={handleClick}
-						to="/portfolio"
-						mooth={true}
-						duration={500}
-					>
-						{" "}
-						Accueil{" "}
-					</Link>{" "}
+			{/* Mobile Menu */}
+			<ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-full bg-[#0e1111d3] flex flex-col justify-center items-center z-10"}>
+				<li className={isActive("/portfolio") || isActive("/portfolio/") ? "active py-6 text-4xl" : "py-6 text-4xl"}>
+					<Link onClick={handleClick} to="/portfolio" smooth={true} duration={500}>
+						Accueil
+					</Link>
 				</li>
-				<li
-					className={
-						isActive("/portfolio/profil")
-							? "active py-6 text-4xl"
-							: "py-6 text-4xl"
-					}
-				>
-					<Link
-						onClick={handleClick}
-						to="/portfolio/profil"
-						mooth={true}
-						duration={500}
-					>
-						{" "}
-						Profil{" "}
-					</Link>{" "}
+				<li className={isActive("/portfolio/profil") ? "active py-6 text-4xl" : "py-6 text-4xl"}>
+					<Link onClick={handleClick} to="/portfolio/profil" smooth={true} duration={500}>
+						Profil
+					</Link>
 				</li>
 				<li className={isActive("/portfolio/competences") ? "active py-6 text-4xl" : "py-6 text-4xl"}>
-					<Link
-						onClick={handleClick}
-						to="/portfolio/competences"
-						mooth={true}
-						duration={500}
-					>
-						{" "}
-						Compétences{" "}
-					</Link>{" "}
+					<Link onClick={handleClick} to="/portfolio/competences" smooth={true} duration={500}>
+						Compétences
+					</Link>
 				</li>
-				<li
-					className={
-						isActive("/portfolio/projets")
-							? "active py-6 text-4xl"
-							: "py-6 text-4xl"
-					}
-				>
-					<Link
-						onClick={handleClick}
-						to="/portfolio/projets"
-						mooth={true}
-						duration={500}
-					>
-						{" "}
-						Projets{" "}
-					</Link>{" "}
+				<li className={isActive("/portfolio/projets") ? "active py-6 text-4xl" : "py-6 text-4xl"}>
+					<Link onClick={handleClick} to="/portfolio/projets" smooth={true} duration={500}>
+						Projets
+					</Link>
 				</li>
-				<li
-					className={
-						isActive("/portfolio/contact")
-							? "active py-6 text-4xl"
-							: "py-6 text-4xl"
-					}
-				>
-					<Link
-						onClick={handleClick}
-						to="/portfolio/contact"
-						mooth={true}
-						duration={500}
-					>
-						{" "}
-						Contact{" "}
-					</Link>{" "}
+				<li className={isActive("/portfolio/contact") ? "active py-6 text-4xl" : "py-6 text-4xl"}>
+					<Link onClick={handleClick} to="/portfolio/contact" smooth={true} duration={500}>
+						Contact
+					</Link>
 				</li>
 
-				{/* -- Réseaux (mobile mode) -- */}
-				<div className=" flex justify-between mt-4">
-					<li className="w-[60px] h-[60px] flex justify-between bg-[#0A66C2]  ">
+				{/* Social Media Links */}
+				<div className="flex justify-between mt-4">
+					<li className="w-[60px] h-[60px] flex justify-between bg-[#0A66C2] border border-white">
 						<a
+							aria-label="Linkedin de Thibaut Raimond (nouvel onglet)"
 							className="flex justify-between items-center w-full text-gray-300"
 							href="https://www.linkedin.com/in/thibaut-raimond-0a46791ab/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<FaLinkedin size={30} alt="Lien vers mon profil Linkedin" />
+							<FaLinkedin size={30} />
 						</a>
 					</li>
-					<li className="w-[60px] h-[60px] flex justify-between bg-[#2d333b]">
+					<li className="w-[60px] h-[60px] flex justify-between bg-[#2d333b] border border-white">
 						<a
+							aria-label="Github de Thibaut Raimond (nouvel onglet)"
 							className="flex justify-between items-center w-full text-gray-300"
 							href="https://github.com/ThibautRaimond"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<FaGithub size={30} alt="Lien vers ma page Github" />
-						</a>
-					</li>
-					<li className="w-[60px] h-[60px] flex justify-between bg-[#347d39] ">
-						<a
-							className="flex justify-between items-center w-full text-gray-300"
-							href="https://cvthibautraimond.netlify.app/"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<AiOutlineProfile size={30} alt="Lien vers mon CV en ligne" />
+							<FaGithub size={30} />
 						</a>
 					</li>
 				</div>
 			</ul>
-		</nav>
+		</div>
 	);
 };
 

@@ -12,7 +12,7 @@ import "../styles/buttonsStyles.css";
 
 const ProfilPage = () => {
 	return (
-		<motion.main
+		<motion.div
 			name="Profil"
 			className="bg-gradient-to-r from[#0e1111] to-transparentbg flex justify-center items-center text-gray-300 mt-4 sm:mt-0"
 			initial={{ opacity: 0, scale: 0.5 }}
@@ -20,7 +20,7 @@ const ProfilPage = () => {
 			transition={{ duration: 0.75 }}
 		>
 			<Helmet>
-				<title>Portfolio: Profil</title>
+				<title>Profil - Portfolio de Thibaut Raimond</title>
 				<meta name="ProfilPage" content="Parcours personnel et CV" />
 			</Helmet>
 
@@ -31,25 +31,21 @@ const ProfilPage = () => {
 					</h1>
 					<div className="flex">
 						<div className="profil-left-container flex flex-col items-center mr-10 pt-4">
-							<img src={thib} alt="Picture" className="thib" />
+							<img src={thib} alt="" className="thib" />
 
 							{/* desktop button */}
-							<a href={CV} download>
-								<button
+							<button href={CV} download>
+								<div
 									className="moovingBorder bg-[#121614] py-4 px-8 mt-6 mb-6
 							hover:text-green-500 hover:underline hover:underline-thickness-2"
 									type="button"
 								>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
 									<div className="flex justify-center align-center">
 										Télécharger mon CV{" "}
 										<MdDownload className="w-[20px] h-[20px] mt-1" />
 									</div>
-								</button>
-							</a>
+								</div>
+							</button>
 						</div>
 
 						<div className="min-w-[300px]">
@@ -83,14 +79,10 @@ const ProfilPage = () => {
 						</div>
 					</div>
 
-					{/* ------------- MOBILE BUTTON  --------------- */}
+					{/* ------------- MOBILE DOWLOAD CV BUTTON  --------------- */}
 				</div>
 					<a href={CV} download className="profil-mobile-button text-xs">
 						<button className="moovingBorder py-4 px-8 mt-6 mb-6" type="button">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
 							<div className="flex justify-center align-center">
 								Télécharger mon CV{" "}
 								<MdDownload className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
@@ -99,38 +91,38 @@ const ProfilPage = () => {
 					</a>
 				{/* ------------- Navigation BUTTON  --------------- */}
 				<div className="flex justify-center align-center max-[450px]:w-full mb-2">
-				<button className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
-						<Link
-							to="/portfolio"
-							mooth={true}
-							duration={500}
-							className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
+				<div className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
+				<Link
+						to="/portfolio"
+						mooth={true}
+						duration={500}
+						className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
 							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
-						>
-							<p className="flex items-center mx-auto">
-								<HiArrowNarrowLeft className="mr-3 leftNavArrow" /> Retour à
-								l'accueil
-							</p>
-						</Link>
-					</button>
+					>
+						<div className="flex items-center mx-auto">
+							<HiArrowNarrowLeft className="mr-3 leftNavArrow" />
+							<p><span className="sr-only">Page précédante</span>Retour à l'accueil</p>
+						</div>
+					</Link>
+					</div>
 
-					<button className="rightNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
-						<Link
-							to="/portfolio/competences"
-							mooth={true}
-							duration={500}
-							className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
+					<div className="rightNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
+					<Link
+						to="/portfolio/competences"
+						mooth={true}
+						duration={500}
+						className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
 							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
-						>
-							<p className="flex items-center mx-auto">
-								Mes compétences{" "}
-								<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
-							</p>
-						</Link>
-					</button>
+					>
+						<div className="flex items-center mx-auto">
+							<p><span className="sr-only">Page suivante</span>Mes compétences</p>
+							<HiArrowNarrowRight className="ml-3 rightNavArrow" />{" "}
+						</div>
+					</Link>
+					</div>
 				</div>
 			</div>
-		</motion.main>
+		</motion.div>
 	);
 };
 export default ProfilPage;
