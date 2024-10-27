@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import ResetScroll from "./components/ResetScoll";
+import ResetScroll from "./components/ResetScroll";
 import Layout from "./components/Layout";
 
 import AnimatedRoutes from "./components/AnimatedRoutes";

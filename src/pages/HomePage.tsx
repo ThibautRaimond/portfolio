@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
@@ -20,13 +20,13 @@ const HomePage = () => {
 		</Helmet>
 		
 		{/* Container */}
-		<div className="sm: margin-auto">
-		<p>
-		<div className="text-3xl text-[#07ed66] title">Bonjour je suis</div>
-		<div className="text-3xl sm:text-5xl font-bold text-[#ccd6f6] title2">
+		<div className="flex flex-col justify-center items-center h-full">
+		<p className="text-center mb-2">
+		<div className="text-3xl sm:text-4xl text-[#999] title">Bonjour je suis</div>
+		<div className="text-3xl sm:text-5xl font-bold text-[#07ed66] title2">
 		Thibaut Raimond
 		</div>
-		<div className="text-4xl sm:text-5xl font-bold text-[#999] title3">
+		<div className="text-4xl sm:text-5xl font-bold text-[#ccd6f6] title3">
 		Consultant en Accessibilité Numérique
 		</div>
 		</p>
@@ -34,7 +34,7 @@ const HomePage = () => {
 		<Link to="/portfolio/profil">
 		<div
 		className="rightNavButton bg-gradient-to-b from-green-800 to-green-600 text-white border border-1 border-[#3e7c48]
-						hover:border hover:border-1 border-solid hover:border-[#adadad] px-6 py-3 my-2 max-w-[200px]">
+						hover:border hover:border-1 border-solid hover:border-[#adadad] px-6 py-3 max-w-[200px]">
 		<div className="flex">
 		Voir mon profil{" "}
 		<HiArrowNarrowRight className="rightNavArrow ml-3 mt-1" />

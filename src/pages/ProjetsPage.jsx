@@ -34,37 +34,39 @@ const ProjetsPage = () => {
 
 					<ul className="flex justify-center items-center flex-wrap">
 						{/* Projet 1 code du dev */}
-						<li className="flex justify-center items-center p-4 m-2 sm:p-2 sm:m-1 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default">
-							<div className="text-center">
+						<li className="flex justify-center items-center p-3 mx-4 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default mb-8 md:mb-0">
+							<div className="text-center flex justify-center items-center flex-col">
 								<a href="https://yannou.philoucorp.fr/"
 									target="_blank"
 									rel="noreferrer"
 									aria-label="Projet le code du dev (nouvel onglet)"
-									className="text-2xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">
-									<h2>Le code du dev</h2>
-								</a>
+									className="p-1"
+									>
+									<h2 className="text-2xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">Le code du dev</h2>
 								<p><span className="font-bold">Languages : </span>EJS <span aria-hidden="true" className="text-[#07ed66]">/</span> NodeJS <span aria-hidden="true" className="text-[#07ed66]">/</span> SQL <span aria-hidden="true" className="text-[#07ed66]">/</span> CSS</p>
-								<p className="m-1">Projet de groupe</p>
+								<p className="m-1 text-[#95F3A4]">Projet de groupe</p>
 								<div className="w-80 aspect-[4/3] mx-auto">
 									<img src={CodeDuDev} alt="" className="w-[320px] h-[240px] object-cover pb-[4px]" />
 								</div>
+								</a>
 							</div>
 						</li>
 
 						{/* Projet 2 pokedex */}
-						<li className="flex justify-center items-center p-4 m-2 sm:p-2 sm:m-1 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default">
+						<li className="flex justify-center items-center p-3 mx-4 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default">
 							<div className="text-center flex justify-center items-center flex-col">
 								<a href="https://thibautraimond.github.io/pokedex/" target="_blank"
 									rel="noreferrer"
-									aria-label="Projet pokedex (nouvel onglet)" className="text-2xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">
-									<h2>Pokedex</h2>
-								</a>
+									aria-label="Projet pokedex (nouvel onglet)"
+									className="p-1">
+									<h2 className="text-2xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">Pokedex</h2>
 								<p className=""><span className="font-bold">Languages : </span>
 								React <span aria-hidden="true" className="text-[#07ed66]">/</span> CSS</p>
-								<p className="m-1">Projet perso</p>
+								<p className="m-1 text-[#95F3A4]">Projet perso</p>
 								<div className="w-80 aspect-[4/3] mx-auto">
 									<img src={pokedex} alt="" className="w-[320px] h-[240px] object-cover pb-[4px]"/>
 								</div>
+								</a>
 							</div>
 						</li>
 					</ul>
@@ -78,7 +80,7 @@ const ProjetsPage = () => {
 							mooth={true}
 							duration={500}
 							className="flex relative min-h-[60px] min-[600px]:min-w-[270px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
-							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
+							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white m-0.5"
 						>
 							<div className="flex items-center mx-auto">
 								<div className="min-w-[40px] flex justify-center content-center">
@@ -95,7 +97,7 @@ const ProjetsPage = () => {
 							mooth={true}
 							duration={500}
 							className="flex relative min-h-[60px] min-[600px]:min-w-[270px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
-							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
+							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white m-0.5"
 						>
 							<div className="flex items-center mx-auto">
 								<p><span className="sr-only">Page suivante</span>Contact par mail</p>

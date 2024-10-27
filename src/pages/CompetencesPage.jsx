@@ -117,7 +117,7 @@ const CompetencesPage = () => {
 						mooth={true}
 						duration={500}
 						className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
-							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
+							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white m-0.5"
 					>
 						<div className="flex items-center mx-auto">
 							<HiArrowNarrowLeft className="mr-3 leftNavArrow" />
@@ -132,7 +132,7 @@ const CompetencesPage = () => {
 						mooth={true}
 						duration={500}
 						className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
-							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white"
+							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white m-0.5"
 					>
 						<div className="flex items-center mx-auto">
 							<p><span className="sr-only">Page suivante</span>Mes projets</p>

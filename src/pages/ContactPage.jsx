@@ -1,6 +1,8 @@
 import { motion } from "framer-motion"; 
 import { Helmet } from "react-helmet";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "../styles/buttonsStyles.css";
+
 
 const Contact = () => {
 	return (
@@ -15,7 +17,7 @@ const Contact = () => {
 				<meta name="Contact" content="Contactez-moi par mail" />
 			</Helmet>
 			
-			<div className="card rounded-md flex justify-center items-center mx-6 my-6 py-4 md:p-8">
+			<div className="card rounded-md flex flex-col justify-center items-center mx-6 my-6 py-4 md:p-8 ">
 				<form
 					method="POST"
 					action="https://getform.io/f/b647f9b9-5752-4f82-a5c5-7e42ed277826"
@@ -36,7 +38,7 @@ const Contact = () => {
 						<div>
 							<p id="name" className="text-[white]">Nom :</p>
 							<input
-								className="bg-[#ccd6f6] placeholder-gray-600 w-full" // Ajout de w-full
+								className="bg-[#ccd6f6] placeholder-gray-800 w-full" // Ajout de w-full
 								type="text"
 								placeholder="Votre nom"
 								name="name"
@@ -46,7 +48,7 @@ const Contact = () => {
 						<div>
 							<p id="mail" className="text-[white] mt-4">Mail :</p>
 							<input
-								className="bg-[#ccd6f6] placeholder-gray-600 w-full" // Ajout de w-full
+								className="bg-[#ccd6f6] placeholder-gray-800 w-full" // Ajout de w-full
 								type="email"
 								placeholder="Votre Email"
 								name="email"
@@ -57,7 +59,7 @@ const Contact = () => {
 							<p id="message" className="text-[white] mt-4">Message :</p>
 							<textarea
 								name="message"
-								className="bg-[#ccd6f6] placeholder-gray-600 w-full" // Ajout de w-full
+								className="bg-[#ccd6f6] placeholder-gray-800 w-full" // Ajout de w-full
 								rows="10"
 								placeholder="Votre message"
 								aria-describedby="message"
@@ -67,13 +69,40 @@ const Contact = () => {
 					<div className="flex justify-center">
 						{/* --button-- */}
 						<button
-							className="moovingBorder bg-[#121614] hover:text-green-500 hover:underline hover:underline-thickness-2 py-4 px-8 mt-6 sm:mt-10 mb-4"
+							className="buttonStyle bg-[#121614] hover:text-green-500 hover:underline hover:underline-thickness-2 focus:underline py-4 px-8 mt-6 sm:mt-10 mb-4"
 							type="submit"
 						>
 							Collaborons ensemble
 						</button>
 					</div>
 				</form>
+				
+				{/* Media Links */}
+				<div className="flex justify-between mt-4">
+					<li className="w-[60px] h-[60px] mx-1 flex bg-[#0A66C2] border border-white hover:scale-110 transition-transform">
+						<a
+							aria-label="Linkedin de Thibaut Raimond (nouvel onglet)"
+							className="flex justify-between items-center w-full h-full text-gray-300 "
+							href="https://www.linkedin.com/in/thibaut-raimond-0a46791ab/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<FaLinkedin size={30} />
+						</a>
+					</li>
+					<li className="w-[60px] h-[60px] mx-0.5 flex justify-between bg-[#2d333b] border border-white hover:scale-110 transition-transform">
+						<a
+							aria-label="Github de Thibaut Raimond (nouvel onglet)"
+							className="flex justify-between items-center w-full h-full text-gray-300"
+							href="https://github.com/ThibautRaimond"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<FaGithub size={30} />
+						</a>
+					</li>
+				</div>
+
 			</div>
 		</motion.div>
 	);
