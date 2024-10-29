@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 function CvAccessible() {
   return (
     <div>
-        <div className="sm:px-56 px-20 mt-4">
+    <div className="flex justify-center mt-4">
     <Link
       to="/portfolio/profil"
       smooth={true}
       duration={500}
-      className="buttonStyle text-center text-white py-1"
+      className="buttonStyle text-center text-white p-2"
     >
       Retour à la page profil
     </Link>
