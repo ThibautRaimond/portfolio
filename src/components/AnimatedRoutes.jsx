@@ -7,6 +7,7 @@ import ProfilPage from "../pages/ProfilPage";
 import CompetencesPage from "../pages/CompetencesPage";
 import ProjetsPage from "../pages/ProjetsPage";
 import ContactPage from "../pages/ContactPage";
+import CvAccessible from "../pages/CvAccessible.jsx";
 
 const AnimatedRoutes = () => {
 	const location = useLocation();
@@ -18,6 +19,7 @@ const AnimatedRoutes = () => {
 				<Route path="/portfolio/competences" element={<CompetencesPage />} />
 				<Route path="/portfolio/projets" element={<ProjetsPage />} />
 				<Route path="/portfolio/contact" element={<ContactPage />} />
+				<Route path="/portfolio/cvaccessible" element={<CvAccessible />} />
 			</Routes>
 		</AnimatePresence>
 	);

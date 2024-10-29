@@ -23,8 +23,8 @@ const ProjetsPage = () => {
 				<meta name="Projets" content="Présentation de mes projets" />
 			</Helmet>
 
-			<div className="bg-gradient-to-r from[#0e1111] to-transparentbg flex flex-col justify-center items-center text-gray-200 md:mt-4 md:px-3">
-				<div className="card rounded-md max-w-[1000px] m-4 p-4 md:p-10 flex flex-col justify-center w-full md:m-0">
+			<div className="bg-gradient-to-r from[#0e1111] to-transparentbg flex flex-col justify-center items-center text-gray-200 md:mt-4 px-2 mx-1">
+				<div className="card rounded-md max-w-[1000px] m-4 p-4 md:p-10 flex flex-col justify-center w-full md:m-0 mx-2">
 					<div className="flex flex-col items-center">
 						<h1 className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#07ed66]">
 							Mes projets
@@ -43,12 +43,12 @@ const ProjetsPage = () => {
 									className="p-1"
 									>
 									<h2 className="text-2xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">Le code du dev</h2>
-								<p><span className="font-bold">Languages : </span>EJS <span aria-hidden="true" className="text-[#07ed66]">/</span> NodeJS <span aria-hidden="true" className="text-[#07ed66]">/</span> SQL <span aria-hidden="true" className="text-[#07ed66]">/</span> CSS</p>
+								</a>
+								<p className="text-sm"><span className="font-bold">Languages : </span>EJS <span aria-hidden="true" className="text-[#07ed66]">/</span> NodeJS <span aria-hidden="true" className="text-[#07ed66]">/</span> SQL <span aria-hidden="true" className="text-[#07ed66]">/</span> CSS</p>
 								<p className="m-1 text-[#95F3A4]">Projet de groupe</p>
-								<div className="w-80 aspect-[4/3] mx-auto">
+								<div className="w-80 aspect-[4/3] flex justify-center items-center px-4">
 									<img src={CodeDuDev} alt="" className="w-[320px] h-[240px] object-cover pb-[4px]" />
 								</div>
-								</a>
 							</div>
 						</li>
 
@@ -60,13 +60,13 @@ const ProjetsPage = () => {
 									aria-label="Projet pokedex (nouvel onglet)"
 									className="p-1">
 									<h2 className="text-2xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">Pokedex</h2>
-								<p className=""><span className="font-bold">Languages : </span>
+								</a>
+								<p className="text-sm"><span className="font-bold">Languages : </span>
 								React <span aria-hidden="true" className="text-[#07ed66]">/</span> CSS</p>
 								<p className="m-1 text-[#95F3A4]">Projet perso</p>
-								<div className="w-80 aspect-[4/3] mx-auto">
+								<div className="w-80 aspect-[4/3] flex justify-center items-center px-4">
 									<img src={pokedex} alt="" className="w-[320px] h-[240px] object-cover pb-[4px]"/>
 								</div>
-								</a>
 							</div>
 						</li>
 					</ul>

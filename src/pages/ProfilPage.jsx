@@ -1,9 +1,9 @@
-	import { HiArrowNarrowRight } from "react-icons/hi";
-	import { HiArrowNarrowLeft } from "react-icons/hi";
-	import { MdDownload } from "react-icons/md";
-	import { Link } from "react-router-dom";
-	import { motion } from "framer-motion";
-	import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
+import { HiArrowNarrowRight } from "react-icons/hi";
+import { HiArrowNarrowLeft } from "react-icons/hi";
+import { MdDownload } from "react-icons/md";
 
 	import thib from "../assets/thib.png";
 	import CV from "../assets/CV-thibaut-raimond.pdf";
@@ -14,7 +14,7 @@
 		return (
 			<motion.div
 			name="Profil"
-			className="bg-gradient-to-r from[#0e1111] to-transparentbg flex justify-center items-center text-gray-300 mt-4 sm:mt-0"
+			className="bg-gradient-to-r from[#0e1111] to-transparentbg flex justify-center items-center text-gray-300 mt-4 sm:mt-0 mx-2"
 			initial={{ opacity: 0, scale: 0.5 }}
 			animate={{ opacity: 1, scale: 1 }}
 			transition={{ duration: 0.75 }}
@@ -34,10 +34,9 @@
 			<img src={thib} alt="" className="thib mt-12 mb-4" />
 			
 			{/* desktop button */}
-			<button href={CV} download className="m-1">
+			<a href={CV} download className="m-1" aria-label="télécharger mon CV (présence d’une alternative accessible après le lien)">
 			<div
-			className="buttonStyle bg-[#121614] py-3 px-4
-								hover:text-green-500 hover:underline hover:underline-thickness-2"
+			className="buttonStyle bg-[#121614] py-3 px-4 hover:text-green-500 hover:underline hover:underline-thickness-2"
 			type="button"
 			>
 			<div className="flex justify-center align-center">
@@ -45,7 +44,15 @@
 			<MdDownload className="w-[20px] h-[20px] mt-1" />
 			</div>
 			</div>
-			</button>
+			</a>
+			<Link
+			to="/portfolio/cvaccessible"
+			mooth={true}
+			duration={500}
+			className="text-[#07ed66] hover:text-[#00D14B] underline mt-2"
+			>
+				CV Accessible
+			</Link>
 			</div>
 			
 			<div className="min-w-[300px]">
@@ -90,12 +97,12 @@
 			{/* ------------- MOBILE DOWLOAD CV BUTTON  --------------- */}
 			</div>
 			
-			<button href={CV} download className="buttonStyle py-4 px-8 profil-mobile-button text-xs m-2" type="button">
+			<a href={CV} download className="buttonStyle py-4 px-8 profil-mobile-button text-xs m-2" type="button">
 			<div className="flex justify-center align-center">
 			Télécharger mon CV{" "}
 			<MdDownload className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
 			</div>
-			</button>
+			</a>
 			
 			{/* ------------- Navigation BUTTON  --------------- */}
 			<div className="flex justify-center align-center max-[450px]:w-full mb-2">
