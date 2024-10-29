@@ -103,7 +103,17 @@ import { MdDownload } from "react-icons/md";
 			<MdDownload className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
 			</div>
 			</a>
-			
+			<Link download
+			to="/portfolio/cvaccessible"
+			mooth={true}
+			duration={500}
+			className="text-[#07ed66] hover:text-[#00D14B] underline mt-2 profil-mobile-button"
+			>
+				CV Accessible
+			</Link>
+
+
+
 			{/* ------------- Navigation BUTTON  --------------- */}
 			<div className="flex justify-center align-center max-[450px]:w-full mb-2">
 			<div className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">

@@ -4,17 +4,15 @@ import { Link } from "react-router-dom";
 function CvAccessible() {
   return (
     <div>
-        <div className="sm:px-56 px-20">
-    <div className="border-1px border border-white text-center text-white mt-2">
+        <div className="sm:px-56 px-20 mt-4">
     <Link
       to="/portfolio/profil"
       smooth={true}
       duration={500}
-      
+      className="buttonStyle text-center text-white py-1"
     >
       Retour à la page profil
     </Link>
-    </div>
     </div>
     <div className="bg-gray-900 text-gray-100 p-8 max-w-4xl mx-auto m-4 flex flex-col flex justify-center align-center">
       <header className="text-center mb-8">
@@ -26,14 +24,26 @@ function CvAccessible() {
           <p><span className="font-semibold">Localisation : </span> Seclin, 59113</p>
           <p>Permis B / Véhiculé</p>
         </address>
-        <p>
-          <a href="http://www.linkedin.com/in/thibaut-raimond-0a46791ab" target="_blank" rel="noreferrer" className="underline mr-4">
-            LinkedIn
-          </a>
-          <a href="https://github.com/ThibautRaimond" target="_blank" rel="noreferrer" className="underline">
-            GitHub
-          </a>
-        </p>
+        <div className="flex justify-center space-x-4">
+  <a
+    href="http://www.linkedin.com/in/thibaut-raimond-0a46791ab"
+    target="_blank"
+    rel="noreferrer"
+    className="underline"
+  >
+    LinkedIn
+  </a>
+  <a
+    href="https://github.com/ThibautRaimond"
+    target="_blank"
+    rel="noreferrer"
+    className="underline"
+  >
+    GitHub
+  </a>
+</div>
+
+
       </header>
 
       <section className="mb-8">
