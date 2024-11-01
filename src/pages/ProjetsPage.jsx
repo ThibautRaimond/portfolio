@@ -29,7 +29,7 @@ const ProjetsPage = () => {
 						<h1 className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#07ed66]">
 							Mes projets
 						</h1>
-						<p className="py-6"> Présentation de mes derniers projets</p>
+						<p className="py-6"> Présentation de mes projets</p>
 					</div>
 
 					<ul className="flex justify-center items-center flex-wrap">

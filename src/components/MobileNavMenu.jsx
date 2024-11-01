@@ -46,13 +46,13 @@ const MobileNavMenu = ({ closeMenu, isActive }) => {
                 aria-label="Menu de navigation"
                 aria-modal="true"
                 ref={menuRef}
-                className="absolute top-0 left-0 w-full h-full bg-[#0e1111d3] text-center transform"
+                className="absolute top-0 left-0 w-full h-full bg-[#0e1111d3] text-center transform flex justify-center items-center"
                 onClick={(e) => e.stopPropagation()} // Empêche la fermeture de la modale lorsqu'on clique à l'intérieur
             >
                 <button 
                     aria-label="Fermer le menu" 
                     onClick={closeMenu} 
-                    className="absolute top-4 right-4 z-40"
+                    className="absolute top-6 right-4 z-40"
                 >
                     <FaTimes size={30} />
                 </button>

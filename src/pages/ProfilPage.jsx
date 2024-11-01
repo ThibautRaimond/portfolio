@@ -26,11 +26,11 @@ import { MdDownload } from "react-icons/md";
 			
 			<div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center md:mx-2">
 			<div className="card rounded-md py-4 md:py-4 px-2 md:px-12 mt-4 flex items-center flex-col">
-			<h1 className="text-4xl font-bold inline border-b-4 mb-4 md:mb-6  border-[#07ed66] text-center">
+			<h1 className="text-4xl font-bold inline border-b-4 mb-4 md:mb-6 border-[#07ed66] text-center">
 			Profil
 			</h1>
 			<div className="flex">
-			<div className="profil-left-container flex flex-col items-center mr-10 pt-4">
+			<div className="hideOnMobileMode flex flex-col items-center mr-10 pt-4">
 			<img src={thib} alt="" className="thib mt-12 mb-4" />
 			
 			{/* desktop button */}
@@ -93,11 +93,10 @@ import { MdDownload } from "react-icons/md";
 			</p>
 			</div>
 			</div>
-			
-			{/* ------------- MOBILE DOWLOAD CV BUTTON  --------------- */}
 			</div>
 			
-			<a href={CV} download className="buttonStyle py-4 px-8 profil-mobile-button text-xs m-2" type="button">
+			{/* ------------- MOBILE DOWLOAD CV BUTTON  --------------- */}
+			<a href={CV} download className="buttonStyle py-4 px-8 hideOnDesktopMode text-xs m-2" type="button">
 			<div className="flex justify-center align-center">
 			Télécharger mon CV{" "}
 			<MdDownload className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
@@ -107,7 +106,7 @@ import { MdDownload } from "react-icons/md";
 			to="/portfolio/cvaccessible"
 			mooth={true}
 			duration={500}
-			className="text-[#07ed66] hover:text-[#00D14B] underline mt-2 profil-mobile-button"
+			className="text-[#07ed66] hover:text-[#00D14B] underline mt-2 hideOnDesktopMode"
 			>
 				CV Accessible
 			</Link>

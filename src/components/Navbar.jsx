@@ -24,6 +24,18 @@ const Navbar = () => {
 
 	return (
 		<div className="w-full h-[85px] flex justify-between items-center pr-4 pl-3 bg-[#0e1111d3] text-gray-300 shadow-md shadow-[#040c16]">
+			
+			{/* Lien d'accès rapide au main */}
+			<a
+			href="#main-content"
+			className="hideOnMobileMode fixed top-[-60px] left-20 z-[300] ml-2 px-4 py-2 flex justify-center items-center bg-black border-[#07ed66] border-[2px] rounded-lg text-white text-center transition-all duration-300 focus:top-4 "
+			onClick={() => 
+				{ const mainContent = document.getElementById('main-content');
+					if (mainContent) mainContent.focus();
+					}}>
+						Accéder au contenu principal
+						</a>
+
 			<div className="h-[70px] w-[70px] p-[5px] rounded-md flex justify-center">
 				<img alt="Logo passion DEV" src={Logo} style={{ width: "65px" }} />
 			</div>
