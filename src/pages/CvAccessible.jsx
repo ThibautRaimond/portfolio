@@ -9,7 +9,7 @@ function CvAccessible() {
       to="/portfolio/profil"
       smooth={true}
       duration={500}
-      className="buttonStyle text-center text-white p-2"
+      className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-4 text-center text-white p-2"
     >
       Retour à la page profil
     </Link>

@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
-import "../styles/buttonsStyles.css";
-
 const HomePage = () => {
 	return (
 		<motion.div

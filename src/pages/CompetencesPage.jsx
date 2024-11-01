@@ -12,7 +12,6 @@ import Node from "../assets/node.png";
 import Sequelize from "../assets/sequelize.png";
 import PSQL from "../assets/psql.png";
 import GitHub from "../assets/github.png";
-import "../styles/buttonsStyles.css";
 
 const CompetencesPage = () => {
 	return (

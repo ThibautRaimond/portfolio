@@ -8,7 +8,6 @@ import { MdDownload } from "react-icons/md";
 	import thib from "../assets/thib.png";
 	import CV from "../assets/CV-thibaut-raimond.pdf";
 	import "../styles/ProfilPage.css";
-	import "../styles/buttonsStyles.css";
 
 	const ProfilPage = () => {
 		return (
@@ -36,7 +35,7 @@ import { MdDownload } from "react-icons/md";
 			{/* desktop button */}
 			<a href={CV} download className="m-1" aria-label="télécharger mon CV (présence d’une alternative accessible après le lien)">
 			<div
-			className="buttonStyle bg-[#121614] py-3 px-4 hover:text-green-500 hover:underline hover:underline-thickness-2"
+			className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-3 px-4 hover:text-green-500 hover:underline hover:underline-thickness-2"
 			type="button"
 			>
 			<div className="flex justify-center align-center">
@@ -96,7 +95,7 @@ import { MdDownload } from "react-icons/md";
 			</div>
 			
 			{/* ------------- MOBILE DOWLOAD CV BUTTON  --------------- */}
-			<a href={CV} download className="buttonStyle py-4 px-8 hideOnDesktopMode text-xs m-2" type="button">
+			<a href={CV} download className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-4 px-8 hideOnDesktopMode text-xs m-2" type="button">
 			<div className="flex justify-center align-center">
 			Télécharger mon CV{" "}
 			<MdDownload className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
