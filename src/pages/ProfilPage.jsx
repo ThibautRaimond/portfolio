@@ -5,9 +5,8 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import { HiArrowNarrowLeft } from "react-icons/hi";
 import { MdDownload } from "react-icons/md";
 
-	import thib from "../assets/thib.png";
-	import CV from "../assets/CV-thibaut-raimond.pdf";
-	import "../styles/ProfilPage.css";
+import thib from "../assets/thib.png";
+import CV from "../assets/CV-thibaut-raimond.pdf";
 
 	const ProfilPage = () => {
 		return (
@@ -30,7 +29,7 @@ import { MdDownload } from "react-icons/md";
 			</h1>
 			<div className="flex">
 			<div className="hideOnMobileMode flex flex-col items-center mr-10 pt-4">
-			<img src={thib} alt="" className="thib mt-12 mb-4" />
+			<img src={thib} alt="" className="bg-[linear-gradient(#5f8661a1,transparent)] shadow-[0_20px_50px_rgba(10,10,10,0.726)] w-[21rem] h-[21rem] left-[calc(50%_-_11rem)] rounded-full overflow-hidden object-cover mt-12 mb-4" />
 			
 			{/* desktop button */}
 			<a href={CV} download className="m-1" aria-label="télécharger mon CV (présence d’une alternative accessible après le lien)">

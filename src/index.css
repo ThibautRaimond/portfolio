@@ -43,3 +43,16 @@
 	border-left: 1px solid rgba(255, 255, 255, 0.199);
 	backdrop-filter: blur(5px);
 }
+
+/* Hide on desktop or mobile mode */
+@media screen and (max-width: 1023px){
+	.hideOnMobileMode{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1023px){
+	.hideOnDesktopMode{
+		display: none;
+	}
+}
