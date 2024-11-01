@@ -6,7 +6,6 @@ import { HiArrowNarrowLeft } from "react-icons/hi";
 
 import CodeDuDev from "../assets/projects/CodeDuDev.jpg";
 import pokedex from "../assets/projects/pokedex.jpg";
-import "../styles/ProjetsPage.css";
 
 const ProjetsPage = () => {
 	return (
