@@ -58,27 +58,27 @@ const MobileNavMenu = ({ closeMenu, isActive }) => {
                 </button>
                 
                 <ul className="py-4">
-                    <li className={`py-6 mt-10 text-4xl ${isActive("/portfolio") ? "active" : ""}`}
+                    <li className={`py-6 mt-10 text-4xl ${isActive("/portfolio") ? "activeLinkClass" : ""}`}
                         aria-current={isActive("/portfolio") ? "page" : undefined}
                     >
                         <Link ref={firstLinkRef} onClick={closeMenu} to="/portfolio">Accueil</Link>
                     </li>
-                    <li className={`py-6 text-4xl ${isActive("/portfolio/profil") ? "active" : ""}`}
+                    <li className={`py-6 text-4xl ${isActive("/portfolio/profil") ? "activeLinkClass" : ""}`}
                         aria-current={isActive("/portfolio/profil") ? "page" : undefined}
                     >
                         <Link onClick={closeMenu} to="/portfolio/profil">Profil</Link>
                     </li>
-                    <li className={`py-6 text-4xl ${isActive("/portfolio/competences") ? "active" : ""}`}
+                    <li className={`py-6 text-4xl ${isActive("/portfolio/competences") ? "activeLinkClass" : ""}`}
                         aria-current={isActive("/portfolio/competences") ? "page" : undefined}
                     >
                         <Link onClick={closeMenu} to="/portfolio/competences">Compétences</Link>
                     </li>
-                    <li className={`py-6 text-4xl ${isActive("/portfolio/projets") ? "active" : ""}`}
+                    <li className={`py-6 text-4xl ${isActive("/portfolio/projets") ? "activeLinkClass" : ""}`}
                         aria-current={isActive("/portfolio/projets") ? "page" : undefined}
                     >
                         <Link onClick={closeMenu} to="/portfolio/projets">Projets</Link>
                     </li>
-                    <li className={`py-6 text-4xl mb-2 ${isActive("/portfolio/contact") ? "active" : ""}`}
+                    <li className={`py-6 text-4xl mb-2 ${isActive("/portfolio/contact") ? "activeLinkClass" : ""}`}
                         aria-current={isActive("/portfolio/contact") ? "page" : undefined}
                     >
                         <Link ref={lastLinkRef} onClick={closeMenu} to="/portfolio/contact">Contact</Link>

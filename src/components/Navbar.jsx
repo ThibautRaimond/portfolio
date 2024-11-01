@@ -45,35 +45,35 @@ const Navbar = () => {
 				<nav>
 					<ul className="hidden md:flex">
 						<li
-							className={isActive("/portfolio") || isActive("/portfolio/") ? "active" : ""}
+							className={isActive("/portfolio") || isActive("/portfolio/") ? "activeLinkClass" : ""}
 							aria-label="Retour vers la page d'accueil"
 							aria-current={isActive("/portfolio") || isActive("/portfolio/") ? "page" : undefined}
 						>
 							<Link to="/portfolio">Accueil</Link>
 						</li>
 						<li
-							className={isActive("/portfolio/profil") ? "active" : ""}
+							className={isActive("/portfolio/profil") ? "activeLinkClass" : ""}
 							aria-label="Page profil"
 							aria-current={isActive("/portfolio/profil") ? "page" : undefined}
 						>
 							<Link to="/portfolio/profil">Profil</Link>
 						</li>
 						<li
-							className={isActive("/portfolio/competences") ? "active" : ""}
+							className={isActive("/portfolio/competences") ? "activeLinkClass" : ""}
 							aria-label="Page compétences"
 							aria-current={isActive("/portfolio/competences") ? "page" : undefined}
 						>
 							<Link to="/portfolio/competences">Compétences</Link>
 						</li>
 						<li
-							className={isActive("/portfolio/projets") ? "active" : ""}
+							className={isActive("/portfolio/projets") ? "activeLinkClass" : ""}
 							aria-label="Lien vers la page projets"
 							aria-current={isActive("/portfolio/projets") ? "page" : undefined}
 						>
 							<Link to="/portfolio/projets">Projets</Link>
 						</li>
 						<li
-							className={isActive("/portfolio/contact") ? "active" : ""}
+							className={isActive("/portfolio/contact") ? "activeLinkClass" : ""}
 							aria-label="Lien vers la page contact"
 							aria-current={isActive("/portfolio/contact") ? "page" : undefined}
 						>

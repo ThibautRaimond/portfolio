@@ -28,7 +28,7 @@
 	display: none;
 }
 
-.Link{
+.activeLinkClass{
 	color: #07ed66;
 	text-decoration: underline;
 }
