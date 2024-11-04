@@ -36,41 +36,42 @@ const Contact = () => {
 						<div>
 							<p id="name" className="text-[white]">Nom :</p>
 							<input
-								className="bg-[#ccd6f6] placeholder-gray-800 w-full" // Ajout de w-full
+								aria-labelledby="name"
+								autocomplete="family-name"
 								type="text"
-								placeholder="Votre nom"
 								name="name"
-								aria-describedby="name"
+								className="bg-[#ccd6f6] placeholder-gray-800 w-full border border-[1px] border-black"
 							/>
 						</div>
 						<div>
 							<p id="mail" className="text-[white] mt-4">Mail :</p>
 							<input
-								className="bg-[#ccd6f6] placeholder-gray-800 w-full" // Ajout de w-full
-								type="email"
-								placeholder="Votre Email"
+								aria-labelledby="mail"
+								autocomplete="email"
 								name="email"
-								aria-describedby="mail"
+								type="email"
+								className="bg-[#ccd6f6] placeholder-gray-800 w-full border border-[1px] border-black"
 							/>
 						</div>
 						<div>
 							<p id="message" className="text-[white] mt-4">Message :</p>
 							<textarea
+								aria-labelledby="message"
 								name="message"
-								className="bg-[#ccd6f6] placeholder-gray-800 w-full" // Ajout de w-full
 								rows="10"
-								placeholder="Votre message"
-								aria-describedby="message"
+								className="bg-[#ccd6f6] placeholder-gray-800 w-full border border-[1px] border-black"
 							></textarea>
 						</div>
 					</div>
+					
 					<div className="flex justify-center">
 						{/* --button-- */}
 						<button
 							className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-4 bg-[#121614] hover:text-green-500 hover:underline hover:underline-thickness-2 focus:underline py-4 px-8 mt-6 sm:mt-10 mb-4"
 							type="submit"
+							title="Collaborons ensemble ; envoyez votre message"
 						>
-							Collaborons ensemble
+							<div aria-hidden="true">Collaborons ensemble</div> {/* pour éviter la répition du title */}
 						</button>
 					</div>
 				</form>
