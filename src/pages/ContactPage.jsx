@@ -17,9 +17,10 @@ const Contact = () => {
 			
 			<div className="card rounded-md flex flex-col justify-center items-center mx-6 my-6 py-4 md:p-8 ">
 				<form
-					method="POST"
-					action="https://getform.io/f/b647f9b9-5752-4f82-a5c5-7e42ed277826"
-					className="flex flex-col max-w-[600px] w-full mx-auto px-2"
+				aria-label="formulaire de contact"
+				method="POST"
+				action="https://getform.io/f/b647f9b9-5752-4f82-a5c5-7e42ed277826"
+				className="flex flex-col max-w-[600px] w-full mx-auto px-2"
 				>
 					<div className="pb-4 text-center">
 						<h1 className="text-4xl font-bold inline border-b-4 border-[#07ed66] text-gray-200">
@@ -63,7 +64,7 @@ const Contact = () => {
 							></textarea>
 						</div>
 					</div>
-					
+
 					<div className="flex justify-center">
 						{/* --button-- */}
 						<button
