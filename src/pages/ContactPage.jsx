@@ -22,6 +22,7 @@ const Contact = () => {
 				action="https://getform.io/f/b647f9b9-5752-4f82-a5c5-7e42ed277826"
 				className="flex flex-col max-w-[600px] w-full mx-auto px-2"
 				>
+					
 					<div className="pb-4 text-center">
 						<h1 className="text-4xl font-bold inline border-b-4 border-[#07ed66] text-gray-200">
 							Me contacter
@@ -34,10 +35,10 @@ const Contact = () => {
 					</div>
 
 					<div className="flex flex-col px-4 md:px-12">
-						<div>
-							<p id="name" className="text-[white]">Nom :</p>
+						<div className="relative">
+							<label for="name" className="text-[white]">Nom :</label>
 							<input
-								aria-labelledby="name"
+								id="name"
 								autocomplete="family-name"
 								type="text"
 								name="name"
@@ -45,9 +46,9 @@ const Contact = () => {
 							/>
 						</div>
 						<div>
-							<p id="mail" className="text-[white] mt-4">Mail :</p>
+							<label for="mail" className="text-[white] mt-4">Mail :</label>
 							<input
-								aria-labelledby="mail"
+								id="mail"
 								autocomplete="email"
 								name="email"
 								type="email"
@@ -55,9 +56,9 @@ const Contact = () => {
 							/>
 						</div>
 						<div>
-							<p id="message" className="text-[white] mt-4">Message :</p>
+							<label for="message" className="text-[white] mt-4">Message :</label>
 							<textarea
-								aria-labelledby="message"
+								id="message"
 								name="message"
 								rows="10"
 								className="bg-[#ccd6f6] placeholder-gray-800 w-full border border-[1px] border-black"
@@ -70,9 +71,8 @@ const Contact = () => {
 						<button
 							className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-4 bg-[#121614] hover:text-green-500 hover:underline hover:underline-thickness-2 focus:underline py-4 px-8 mt-6 sm:mt-10 mb-4"
 							type="submit"
-							title="Collaborons ensemble ; envoyez votre message"
 						>
-							<div aria-hidden="true">Collaborons ensemble</div> {/* pour éviter la répition du title */}
+							Envoyer le message
 						</button>
 					</div>
 				</form>
