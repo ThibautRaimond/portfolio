@@ -109,7 +109,7 @@ const CompetencesPage = () => {
 			</div>
 
 			{/* ------------- Navigation BUTTON  --------------- */}
-			<div className="flex justify-center align-center max-[450px]:w-full mb-2">
+			<nav aria-label="Secondaire"className="flex justify-center align-center max-[450px]:w-full mb-2">
 				<div className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
 					<Link
 						to="/portfolio/profil"
@@ -139,7 +139,7 @@ const CompetencesPage = () => {
 						</div>
 					</Link>
 				</div>
-			</div>
+			</nav>
 		</motion.div>
 	);
 };

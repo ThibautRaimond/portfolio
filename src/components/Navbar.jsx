@@ -41,8 +41,8 @@ const Navbar = () => {
 			</div>
 
 			{/* Desktop Menu */}
-			<div>
-				<nav>
+			
+				<nav aria-label="Menu principal">
 					<ul className="hidden md:flex">
 						<li
 							className={isActive("/portfolio") || isActive("/portfolio/") ? "activeLinkClass" : ""}
@@ -81,7 +81,6 @@ const Navbar = () => {
 						</li>
 					</ul>
 				</nav>
-			</div>
 
 			{/* Bouton en mode mobile pour ouvrir la modale */}
 			<button
