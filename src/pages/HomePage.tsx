@@ -20,7 +20,7 @@ const HomePage = () => {
 		{/* Container */}
 		<div className="flex flex-col justify-center items-center h-full">
 		<p className="text-center mb-2">
-		<div className="text-3xl sm:text-4xl text-[#999] title">Bonjour je suis</div>
+		<div className="text-3xl sm:text-4xl text-[#D4D4D4] title">Bonjour je suis</div>
 		<div className="text-3xl sm:text-5xl font-bold text-[#07ed66] title2">
 		Thibaut Raimond
 		</div>
