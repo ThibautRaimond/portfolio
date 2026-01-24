@@ -44,8 +44,8 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
 
-      <nav aria-label="Menu principal">
-        <ul className="hidden md:flex">
+      <nav aria-label="Menu principal hidden">
+        <ul className="md:flex hidden">
           <li
             className={
               isActive("/portfolio") || isActive("/portfolio/")
