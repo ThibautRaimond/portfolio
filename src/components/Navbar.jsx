@@ -37,7 +37,7 @@ const Navbar = () => {
       </a>
 
       <div className="h-[70px] w-[70px] p-[5px] rounded-md flex justify-center">
-        <Link to="/portfolio" aria-hidden="true" tabIndex="-1">
+        <Link to="/" aria-hidden="true" tabIndex="-1">
           <img alt="Logo passion DEV" src={Logo} style={{ width: "65px" }} />
         </Link>
       </div>
@@ -48,50 +48,50 @@ const Navbar = () => {
         <ul className="md:flex">
           <li
             className={
-              isActive("/portfolio") || isActive("/portfolio/")
+              isActive("/")
                 ? "activeLinkClass"
                 : ""
             }
             aria-label="Retour vers la page d'accueil"
             aria-current={
-              isActive("/portfolio") || isActive("/portfolio/")
+              isActive("/")
                 ? "page"
                 : undefined
             }
           >
-            <Link to="/portfolio">Accueil</Link>
+            <Link to="/">Accueil</Link>
           </li>
           <li
-            className={isActive("/portfolio/profil") ? "activeLinkClass" : ""}
+            className={isActive("/profil") ? "activeLinkClass" : ""}
             aria-label="Page profil"
-            aria-current={isActive("/portfolio/profil") ? "page" : undefined}
+            aria-current={isActive("/profil") ? "page" : undefined}
           >
-            <Link to="/portfolio/profil">Profil</Link>
+            <Link to="/profil">Profil</Link>
           </li>
           <li
             className={
-              isActive("/portfolio/competences") ? "activeLinkClass" : ""
+              isActive("/competences") ? "activeLinkClass" : ""
             }
             aria-label="Page compétences"
             aria-current={
-              isActive("/portfolio/competences") ? "page" : undefined
+              isActive("/competences") ? "page" : undefined
             }
           >
-            <Link to="/portfolio/competences">Compétences</Link>
+            <Link to="/competences">Compétences</Link>
           </li>
           <li
-            className={isActive("/portfolio/projets") ? "activeLinkClass" : ""}
+            className={isActive("/projets") ? "activeLinkClass" : ""}
             aria-label="Lien vers la page projets"
-            aria-current={isActive("/portfolio/projets") ? "page" : undefined}
+            aria-current={isActive("/projets") ? "page" : undefined}
           >
-            <Link to="/portfolio/projets">Projets</Link>
+            <Link to="/projets">Projets</Link>
           </li>
           <li
-            className={isActive("/portfolio/contact") ? "activeLinkClass" : ""}
+            className={isActive("/contact") ? "activeLinkClass" : ""}
             aria-label="Lien vers la page contact"
-            aria-current={isActive("/portfolio/contact") ? "page" : undefined}
+            aria-current={isActive("/contact") ? "page" : undefined}
           >
-            <Link to="/portfolio/contact">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

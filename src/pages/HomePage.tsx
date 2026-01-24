@@ -29,7 +29,7 @@ const HomePage = () => {
 					</div>
 				</p>
 
-				<Link to="/portfolio/profil">
+				<Link to="/profil">
 					<div
 						className="rightNavButton bg-gradient-to-b from-green-800 to-green-600 text-white border border-1 border-[#3e7c48]
 						hover:border hover:border-1 border-solid hover:border-[#adadad] px-6 py-3 max-w-[200px]">

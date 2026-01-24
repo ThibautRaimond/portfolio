@@ -201,7 +201,7 @@ function CvAccessible() {
       {/* --- Retour à la page profil --- */}
       <div className="flex justify-center mt-4">
         <Link
-          to="/portfolio/profil"
+          to="/profil"
           smooth={true}
           duration={500}
           className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-4 mb-4 text-center text-white p-2"

@@ -112,7 +112,7 @@ const CompetencesPage = () => {
 			<nav aria-label="Secondaire"className="flex justify-center align-center max-[450px]:w-full mb-2">
 				<div className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
 					<Link
-						to="/portfolio/profil"
+						to="/profil"
 						mooth={true}
 						duration={500}
 						className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
@@ -127,7 +127,7 @@ const CompetencesPage = () => {
 
 				<div className="rightNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
 					<Link
-						to="/portfolio/projets"
+						to="/projets"
 						mooth={true}
 						duration={500}
 						className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]

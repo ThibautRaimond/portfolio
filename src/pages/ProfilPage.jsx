@@ -44,7 +44,7 @@ const ProfilPage = () => {
 								</div>
 							</a>
 							<Link
-								to="/portfolio/cvaccessible"
+								to="/cvaccessible"
 								mooth={true}
 								duration={500}
 								className="text-[#07ed66] hover:text-[#00D14B] underline mt-2"
@@ -109,9 +109,7 @@ const ProfilPage = () => {
 					</div>
 				</a>
 				<Link download
-					to="/portfolio/cvaccessible"
-					mooth={true}
-					duration={500}
+				to="/cvaccessible"
 					className="text-[#07ed66] hover:text-[#00D14B] underline mt-2 hideOnDesktopMode"
 				>
 					CV Accessible
@@ -123,7 +121,7 @@ const ProfilPage = () => {
 				<nav aria-label="Secondaire" className="flex justify-center align-center max-[450px]:w-full mb-2">
 					<div className="leftNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
 						<Link
-							to="/portfolio"
+							to="/"
 							mooth={true}
 							duration={500}
 							className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
@@ -138,7 +136,7 @@ const ProfilPage = () => {
 
 					<div className="rightNavButton w-50vw md:mt-10 mt-6 profil-bot-button flex-1">
 						<Link
-							to="/portfolio/competences"
+							to="/competences"
 							mooth={true}
 							duration={500}
 							className="flex relative min-h-[60px] min-[450px]:min-w-[220px] bg-gradient-to-b from-green-900 to-green-800 text-white border border-1 border-[#adadad]
