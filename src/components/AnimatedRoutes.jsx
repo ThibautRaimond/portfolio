@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 import HomePage from "../pages/HomePage.tsx";
@@ -14,7 +14,9 @@ const AnimatedRoutes = () => {
 	return (
 		<AnimatePresence>
 			<Routes location={location.pathname} key={location.pathname}>
+				<Route path="/" element={<Navigate to="/portfolio" replace />} />
 				<Route path="/portfolio" element={<HomePage />} />
+				<Route path="/portfolio/" element={<HomePage />} />
 				<Route path="/portfolio/profil" element={<ProfilPage />} />
 				<Route path="/portfolio/competences" element={<CompetencesPage />} />
 				<Route path="/portfolio/projets" element={<ProjetsPage />} />
