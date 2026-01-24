@@ -84,7 +84,7 @@ const ProjetsPage = () => {
 								<div className="min-w-[40px] flex justify-center content-center">
 									<HiArrowNarrowLeft className="leftNavArrow" />
 								</div>
-								<p><span className="sr-only">Page précédante</span>Retour aux compétences</p>
+							<p>Compétences<span className="sr-only">{"\u00A0"}Page précédente</span></p>
 							</div>
 						</Link>
 					</div>
@@ -98,7 +98,7 @@ const ProjetsPage = () => {
 							hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white m-0.5"
 						>
 							<div className="flex items-center mx-auto">
-								<p><span className="sr-only">Page suivante</span>Contact par mail</p>
+							<p>Contact<span className="sr-only">{"\u00A0"}Page suivante</span></p>
 								<div className="min-w-[40px] flex justify-center content-center">
 									<HiArrowNarrowRight className="rightNavArrow" />
 								</div>

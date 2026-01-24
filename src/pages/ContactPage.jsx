@@ -67,7 +67,7 @@ const Contact = () => {
                 autocomplete="family-name"
                 type="text"
                 name="name"
-                className="w-full border border-[1px] border-black"
+                className="w-full bg-gray-50 border border-[1px] border-black"
               />
             </div>
 
@@ -81,7 +81,7 @@ const Contact = () => {
                 name="email"
                 type="email"
                 aria-describedby="mailText"
-                className="w-full block peer border border-[1px] border-black"
+                className="w-full bg-gray-50 block peer border border-[1px] border-black"
                 placeholder=" "
                 onInput={handleInputChange}
                 onBlur={handleBlur} // Gérer le focus perdu
@@ -102,7 +102,7 @@ const Contact = () => {
                 id="message"
                 name="message"
                 rows="10"
-                className="bg-[#ccd6f6] placeholder-gray-800 w-full border border-[1px] border-black"
+                className="bg-gray-50 placeholder-gray-800 w-full border border-[1px] border-black"
               ></textarea>
             </div>
           </div>

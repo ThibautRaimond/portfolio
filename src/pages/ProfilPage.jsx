@@ -90,9 +90,9 @@ const ProfilPage = () => {
 								>
 									Urbilog
 								</a>.
-								Je maîtrise désormais les référentiels d’accessibilité{' '}
-								<abbr title="Référentiel Général d’Amélioration de l’Accessibilité">RGAA</abbr>,{' '}
-								<abbr title="Référentiel d'Accessibilité des Applications Mobiles">RAAM</abbr>{' '}et{' '}
+					Je maîtrise désormais les référentiels d'accessibilité<span aria-hidden="true"> </span>
+					<abbr title="Référentiel Général d’Amélioration de l’Accessibilité">RGAA</abbr>,<span aria-hidden="true"> </span>
+					<abbr title="Référentiel d’Accessibilité des Applications Mobiles">RAAM</abbr><span aria-hidden="true"> </span>et<span aria-hidden="true"> </span>
 								<abbr lang="en" title="Web Content Accessibility Guidelines">WCAG</abbr>,
 								et j’accompagne les équipes pour concevoir des interfaces accessibles et inclusives.
 							</p>
@@ -131,7 +131,7 @@ const ProfilPage = () => {
 						>
 							<div className="flex items-center mx-auto">
 								<HiArrowNarrowLeft className="mr-3 leftNavArrow" />
-								<p><span className="sr-only">Page précédante </span>Accueil</p>
+					<p>Accueil<span className="sr-only">{"\u00A0"}Page précédente</span></p>
 							</div>
 						</Link>
 					</div>
@@ -145,7 +145,7 @@ const ProfilPage = () => {
 								hover:border hover:border-1 border-solid hover:border-[#fff] hover:text-white m-0.5"
 						>
 							<div className="flex items-center mx-auto">
-								<p><span className="sr-only">Page suivant </span>Compétences</p>
+					<p>Compétences<span className="sr-only">{"\u00A0"}Page suivante</span></p>
 								<HiArrowNarrowRight className="ml-3 rightNavArrow" />
 							</div>
 						</Link>
