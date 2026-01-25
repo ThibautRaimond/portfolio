@@ -15,7 +15,7 @@ const ProfilPage = () => {
   return (
     <motion.div
       name="Profil"
-      className="bg-gradient-to-r from[#0e1111] to-transparentbg flex justify-center items-center text-gray-300 mt-4 sm:mt-0 mx-2"
+      className="bg-gradient-to-r from-[#0e1111] to-transparent bg flex justify-center items-center text-gray-300 mt-4 sm:mt-0 mx-2"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.75 }}
@@ -25,17 +25,17 @@ const ProfilPage = () => {
         <meta name="ProfilPage" content="Parcours personnel et CV" />
       </Helmet>
 
-      <div className="bg-[#0e1111] text-gray-300 items-center flex flex-col justify-center md:mx-2">
+      <div className="text-gray-300 items-center flex flex-col justify-center md:mx-2">
         {/* Card principale */}
-        <div className="card rounded-md py-4 md:py-4 px-2 md:px-12 mt-4 flex items-center flex-col">
-          <h1 className="text-4xl font-bold inline border-b-4 mb-4 md:mb-6 border-[#07ed66] text-center">
+        <div className="card rounded-md py-4 md:py-8 px-2 md:px-12 mt-8 flex items-center flex-col">
+          <h1 className="text-4xl font-bold inline border-b-4 mb-6 md:mb-6 border-[#07ed66] text-center">
             Profil
           </h1>
 
           <div className="flex">
             {/* Section Texte - Présentation */}
-            <div className="min-w-[300px]">
-              <p className="text-xl text-left max-w-xl mt-4 md:mt-6">
+            <div className="min-w-[300px] md:min-w-[400px] lg:min-w-[500px] xl:min-w-[600px] 2xl:min-w-[700px]">
+              <p className="text-xl text-left max-w-[800px] mt-4 md:mt-6">
                 Enchanté je m'appelle Thibaut, après avoir découvert une passion
                 pour le développement web, j'ai choisi de suivre la formation
                 FullStack JavaScript chez{" "}
@@ -53,7 +53,7 @@ const ProfilPage = () => {
                 d'équipe en utilisant les méthodes AGILE pour la conception web.
               </p>
 
-              <p className="py-4 text-xl text-left max-w-xl mt-5">
+              <p className="py-4 text-xl text-left max-w-[800px] mt-5">
                 Suite à cela j'ai pu obtenir mon diplôme de Développeur
                 FullStack Web & Mobile de niveau RNCP (Répertoire National des
                 Certifications Professionnelles) 5.
@@ -63,7 +63,7 @@ const ProfilPage = () => {
                 <span lang="en">front-end</span>.
               </p>
 
-              <p className="text-xl text-left max-w-xl mt-5">
+              <p className="text-xl text-left max-w-[800px] mt-5">
                 En approfondissant ce sujet, je me suis fortement intéressé à
                 l'accessibilité numérique, une spécialisation qui m'a conduit à
                 devenir consultant dans ce domaine au sein de l'entreprise{" "}
@@ -77,19 +77,19 @@ const ProfilPage = () => {
                   Urbilog
                 </a>
                 . Je maîtrise désormais les référentiels RGAA (Référentiel
-                Général d'Amélioration de l'Accessibilité) , RAAM (Référentiel
+                Général d'Amélioration de l'Accessibilité), RAAM (Référentiel
                 d'Accessibilité des Applications Mobiles) et WCAG (Web Content
-                Accessibility Guidelines) , et j'accompagne les équipes pour
+                Accessibility Guidelines), et j'accompagne les équipes pour
                 concevoir des interfaces accessibles et inclusives.
               </p>
             </div>
 
             {/* Section Desktop - Image et bouton CV */}
-            <div className="hideOnMobileMode flex flex-col items-center ml-10 pt-4">
+            <div className="hideOnMobileMode flex flex-col justify-center items-center ml-10 pt-4">
               <img
                 src={thib}
                 alt=""
-                className="bg-[linear-gradient(#5f8661a1,transparent)] shadow-[0_20px_50px_rgba(10,10,10,0.726)] w-[21rem] h-[21rem] left-[calc(50%_-_11rem)] rounded-full overflow-hidden object-cover mt-12 mb-4"
+                className="bg-[linear-gradient(#5f8661a1,transparent)] shadow-[0_20px_50px_rgba(10,10,10,0.726)] w-[19rem] h-[19rem] left-[calc(50%_-_11rem)] rounded-full overflow-hidden object-cover mt-2 mb-4"
               />
 
               <div
