@@ -27,7 +27,7 @@ const ProfilPage = () => {
 
       <div className="text-gray-300 items-center flex flex-col justify-center md:mx-2">
         {/* Card principale */}
-        <div className="card rounded-md py-4 md:py-8 px-2 md:px-12 mt-8 flex items-center flex-col">
+        <div className="card rounded-md bg-[#0e1111] py-4 md:py-8 px-2 md:px-12 mt-8 flex items-center flex-col">
           <h1 className="text-4xl font-bold inline border-b-4 mb-6 md:mb-6 border-[#07ed66] text-center">
             Profil
           </h1>
