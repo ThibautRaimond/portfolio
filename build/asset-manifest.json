@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.82510332.css",
-    "main.js": "/portfolio/static/js/main.918e440b.js",
+    "main.css": "/portfolio/static/css/main.be50c90b.css",
+    "main.js": "/portfolio/static/js/main.e59c401a.js",
     "static/media/CV-thibaut-raimond.pdf": "/portfolio/static/media/CV-thibaut-raimond.3e56e8c33e5f9c6a7e41.pdf",
     "static/media/thib.png": "/portfolio/static/media/thib.4fa78691c46cf9164d58.png",
     "static/media/pokedex.jpg": "/portfolio/static/media/pokedex.cb47f48423d306256654.jpg",
+    "static/media/urbi.png": "/portfolio/static/media/urbi.a17743e98c025c9ef7a0.png",
     "static/media/CodeDuDev.jpg": "/portfolio/static/media/CodeDuDev.a11fd53b7b07de435994.jpg",
     "static/media/logo.png": "/portfolio/static/media/logo.54834559af14d9e5b087.png",
     "static/media/react.png": "/portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
@@ -14,13 +15,14 @@
     "static/media/github.png": "/portfolio/static/media/github.3b9e32903aa89111875d.png",
     "static/media/html.png": "/portfolio/static/media/html.2ba4fabc69a89a8f71e6.png",
     "static/media/css.png": "/portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/oclock.png": "/portfolio/static/media/oclock.7997ab568a5f5d97b38b.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.82510332.css.map": "/portfolio/static/css/main.82510332.css.map",
-    "main.918e440b.js.map": "/portfolio/static/js/main.918e440b.js.map"
+    "main.be50c90b.css.map": "/portfolio/static/css/main.be50c90b.css.map",
+    "main.e59c401a.js.map": "/portfolio/static/js/main.e59c401a.js.map"
   },
   "entrypoints": [
-    "static/css/main.82510332.css",
-    "static/js/main.918e440b.js"
+    "static/css/main.be50c90b.css",
+    "static/js/main.e59c401a.js"
   ]
 }

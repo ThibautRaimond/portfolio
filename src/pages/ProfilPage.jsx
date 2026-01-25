@@ -56,7 +56,7 @@ const ProfilPage = () => {
               <p className="py-4 text-xl text-left max-w-xl mt-5">
                 Suite à cela j'ai pu obtenir mon diplôme de Développeur
                 FullStack Web & Mobile de niveau RNCP (Répertoire National des
-                Certifications Professionnelles 5).
+                Certifications Professionnelles) 5.
                 <br />
                 Au fil de mon apprentissage, j'ai développé une appétence
                 particulière pour le développement{" "}
