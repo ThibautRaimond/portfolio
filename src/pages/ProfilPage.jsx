@@ -85,7 +85,7 @@ const ProfilPage = () => {
             </div>
 
             {/* Section Desktop - Image et bouton CV */}
-            <div className="hideOnMobileMode flex flex-col justify-center items-center ml-10 pt-4">
+            <div className="hideOnMobileMode flex flex-col justify-center items-center pt-4">
               <img
                 src={thib}
                 alt=""
