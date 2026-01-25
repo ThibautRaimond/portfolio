@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
+import { IoAccessibility } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 import Logo from "../assets/logo.png";

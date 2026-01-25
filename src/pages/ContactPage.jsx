@@ -110,7 +110,7 @@ const Contact = () => {
           <div className="flex justify-center">
             {/* --button-- */}
             <button
-              className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-4 bg-[#121614] hover:text-green-500 hover:underline hover:underline-thickness-2 focus:underline py-4 px-8 mt-6 sm:mt-10 mb-4"
+              className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-4 px-8 mt-6 sm:mt-10 mb-4 hover:text-green-500 hover:underline hover:underline-thickness-2 focus:outline focus:outline-2 focus:outline-[#fff] focus:outline-offset-4"
               type="submit"
             >
               Envoyer le message
