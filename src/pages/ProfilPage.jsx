@@ -85,7 +85,7 @@ const ProfilPage = () => {
             </div>
 
             {/* Section Desktop - Image et bouton CV */}
-            <div className="hideOnMobileMode flex flex-col justify-center items-center pt-4">
+            <div className="hidden nav:flex flex-col justify-center items-center pt-4">
               <img
                 src={thib}
                 alt=""
@@ -93,13 +93,13 @@ const ProfilPage = () => {
               />
 
               <div
-                className="flex justify-center mb-4 mt-2 hideOnMobileMode "
+                className="hidden nav:flex justify-center mb-4 mt-2 "
                 aria-hidden="true"
               >
-                <MdDeveloperMode className="w-9 h-9 mr-3 ml-3 text-[#FFFED6]" />
-                <img src={oclock} alt="O'clock logo" className="w-9 h-9 mr-3 ml-3" />
-                <IoAccessibility className="w-9 h-9 mr-3 ml-3 color text-[#E11A22]" />
-                <img src={urbi} alt="Urbilog logo" className="w-9 h-9 mr-3 ml-3" />
+                <MdDeveloperMode className="w-9 h-9 mr-3 ml-3 text-[#FFFED6] shrink-0" />
+                <img src={oclock} alt="O'clock logo" className="w-9 h-9 mr-3 ml-3 shrink-0" />
+                <IoAccessibility className="w-9 h-9 mr-3 ml-3 color text-[#E11A22] shrink-0" />
+                <img src={urbi} alt="Urbilog logo" className="w-9 h-9 mr-3 ml-3 shrink-0" />
               </div>
 
               <a
@@ -136,7 +136,7 @@ const ProfilPage = () => {
         <a
           href={CV}
           download
-          className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-4 px-8 hideOnDesktopMode text-xs m-2"
+          className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-4 px-8 nav:hidden text-xs m-2"
           type="button"
         >
           <div className="flex justify-center align-center">
@@ -148,7 +148,7 @@ const ProfilPage = () => {
         <Link
           download
           to="/cvaccessible"
-          className="text-[#07ed66] hover:text-[#00D14B] underline mt-2 hideOnDesktopMode"
+          className="text-[#07ed66] hover:text-[#00D14B] underline mt-2 nav:hidden"
         >
           CV Accessible
         </Link>

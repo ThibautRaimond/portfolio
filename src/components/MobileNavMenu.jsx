@@ -58,7 +58,7 @@ const MobileNavMenu = ({ closeMenu, isActive }) => {
         >
           <FaTimes size={30} />
         </button>
-        <nav className="w-full px-4">
+        <nav className="w-full">
           <ul className="py-4">
             <li
               className={`py-4 sm:py-6 mt-6 sm:mt-10 text-2xl sm:text-3xl md:text-4xl ${isActive("/") ? "activeLinkClass" : ""}`}

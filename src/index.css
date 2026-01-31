@@ -60,16 +60,3 @@
 .leftNavButton:hover .leftNavArrow {
     transform: translateX(-10px); 
 }
-
-/* --- Hide on desktop or mobile mode --- */
-@media screen and (max-width: 666px){
-	.hideOnMobileMode{
-		display: none !important;
-	}
-}
-
-@media screen and (min-width: 667px){
-	.hideOnDesktopMode{
-		display: none !important;
-	}
-}

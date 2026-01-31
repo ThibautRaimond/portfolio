@@ -28,7 +28,7 @@ const Header = () => {
       {/* Lien d'accès rapide au main */}
       <a
         href="#main-content"
-        className="hideOnMobileMode fixed top-[-60px] left-20 z-[300] ml-2 px-4 py-2 flex justify-center items-center bg-black border-[#07ed66] border-[2px] rounded-lg text-white text-center transition-all duration-300 focus:top-4 "
+        className="hidden nav:flex fixed top-[-60px] left-20 z-[300] ml-2 px-4 py-2 justify-center items-center bg-black border-[#07ed66] border-[2px] rounded-lg text-white text-center transition-all duration-300 focus:top-4 "
         onClick={() => {
           const mainContent = document.getElementById("main-content");
           if (mainContent) mainContent.focus();
@@ -45,7 +45,7 @@ const Header = () => {
 
       {/* Desktop Menu */}
 
-      <nav aria-label="Menu principal" className="hideOnMobileMode">
+      <nav aria-label="Menu principal" className="hidden nav:block">
         <ul className="flex">
           <li
             className={
@@ -98,7 +98,7 @@ const Header = () => {
       </nav>
 
       {/* Bouton en mode mobile pour ouvrir la modale */}
-      <button className="hideOnDesktopMode z-20" onClick={openMobileNav}>
+      <button className="nav:hidden z-20" onClick={openMobileNav}>
         <FaBars size={30} aria-label="Ouvrir le menu pour changer de page" />
       </button>
 
