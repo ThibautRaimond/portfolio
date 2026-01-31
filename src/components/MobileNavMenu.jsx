@@ -48,20 +48,20 @@ const MobileNavMenu = ({ closeMenu, isActive }) => {
         aria-label="Menu de navigation"
         aria-modal="true"
         ref={menuRef}
-        className="absolute top-0 left-0 w-full h-full bg-[#0e1111d3] text-center transform flex justify-center items-center"
+        className="absolute top-0 left-0 w-full h-full bg-[#0e1111d3] text-center flex justify-center items-center overflow-y-auto"
         onClick={(e) => e.stopPropagation()} // Empêche la fermeture de la modale lorsqu'on clique à l'intérieur
       >
         <button
           aria-label="Fermer le menu"
           onClick={closeMenu}
-          className="absolute top-6 right-4 z-40"
+          className="absolute top-4 right-4 sm:top-6 sm:right-6 z-40"
         >
           <FaTimes size={30} />
         </button>
-        <nav>
+        <nav className="w-full px-4">
           <ul className="py-4">
             <li
-              className={`py-6 mt-10 text-4xl ${isActive("/") ? "activeLinkClass" : ""}`}
+              className={`py-4 sm:py-6 mt-6 sm:mt-10 text-2xl sm:text-3xl md:text-4xl ${isActive("/") ? "activeLinkClass" : ""}`}
               aria-current={isActive("/") ? "page" : undefined}
             >
               <Link ref={firstLinkRef} onClick={closeMenu} to="/">
@@ -69,7 +69,7 @@ const MobileNavMenu = ({ closeMenu, isActive }) => {
               </Link>
             </li>
             <li
-              className={`py-6 text-4xl ${isActive("/profil") ? "activeLinkClass" : ""}`}
+              className={`py-4 sm:py-6 text-2xl sm:text-3xl md:text-4xl ${isActive("/profil") ? "activeLinkClass" : ""}`}
               aria-current={isActive("/profil") ? "page" : undefined}
             >
               <Link onClick={closeMenu} to="/profil">
@@ -77,7 +77,7 @@ const MobileNavMenu = ({ closeMenu, isActive }) => {
               </Link>
             </li>
             <li
-              className={`py-6 text-4xl ${isActive("/competences") ? "activeLinkClass" : ""}`}
+              className={`py-4 sm:py-6 text-2xl sm:text-3xl md:text-4xl ${isActive("/competences") ? "activeLinkClass" : ""}`}
               aria-current={
                 isActive("/competences") ? "page" : undefined
               }
@@ -87,7 +87,7 @@ const MobileNavMenu = ({ closeMenu, isActive }) => {
               </Link>
             </li>
             <li
-              className={`py-6 text-4xl ${isActive("/projets") ? "activeLinkClass" : ""}`}
+              className={`py-4 sm:py-6 text-2xl sm:text-3xl md:text-4xl ${isActive("/projets") ? "activeLinkClass" : ""}`}
               aria-current={isActive("/projets") ? "page" : undefined}
             >
               <Link onClick={closeMenu} to="/projets">
@@ -95,7 +95,7 @@ const MobileNavMenu = ({ closeMenu, isActive }) => {
               </Link>
             </li>
             <li
-              className={`py-6 text-4xl mb-2 ${isActive("/contact") ? "activeLinkClass" : ""}`}
+              className={`py-4 sm:py-6 mb-2 text-2xl sm:text-3xl md:text-4xl ${isActive("/contact") ? "activeLinkClass" : ""}`}
               aria-current={isActive("/contact") ? "page" : undefined}
             >
               <Link

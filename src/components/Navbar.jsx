@@ -46,7 +46,7 @@ const Navbar = () => {
       {/* Desktop Menu */}
 
       <nav aria-label="Menu principal" className="hideOnMobileMode">
-        <ul className="md:flex">
+        <ul className="flex">
           <li
             className={
               isActive("/")
@@ -98,7 +98,7 @@ const Navbar = () => {
       </nav>
 
       {/* Bouton en mode mobile pour ouvrir la modale */}
-      <button className="md:hidden z-20" onClick={openMobileNav}>
+      <button className="hideOnDesktopMode z-20" onClick={openMobileNav}>
         <FaBars size={30} aria-label="Ouvrir le menu pour changer de page" />
       </button>
 
