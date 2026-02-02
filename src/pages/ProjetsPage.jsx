@@ -32,13 +32,13 @@ const ProjetsPage = () => {
 
 					<ul className="flex justify-center items-center flex-wrap">
 						{/* Projet 1 code du dev */}
-						<li className="flex justify-center items-center p-3 mx-4 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default mb-8 md:mb-0">
+						<li className="relative flex justify-center items-center p-3 mx-4 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default mb-8 md:mb-0">
 							<div className="text-center flex justify-center items-center flex-col">
 								<a href="https://yannou.philoucorp.fr/"
 									target="_blank"
 									rel="noreferrer"
 									aria-label="Projet le code du dev (nouvel onglet)"
-									className="p-1"
+									className="p-1 after:absolute after:inset-0 after:content-['']"
 									>
 									<h2 className="text-2xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">Le code du dev</h2>
 								</a>
@@ -51,12 +51,12 @@ const ProjetsPage = () => {
 						</li>
 
 						{/* Projet 2 pokedex */}
-						<li className="flex justify-center items-center p-3 mx-4 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default">
+						<li className="relative flex justify-center items-center p-3 mx-4 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default">
 							<div className="text-center flex justify-center items-center flex-col">
 								<a href="https://thibautraimond.github.io/pokedex/" target="_blank"
 									rel="noreferrer"
 									aria-label="Projet pokedex (nouvel onglet)"
-									className="p-1">
+									className="p-1 after:absolute after:inset-0 after:content-['']">
 									<h2 className="text-2xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">Pokedex</h2>
 								</a>
 								<p className="text-sm"><span className="font-bold">Languages : </span>
