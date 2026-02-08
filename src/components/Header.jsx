@@ -60,14 +60,22 @@ const Header = () => {
                 : undefined
             }
           >
-            <Link to="/">Accueil</Link>
+            {isActive("/") ? (
+              <p className="cursor-default">Accueil</p>
+            ) : (
+              <Link to="/">Accueil</Link>
+            )}
           </li>
           <li
             className={isActive("/profil") ? "activeLinkClass" : ""}
             aria-label="Page profil"
             aria-current={isActive("/profil") ? "page" : undefined}
           >
-            <Link to="/profil">Profil</Link>
+            {isActive("/profil") ? (
+              <p className="cursor-default">Profil</p>
+            ) : (
+              <Link to="/profil">Profil</Link>
+            )}
           </li>
           <li
             className={
@@ -78,21 +86,33 @@ const Header = () => {
               isActive("/competences") ? "page" : undefined
             }
           >
-            <Link to="/competences">Compétences</Link>
+            {isActive("/competences") ? (
+              <p className="cursor-default">Compétences</p>
+            ) : (
+              <Link to="/competences">Compétences</Link>
+            )}
           </li>
           <li
             className={isActive("/projets") ? "activeLinkClass" : ""}
             aria-label="Lien vers la page projets"
             aria-current={isActive("/projets") ? "page" : undefined}
           >
-            <Link to="/projets">Projets</Link>
+            {isActive("/projets") ? (
+              <p className="cursor-default">Projets</p>
+            ) : (
+              <Link to="/projets">Projets</Link>
+            )}
           </li>
           <li
             className={isActive("/contact") ? "activeLinkClass" : ""}
             aria-label="Lien vers la page contact"
             aria-current={isActive("/contact") ? "page" : undefined}
           >
-            <Link to="/contact">Contact</Link>
+            {isActive("/contact") ? (
+              <p className="cursor-default">Contact</p>
+            ) : (
+              <Link to="/contact">Contact</Link>
+            )}
           </li>
         </ul>
       </nav>
