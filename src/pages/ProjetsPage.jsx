@@ -22,7 +22,7 @@ const ProjetsPage = () => {
       </Helmet>
 
       <div className="bg-gradient-to-r from[#0e1111] to-transparentbg flex flex-col justify-center items-center text-gray-200 md:mt-4 px-2 mx-1">
-        <div className="card rounded-md max-w-[1000px] m-4 p-4 md:p-10 flex flex-col justify-center w-full md:m-0 mx-2">
+        <div className="card rounded-md max-w-[1600px] m-4 p-4 md:p-10 flex flex-col justify-center w-full md:m-0 mx-2">
           <div className="flex flex-col items-center">
             <h1 className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#07ed66]">
               Mes projets
@@ -32,20 +32,20 @@ const ProjetsPage = () => {
 
           <ul className="flex justify-center items-stretch flex-wrap gap-6 md:flex-nowrap">
             {/* Projet 1 code du dev */}
-            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default mb-8 md:mb-0 w-full md:w-1/2 max-w-[460px] min-h-[420px] sm:min-h-[440px]">
-              <div className="text-center flex justify-between items-center flex-col h-full">
+            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default mb-8 md:mb-0 w-full md:w-1/2 max-w-[700px] min-h-[420px] sm:min-h-[440px]">
+              <div className="text-center flex flex-col h-full gap-2">
                 <div
                   aria-label="Projet le code du dev (lien indisponible)"
                   className="p-1"
                 >
-                  <h2 className="text-2xl text-[#07ed66] font-bold">
+                  <h2 className="text-2xl md:text-3xl text-[#07ed66] font-bold">
                     Le code du dev
                   </h2>
-                  <p className="text-xs text-red-400">
+                  <p className="text-sm md:text-base text-red-400">
                     Le site n'est plus disponible en ligne.
                   </p>
                 </div>
-                <p className="text-sm">
+                <p className="text-base md:text-lg">
                   <span className="font-bold">Languages : </span>EJS{" "}
                   <span aria-hidden="true" className="text-[#07ed66]">
                     /
@@ -60,14 +60,15 @@ const ProjetsPage = () => {
                   </span>{" "}
                   CSS
                 </p>
-                <p className="m-1 text-[#95F3A4]">Projet de groupe</p>
-                <p className="text-sm text-gray-300 w-full max-w-[260px] sm:max-w-[320px] break-words hyphens-auto mb-[6px]" lang="fr">
+                <p className="m-1 text-base md:text-lg text-[#95F3A4]">Projet de groupe</p>
+                <p className="text-base md:text-lg text-gray-300 w-full max-w-[400px] sm:max-w-[500px] break-words hyphens-auto mb-[6px]" lang="fr">
                   Projet destiné à proposer des quiz sur différents sujets liés au
                   développement web. Le site respecte les exigences
                   <span lang="en"><span className="font-semibold"> CRUD</span> (Create, Read,
                   Update, Delete).</span>
                 </p>
-                <div className="w-full max-w-[320px] aspect-[4/3] flex justify-center items-center px-4">
+                <div className="flex-grow"></div>
+                <div className="w-full max-w-[500px] aspect-[4/3] flex justify-center items-center px-4 flex-shrink-0 mx-auto">
                   <img
                     src={CodeDuDev}
                     alt=""
@@ -78,19 +79,19 @@ const ProjetsPage = () => {
             </li>
 
             {/* Projet 2 pokedex */}
-            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default w-full md:w-1/2 max-w-[460px] min-h-[420px] sm:min-h-[440px]">
-              <div className="text-center flex justify-between items-center flex-col h-full">
+            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default w-full md:w-1/2 max-w-[700px] min-h-[420px] sm:min-h-[440px]">
+              <div className="text-center flex flex-col h-full gap-2">
                 <a
                   href="https://thibautraimond.github.io/pokedex/"
                   rel="noreferrer"
                   aria-label="Projet pokedex (nouvel onglet)"
                   className="p-1 after:absolute after:inset-0 after:content-['']"
                 >
-                  <h2 className="text-2xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">
+                  <h2 className="text-2xl md:text-3xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">
                     Pokedex
                   </h2>
                 </a>
-                <p className="text-sm">
+                <p className="text-base md:text-lg">
                   <span className="font-bold">Languages : </span>
                   React{" "}
                   <span aria-hidden="true" className="text-[#07ed66]">
@@ -98,11 +99,12 @@ const ProjetsPage = () => {
                   </span>{" "}
                   CSS
                 </p>
-                <p className="m-1 text-[#95F3A4]">Projet perso</p>
-                <p className="mt-2 text-sm text-gray-300 w-full max-w-[260px] sm:max-w-[320px] break-words hyphens-auto mb-[6px]" lang="fr">
+                <p className="m-1 text-base md:text-lg text-[#95F3A4]">Projet perso</p>
+                <p className="mt-2 text-base md:text-lg text-gray-300 w-full max-w-[400px] sm:max-w-[500px] break-words hyphens-auto mb-[6px]" lang="fr">
                   Application Pokedex géré par <span className="font-semibold">l'API </span> PokeApi. Permet de rechercher les pokémons par nom ou par type, et d'afficher leurs caractéristiques.
                 </p>
-                <div className="w-full max-w-[320px] aspect-[4/3] flex justify-center items-center px-4">
+                <div className="flex-grow"></div>
+                <div className="w-full max-w-[500px] aspect-[4/3] flex justify-center items-center px-4 flex-shrink-0 mx-auto">
                   <img
                     src={pokedex}
                     alt=""
