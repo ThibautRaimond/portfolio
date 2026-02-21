@@ -29,9 +29,13 @@ const Header = () => {
       <a
         href="#main-content"
         className="hidden nav:flex fixed top-[-60px] left-20 z-[300] ml-2 px-4 py-2 justify-center items-center bg-black border-[#07ed66] border-[2px] rounded-lg text-white text-center transition-all duration-300 focus:top-4 "
-        onClick={() => {
+        onClick={(event) => {
+          event.preventDefault();
           const mainContent = document.getElementById("main-content");
-          if (mainContent) mainContent.focus();
+          if (mainContent) {
+            mainContent.focus();
+            mainContent.scrollIntoView({ block: "start" });
+          }
         }}
       >
         Accéder au contenu principal
