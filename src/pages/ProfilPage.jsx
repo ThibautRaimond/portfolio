@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from "react-icons/hi";
 import { MdDownload, MdDeveloperMode } from "react-icons/md";
 import { IoAccessibility } from "react-icons/io5";
+import { RxOpenInNewWindow } from "react-icons/rx";
 
 import oclock from "../assets/oclock.png";
 import urbi from "../assets/urbi.png";
@@ -40,13 +41,14 @@ const ProfilPage = () => {
                 pour le développement web, j'ai choisi de suivre la formation
                 FullStack JavaScript chez{" "}
                 <a
-                  className="hover:text-[#07ed66] underline"
+                  className="hover:text-[#07ed66] underline relative"
                   href="https://oclock.io/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="O'clock (nouvel onglet)"
                 >
                   O'Clock
+                  <RxOpenInNewWindow className="w-2.5 h-2.5 absolute -top-1 -right-2 transition-transform hover:scale-110" aria-hidden="true" />
                 </a>
                 . Cette formation m'a permis d'acquérir de nombreuses
                 compétences de développeur ainsi que de prendre part à un projet
@@ -72,9 +74,10 @@ const ProfilPage = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="urbilog (nouvel onglet)"
-                  className="hover:text-[#07ed66] underline"
+                  className="hover:text-[#07ed66] underline relative"
                 >
                   Urbilog
+                  <RxOpenInNewWindow className="w-2.5 h-2.5 absolute -top-1 -right-2 transition-transform hover:scale-110" aria-hidden="true" />
                 </a>
                 . Je maîtrise désormais les référentiels RGAA (Référentiel
                 Général d'Amélioration de l'Accessibilité), RAAM (Référentiel

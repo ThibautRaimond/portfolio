@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"; 
 import { Helmet } from "react-helmet"; 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { RxOpenInNewWindow } from "react-icons/rx";
 
 const Contact = () => {
   function handleInputChange() {
@@ -120,7 +121,7 @@ const Contact = () => {
         
         {/* Media Links */}
         <div className="flex justify-between mt-4">
-          <li className="w-[60px] h-[60px] mx-1 flex bg-[#0A66C2] border border-white hover:scale-110 transition-transform">
+          <li className="w-[60px] h-[60px] mx-1 flex bg-[#0A66C2] border border-white hover:scale-110 transition-transform relative">
             <a
               aria-label="Linkedin de Thibaut Raimond (nouvel onglet)"
               className="flex justify-between items-center w-full h-full text-gray-300"
@@ -130,8 +131,9 @@ const Contact = () => {
             >
               <FaLinkedin size={30} />
             </a>
+            <RxOpenInNewWindow className="w-4 h-4 absolute top-px right-0.5 text-gray-300" aria-hidden="true" />
           </li>
-          <li className="w-[60px] h-[60px] mx-0.5 flex justify-between bg-[#2d333b] border border-white hover:scale-110 transition-transform">
+          <li className="w-[60px] h-[60px] mx-0.5 flex justify-between bg-[#2d333b] border border-white hover:scale-110 transition-transform relative">
             <a
               aria-label="Github de Thibaut Raimond (nouvel onglet)"
               className="flex justify-between items-center w-full h-full text-gray-300"
@@ -141,6 +143,7 @@ const Contact = () => {
             >
               <FaGithub size={30} />
             </a>
+            <RxOpenInNewWindow className="w-4 h-4 absolute top-px right-0.5 text-gray-300" aria-hidden="true" />
           </li>
         </div>
       </div>
