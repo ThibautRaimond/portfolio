@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Breadcrumb from "../components/Breadcrumb";
 
 function CvAccessible() {
   return (
     <div>
+      <Breadcrumb />
       {/* --------- COORDONNÉES ---------  */}
       <div className="bg-gray-900 text-gray-100 p-8 max-w-4xl mx-auto m-4 flex flex-col justify-center align-center">
         <header className="text-center mb-8">
@@ -204,7 +206,7 @@ function CvAccessible() {
           to="/profil"
           smooth={true}
           duration={500}
-          className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-4 mb-4 text-center text-white p-2"
+          className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-4 mb-4 text-center text-white p-2 hover:text-[#07ed66]"
         >
           Retour à la page profil
         </Link>
