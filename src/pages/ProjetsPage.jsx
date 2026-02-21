@@ -22,7 +22,7 @@ const ProjetsPage = () => {
       </Helmet>
 
       <div className="bg-gradient-to-r from[#0e1111] to-transparentbg flex flex-col justify-center items-center text-gray-200 md:mt-4 px-2 mx-1">
-        <div className="card rounded-md max-w-[1600px] m-4 p-4 md:p-10 flex flex-col justify-center w-full md:m-0 mx-2">
+        <div className="card rounded-md m-4 p-4 md:p-10 flex flex-col justify-center w-full max-w-7xl md:m-0 mx-2">
           <div className="flex flex-col items-center">
             <h1 className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#07ed66]">
               Mes projets
@@ -32,8 +32,8 @@ const ProjetsPage = () => {
 
           <ul className="flex justify-center items-stretch flex-wrap gap-6 md:flex-nowrap">
             {/* Projet 1 code du dev */}
-            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default mb-8 md:mb-0 w-full md:w-1/2 max-w-[700px] min-h-[420px] sm:min-h-[440px]">
-              <div className="text-center flex flex-col h-full gap-2">
+            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default mb-8 md:mb-0 w-full max-w-[600px] min-h-[420px] sm:min-h-[440px]">
+              <div className="text-center flex justify-between items-center flex-col h-full">
                 <div
                   aria-label="Projet le code du dev (lien indisponible)"
                   className="p-1"
@@ -61,26 +61,25 @@ const ProjetsPage = () => {
                   CSS
                 </p>
                 <p className="m-1 text-base md:text-lg text-[#95F3A4]">Projet de groupe</p>
-                <p className="text-base md:text-lg text-gray-300 w-full max-w-[400px] sm:max-w-[500px] break-words hyphens-auto mb-[6px]" lang="fr">
+                <p className="text-base md:text-lg text-gray-300 w-full max-w-[500px] break-words hyphens-auto mb-[6px]" lang="fr">
                   Projet destiné à proposer des quiz sur différents sujets liés au
                   développement web. Le site respecte les exigences
                   <span lang="en"><span className="font-semibold"> CRUD</span> (Create, Read,
                   Update, Delete).</span>
                 </p>
-                <div className="flex-grow"></div>
-                <div className="w-full max-w-[500px] aspect-[4/3] flex justify-center items-center px-4 flex-shrink-0 mx-auto">
+                <div className="w-full max-w-[550px] h-[360px] flex justify-center items-center px-4">
                   <img
                     src={CodeDuDev}
                     alt=""
-                    className="w-full h-full object-cover pb-[4px]"
+                    className="w-full h-full object-cover pb-[4px] rounded"
                   />
                 </div>
               </div>
             </li>
 
             {/* Projet 2 pokedex */}
-            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default w-full md:w-1/2 max-w-[700px] min-h-[420px] sm:min-h-[440px]">
-              <div className="text-center flex flex-col h-full gap-2">
+            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default mb-8 md:mb-0 w-full max-w-[600px] min-h-[420px] sm:min-h-[440px]">
+              <div className="text-center flex justify-between items-center flex-col h-full">
                 <a
                   href="https://thibautraimond.github.io/pokedex/"
                   rel="noreferrer"
@@ -100,15 +99,14 @@ const ProjetsPage = () => {
                   CSS
                 </p>
                 <p className="m-1 text-base md:text-lg text-[#95F3A4]">Projet perso</p>
-                <p className="mt-2 text-base md:text-lg text-gray-300 w-full max-w-[400px] sm:max-w-[500px] break-words hyphens-auto mb-[6px]" lang="fr">
+                <p className="mt-2 text-base md:text-lg text-gray-300 w-full max-w-[500px] break-words hyphens-auto mb-[6px]" lang="fr">
                   Application Pokedex géré par <span className="font-semibold">l'API </span> PokeApi. Permet de rechercher les pokémons par nom ou par type, et d'afficher leurs caractéristiques.
                 </p>
-                <div className="flex-grow"></div>
-                <div className="w-full max-w-[500px] aspect-[4/3] flex justify-center items-center px-4 flex-shrink-0 mx-auto">
+                <div className="w-full max-w-[550px] h-[360px] flex justify-center items-center px-4">
                   <img
                     src={pokedex}
                     alt=""
-                    className="w-full h-full object-cover pb-[4px]"
+                    className="w-full h-full object-cover pb-[4px] rounded"
                   />
                 </div>
               </div>
