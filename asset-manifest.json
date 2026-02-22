@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.76d2f569.css",
-    "main.js": "/portfolio/static/js/main.36724821.js",
+    "main.css": "/portfolio/static/css/main.a6b5cfe4.css",
+    "main.js": "/portfolio/static/js/main.7de188c5.js",
+    "static/media/CV_Thibaut_Raimond_Conforme_WCAG.pdf": "/portfolio/static/media/CV_Thibaut_Raimond_Conforme_WCAG.482665e55971cff1a4c5.pdf",
     "static/media/thib.png": "/portfolio/static/media/thib.4fa78691c46cf9164d58.png",
+    "static/media/thib2.jpg": "/portfolio/static/media/thib2.a79b1a57fcc10f538c39.jpg",
     "static/media/pokedex.jpg": "/portfolio/static/media/pokedex.cb47f48423d306256654.jpg",
     "static/media/urbi.png": "/portfolio/static/media/urbi.a17743e98c025c9ef7a0.png",
     "static/media/CodeDuDev.jpg": "/portfolio/static/media/CodeDuDev.a11fd53b7b07de435994.jpg",
-    "static/media/CV_Thibaut_Raimond_Conforme_WCAG.pdf": "/portfolio/static/media/CV_Thibaut_Raimond_Conforme_WCAG.c87c6f6ba52d77082311.pdf",
     "static/media/logo.png": "/portfolio/static/media/logo.54834559af14d9e5b087.png",
     "static/media/react.png": "/portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/node.png": "/portfolio/static/media/node.952a9ea986dcfa5229ad.png",
@@ -18,11 +19,11 @@
     "static/media/oclock.png": "/portfolio/static/media/oclock.7997ab568a5f5d97b38b.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.76d2f569.css.map": "/portfolio/static/css/main.76d2f569.css.map",
-    "main.36724821.js.map": "/portfolio/static/js/main.36724821.js.map"
+    "main.a6b5cfe4.css.map": "/portfolio/static/css/main.a6b5cfe4.css.map",
+    "main.7de188c5.js.map": "/portfolio/static/js/main.7de188c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.76d2f569.css",
-    "static/js/main.36724821.js"
+    "static/css/main.a6b5cfe4.css",
+    "static/js/main.7de188c5.js"
   ]
 }
