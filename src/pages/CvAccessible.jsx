@@ -1,6 +1,7 @@
 ﻿import React from "react";
 import { Link } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb";
+import thib2 from "../assets/thib2.jpg";
 
 function CvAccessible() {
   return (
@@ -15,6 +16,11 @@ function CvAccessible() {
           <h2 className="text-3xl text-sky-400 font-semibold mb-4 text-gray-200">
             Consultant en Accessibilité Numérique
           </h2>
+          <img
+            src={thib2}
+            alt=""
+            className="mx-auto mb-4 h-28 w-28 rounded-full object-cover border border-gray-700"
+          />
           <address className="not-italic mb-4">
             <ul className="list-none">
               <li>
@@ -57,98 +63,47 @@ function CvAccessible() {
           </div>
         </div>
 
-        {/* --------- PROFIL ---------  */}
         <section className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4 border-t-2 border-gray-700 pt-2 text-[#FFA500]">
-            Profil
-          </h3>
+          <h3 className="text-2xl font-semibold mb-4 border-t-2 border-gray-700 pt-2 text-[#FFA500]">Profil</h3>
           <p className="text-gray-100 mb-4">
-            Après six ans d’expérience dans la vente de produits de luxe, j’ai
-            choisi d’effectuer une reconversion vers le développement web et
-            l’accessibilité numérique.
-            <br />
-            Désormais, consultant accessibilité pour grands comptes via Urbilog,
-            spécialisé dans les référentiels RGAA et RAAM, j’accompagne les
-            équipes <span lang="en">UX</span> <span aria-hidden="true">/</span>
-            <span lang="en">UI</span> ainsi que les développeurs dans la
-            conception de contenus inclusifs et accessibles.
-            <br />
-            Je combine expertise technique, pédagogie et aisance relationnelle
-            pour renforcer durablement leurs compétences et contribuer à
-            l'élévation de l'expertise des collaborateurs en interne.
+            Après six ans d’expérience dans la vente de produits de luxe, j’ai choisi d’effectuer une reconversion vers le développement web et l’accessibilité numérique.<br />
+            Désormais, consultant accessibilité pour grands comptes via Urbilog, spécialisé dans les référentiels RGAA et RAAM, j’accompagne les équipes <span lang="en">UX</span> <span aria-hidden="true">/</span> <span lang="en">UI</span> ainsi que les développeurs dans la conception de contenus inclusifs et accessibles.<br />
+            Je combine expertise technique, pédagogie et aisance relationnelle pour renforcer durablement leurs compétences et contribuer à l'élévation de l'expertise des collaborateurs en interne.
           </p>
         </section>
 
-        {/* --------- EXPÉRIENCES PROFESSIONNELLES ---------  */}
         <section className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4 border-t-2 border-gray-700 pt-2 text-[#FFA500]">
-            Expérience Professionnelle
-          </h3>
-
-          <article className="mb-4">
-            <h4 className="text-sky-400 text-xl font-bold">
-              Consultant Accessibilité Numérique — Urbilog
-            </h4>
-            <p className="text-sm text-gray-400 mb-2">
-              De décembre 2024 à aujourd'hui
-            </p>
+          <h3 className="text-2xl font-semibold mb-4 border-t-2 border-gray-700 pt-2 text-[#FFA500]">Expérience Professionnelle</h3>
+          <div className="mb-4">
+            <h4 className="text-sky-400 text-xl font-bold mt-0 mb-2">Consultant Accessibilité Numérique <span aria-hidden="true">|</span> Urbilog <span aria-hidden="true">|</span> Décembre 2024 à aujourd'hui</h4>
             <div className="ml-4 mb-4">
-              <h5 className="text-sky-400 font-semibold mb-2">SFR (2 ans)</h5>
+              <h5 className="text-sky-400 font-semibold mb-2">SFR depuis mars 2024</h5>
               <ul className="list-disc ml-5 space-y-1 text-gray-100">
                 <li>Recettes RGAA sur parcours clients web et applicatifs</li>
-                <li>
-                  Corrections sémantiques, navigation clavier, composants
-                  accessibles
-                </li>
-                <li>
-                  Collaboration quotidienne avec <span lang="en">UX</span>{" "}
-                  <span aria-hidden="true">/</span> <span lang="en">UI</span> et
-                  développeurs front
-                </li>
+                <li>Corrections sémantiques, navigation clavier, composants accessibles</li>
+                <li>Collaboration quotidienne avec <span lang="en">UX</span> <span aria-hidden="true">/</span> <span lang="en">UI</span> et développeurs front</li>
                 <li>Accompagnement des équipes vers l'autonomie</li>
               </ul>
             </div>
-
             <div className="ml-4 mb-4">
-              <h5 className="text-sky-400 font-semibold mb-2">
-                France Télévisions (+1 an)
-              </h5>
+              <h5 className="text-sky-400 font-semibold mb-2">France Télévisions depuis mai 2025</h5>
               <ul className="list-disc ml-5 space-y-1 text-gray-100">
-                <li>
-                  Recettes RGAA et RAAM sur plateformes médias à forte audience
-                </li>
+                <li>Recettes RGAA et RAAM sur plateformes médias à forte audience</li>
                 <li>Tests lecteurs d'écran et scénarios utilisateurs réels</li>
-                <li>
-                  Recommandations <span lang="en">UX</span> inclusives et
-                  solutions techniques concrètes
-                </li>
-                <li>
-                  Participation à la montée en expertise des équipes design et
-                  développement
-                </li>
+                <li>Recommandations <span lang="en">UX</span> inclusives et solutions techniques concrètes</li>
+                <li>Participation à la montée en expertise des équipes design et développement</li>
               </ul>
             </div>
-
             <div className="ml-4">
-              <h5 className="text-sky-400 font-semibold mb-2">
-                Activités transverses :
-              </h5>
+              <h5 className="text-sky-400 font-semibold mb-2">Activités transverses :</h5>
               <ul className="list-disc ml-5 space-y-1 text-gray-100">
                 <li>Rapports d'audit détaillés et plans d'actions priorisés</li>
-                <li>
-                  Préconisations adaptées aux contraintes techniques et design
-                  des différents métiers
-                </li>
-                <li>
-                  Partage de bonnes pratiques et diffusion d'une culture
-                  accessibilité
-                </li>
-                <li>
-                  Animation de formations et ateliers en accessibilité numérique
-                </li>
+                <li>Préconisations adaptées aux contraintes techniques et design des différents métiers</li>
+                <li>Partage de bonnes pratiques et diffusion d'une culture accessibilité</li>
+                <li>Animation de formations et ateliers en accessibilité numérique</li>
               </ul>
             </div>
-          </article>
+          </div>
         </section>
 
         {/* --------- COMPÉTENCES CLÉS ACCESSIBILITÉ ---------  */}
