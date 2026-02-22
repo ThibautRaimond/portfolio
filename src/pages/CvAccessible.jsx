@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { Link } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb";
 
@@ -8,7 +8,7 @@ function CvAccessible() {
       <Breadcrumb />
       {/* --------- COORDONNÉES ---------  */}
       <div className="bg-gray-900 text-gray-100 p-8 max-w-4xl mx-auto m-4 flex flex-col justify-center align-center">
-        <header className="text-center mb-8">
+        <div className="text-center mb-8">
           <h1 className="text-4xl text-sky-400 font-bold mb-2">
             Thibaut Raimond
           </h1>
@@ -16,23 +16,26 @@ function CvAccessible() {
             Consultant en Accessibilité Numérique
           </h2>
           <address className="not-italic mb-4">
-            <p>
-              <span className="font-semibold">Téléphone : </span>
-              <a href="tel:+33658510132" className="underline">
-                06.58.51.01.32
-              </a>
-            </p>
-            <p>
-              <span className="font-semibold">Email : </span>
-              <a href="mailto:raimond.thibaut@gmail.com" className="underline">
-                raimond.thibaut@gmail.com
-              </a>
-            </p>
-            <p>
-              <span className="font-semibold">Localisation : </span> Seclin,
-              59113
-            </p>
-            <p>Permis B / Véhiculé</p>
+            <ul className="list-none">
+              <li>
+                <span className="font-semibold">Téléphone : </span>
+                <a href="tel:+33658510132" className="underline">
+                  06.58.51.01.32
+                </a>
+              </li>
+              <li>
+                <span className="font-semibold">Email : </span>
+                <a
+                  href="mailto:raimond.thibaut@gmail.com"
+                  className="underline"
+                >
+                  raimond.thibaut@gmail.com
+                </a>
+              </li>
+              <li>
+                Permis B <span aria-hidden="true">/</span> Véhiculé
+              </li>
+            </ul>
           </address>
           <div className="flex justify-center space-x-4">
             <a
@@ -52,154 +55,258 @@ function CvAccessible() {
               GitHub
             </a>
           </div>
-        </header>
+        </div>
+
+        {/* --------- PROFIL ---------  */}
+        <section className="mb-8">
+          <h3 className="text-2xl font-semibold mb-4 border-t-2 border-gray-700 pt-2 text-[#FFA500]">
+            Profil
+          </h3>
+          <p className="text-gray-100 mb-4">
+            Consultant accessibilité pour grands comptes via Urbilog, spécialisé
+            dans les référentiels RGAA et RAAM, j'aide les équipes{" "}
+            <span lang="en">UX</span> <span aria-hidden="true">/</span>{" "}
+            <span lang="en">UI</span> et les développeurs à concevoir des
+            contenus inclusifs et accessibles.
+            <br />
+            Je combine expertise technique, pédagogie et aisance relationnelle
+            pour renforcer durablement leurs compétences et contribuer à
+            l'élévation de l'expertise des collaborateurs en interne.
+          </p>
+        </section>
 
         {/* --------- EXPÉRIENCES PROFESSIONNELLES ---------  */}
         <section className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4 border-b-2 border-gray-700 pb-2 text-[#FFA500]">
-            Expériences Professionnelles
+          <h3 className="text-2xl font-semibold mb-4 border-t-2 border-gray-700 pt-2 text-[#FFA500]">
+            Expérience Professionnelle
           </h3>
 
           <article className="mb-4">
             <h4 className="text-sky-400 text-xl font-bold">
-              Consultant en Accessibilité Numérique - Urbilog
+              Consultant Accessibilité Numérique — Urbilog
             </h4>
-            <p className="text-sm text-gray-400 mb-2">03/2024</p>
-            <ul className="list-disc ml-5 space-y-1">
-              <li>
-                Périmètre : Audit RGAA et RAAM ; Livrables clients ; Restitution
-              </li>
-              <li>
-                Accompagnement client ; Gestion des contestations ; Recette
-              </li>
-              <li>
-                Élaboration de préconisations ; Relectures ; Optimisation
-                qualitative
-              </li>
-            </ul>
-          </article>
+            <p className="text-sm text-gray-400 mb-2">
+              De décembre 2024 à aujourd'hui
+            </p>
+            <p className="text-gray-100 mb-3">
+              Missions réalisées pour clients grands comptes :
+            </p>
 
-          <article className="mb-4">
-            <h4 className="text-sky-400 text-xl font-bold">
-              Conseiller de Vente - Boutique Figaret Lille
-            </h4>
-            <p className="text-sm text-gray-400 mb-2">02/2017 (5 ans)</p>
-            <ul className="list-disc ml-5 space-y-1">
-              <li>Conseil client et gestion des stocks</li>
-              <li>Collaboration avec les membres de l’équipe</li>
-              <li>Gestion des encaissements et de la comptabilité</li>
-            </ul>
-          </article>
+            <div className="ml-4 mb-4">
+              <h5 className="text-sky-400 font-semibold mb-2">SFR (2 ans)</h5>
+              <ul className="list-disc ml-5 space-y-1 text-gray-100">
+                <li>Recettes RGAA sur parcours clients web et applicatifs</li>
+                <li>
+                  Corrections sémantiques, navigation clavier, composants
+                  accessibles
+                </li>
+                <li>
+                  Collaboration quotidienne avec <span lang="en">UX</span>{" "}
+                  <span aria-hidden="true">/</span> <span lang="en">UI</span> et
+                  développeurs front
+                </li>
+                <li>Accompagnement des équipes vers l'autonomie</li>
+              </ul>
+            </div>
 
-          <article className="mb-4">
-            <h4 className="text-sky-400 text-xl font-bold">
-              Vente Intérim & CDD - KSI Retail Lille
-            </h4>
-            <p className="text-sm text-gray-400 mb-2">06/2016 (8 mois)</p>
-            <ul className="list-disc ml-5 space-y-1">
-              <li>
-                Travail en autonomie et prise en charge de corners aux Printemps
-              </li>
-              <li>Conseille clients dans divers secteurs du luxe</li>
-            </ul>
+            <div className="ml-4 mb-4">
+              <h5 className="text-sky-400 font-semibold mb-2">
+                France Télévisions (+1 an)
+              </h5>
+              <ul className="list-disc ml-5 space-y-1 text-gray-100">
+                <li>
+                  Recettes RGAA et RAAM sur plateformes médias à forte audience
+                </li>
+                <li>Tests lecteurs d'écran et scénarios utilisateurs réels</li>
+                <li>
+                  Recommandations <span lang="en">UX</span> inclusives et
+                  solutions techniques concrètes
+                </li>
+                <li>
+                  Participation à la montée en expertise des équipes design et
+                  développement
+                </li>
+              </ul>
+            </div>
+
+            <div className="ml-4">
+              <h5 className="text-sky-400 font-semibold mb-2">
+                Activités transverses :
+              </h5>
+              <ul className="list-disc ml-5 space-y-1 text-gray-100">
+                <li>Rapports d'audit détaillés et plans d'actions priorisés</li>
+                <li>
+                  Préconisations adaptées aux contraintes techniques et design
+                  des différents métiers
+                </li>
+                <li>
+                  Partage de bonnes pratiques et diffusion d'une culture
+                  accessibilité
+                </li>
+                <li>
+                  Animation de formations et ateliers en accessibilité numérique
+                </li>
+              </ul>
+            </div>
           </article>
         </section>
 
-        {/* --------- COMPÉTENCES TECHNIQUES ET PERSONNELLES ---------  */}
+        {/* --------- COMPÉTENCES CLÉS ACCESSIBILITÉ ---------  */}
         <section className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4 border-b-2 border-gray-700 pb-2 text-[#FFA500]">
-            Compétences Techniques et Personnelles
+          <h3 className="text-2xl font-semibold mb-4 border-t-2 border-gray-700 pt-2 text-[#FFA500]">
+            Compétences Clés Accessibilité
           </h3>
-          <ul className="list-disc ml-5 space-y-1">
-            <li>RGAA ; RAAM ; WCAG</li>
-            <li>Pattern W3C</li>
-            <li>Méthode AGILE & SCRUM</li>
-            <li>Gestion de projet</li>
-
-            <li>Adaptabilité & polyvalence</li>
-            <li>Organisé & collaboratif</li>
-            <li>Rigoureux & fiable</li>
-            <li>Observateur & créatif</li>
+          <ul className="list-disc ml-5 space-y-1 text-gray-100">
+            <li>Audits complets RGAA et RAAM</li>
+            <li>
+              Tests lecteurs d'écran :{" "}
+              <span lang="en">NVDA, JAWS, VoiceOver</span>
+            </li>
+            <li>
+              Sémantique <span lang="en">HTML</span>,{" "}
+              <span lang="en">ARIA</span>, gestion du focus, navigation clavier
+            </li>
+            <li>
+              Correction de composants <span lang="en">UI</span> & design
+              systems
+            </li>
+            <li>
+              Accompagnement <span lang="en">UX</span>{" "}
+              <span aria-hidden="true">/</span> <span lang="en">UI</span> &
+              développeurs
+            </li>
+            <li>Approche pragmatique orientée solutions</li>
           </ul>
         </section>
 
-        {/* --------- LANGAGES & LOGICIELS ---------  */}
+        {/* --------- PRATIQUE PERSONNELLE & VEILLE ---------  */}
         <section className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4 border-b-2 border-gray-700 pb-2 text-[#FFA500]">
-            Langages et Logiciels
+          <h3 className="text-2xl font-semibold mb-4 border-t-2 border-gray-700 pt-2 text-[#FFA500]">
+            Pratique Personnelle & Veille
           </h3>
-          <ul className="list-disc ml-5 space-y-1">
-            <li>HTML, CSS, Tailwind, Bootstrap</li>
-            <li>JS, REACT, EJS, NodeJS, Sequelize</li>
-            <li>Jira, Figma, Mocodo, Canva</li>
-            <li>COBOL, DB2, PSQL et MongoDB</li>
-            <li>Gestion d’API</li>
+          <ul className="list-disc ml-5 space-y-1 text-gray-100">
+            <li>Mise en accessibilité de mes projets web personnels</li>
+            <li>
+              Expérimentation continue des contraintes réelles (code, UX, choix
+              design)
+            </li>
+            <li>
+              Veille continue sur les standards et bonnes pratiques du secteur
+            </li>
+          </ul>
+        </section>
+
+        {/* --------- TECHNOLOGIES MAÎTRISÉES ---------  */}
+        <section className="mb-8">
+          <h3 className="text-2xl font-semibold mb-4 border-t-2 border-gray-700 pt-2 text-[#FFA500]">
+            Technologies maîtrisées
+          </h3>
+          <ul className="list-disc ml-5 space-y-1 text-gray-100">
+            <li>
+              <span lang="en">HTML</span> <span aria-hidden="true">/</span>{" "}
+              <span lang="en">CSS</span> <span aria-hidden="true">/</span>{" "}
+              <span lang="en">Tailwind</span>
+            </li>
+            <li>
+              <span lang="en">JS</span> <span aria-hidden="true">/</span>{" "}
+              <span lang="en">REACT</span> <span aria-hidden="true">/</span>{" "}
+              <span lang="en">EJS</span> <span aria-hidden="true">/</span>{" "}
+              <span lang="en">NodeJS</span> <span aria-hidden="true">/</span>{" "}
+              <span lang="en">Sequelize</span>
+            </li>
+            <li>
+              <span lang="en">Jira</span> <span aria-hidden="true">/</span>{" "}
+              <span lang="en">Figma</span> <span aria-hidden="true">/</span>{" "}
+              <span lang="en">Mocodo</span> <span aria-hidden="true">/</span>{" "}
+              <span lang="en">Canva</span>
+            </li>
           </ul>
         </section>
 
         {/* --------- FORMATIONS ---------  */}
         <section className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4 border-b-2 border-gray-700 pb-2 text-[#FFA500]">
+          <h3 className="text-2xl font-semibold mb-4 border-t-2 border-gray-700 pt-2 text-[#FFA500]">
             Formations
           </h3>
-          <article className="mb-4">
-            <h4 className="text-sky-400 text-xl font-bold">
-              Formation Consultant Accessibilité Numérique - Compethance
-            </h4>
-            <p className="text-sm text-gray-400">2023 (3 mois)</p>
-            <p>RGAA, RAAM, WCAG, Sémantique HTML, W3C Pattern</p>
-          </article>
-          <article className="mb-4">
-            <h4 className="text-sky-400 text-xl font-bold">
-              Développeur COBOL - Simplon
-            </h4>
-            <p className="text-sm text-gray-400">2023 (2 mois)</p>
-            <p>Cobol, Algorithmie, JCL et DB2</p>
-          </article>
-          <article className="mb-4">
-            <h4 className="text-sky-400 text-xl font-bold">
-              Titre Pro Développeur FullStack Web & Mobile - O'Clock
-            </h4>
-            <p className="text-sm text-gray-400">2022 (6 mois)</p>
-            <p>HTML5, CSS3, JavaScript, Node.js, React, PostgreSQL</p>
-          </article>
-          <article className="mb-4">
-            <h4 className="text-sky-400 text-xl font-bold">
-              BTS Management des Unités Commerciales - Institut Saint Jude
-            </h4>
-            <p className="text-sm text-gray-400">2016 (2 ans)</p>
-            <p>
-              Formation au management de l'équipe, gestion opérationnelle de
-              l'unité commerciale et de la relation client. Animation et
-              dynamisation de l'offre.
-            </p>
-          </article>
-        </section>
-
-        {/* --------- langues ---------  */}
-        <section className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4 border-b-2 border-gray-700 pb-2 text-[#FFA500]">
-            Langues
-          </h3>
-          <ul className="list-disc ml-5 space-y-1">
-            <li>Français : Langue maternelle</li>
-            <li>Anglais : Intermédiaire</li>
+          <ul className="list-disc ml-5 space-y-2 text-gray-100">
+            <li>Formation Consultant Accessibilité Numérique – Compethance</li>
+            <li>Titre Pro Développeur FullStack Web & Mobile – O'Clock</li>
+            <li>BTS Management des Unités Commerciales</li>
           </ul>
         </section>
 
-        {/* --------- Centres d'intérêt ---------  */}
+        {/* --------- ATOUTS COMPLÉMENTAIRES ---------  */}
         <section className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4 border-b-2 border-gray-700 pb-2 text-[#FFA500]">
-            Centres d'Intérêt
+          <h3 className="text-2xl font-semibold mb-4 border-t-2 border-gray-700 pt-2 text-[#FFA500]">
+            Atouts Complémentaires
           </h3>
-          <ul className="list-disc ml-5 space-y-1">
-            <li>Bénévolat LPA Lille</li>
-            <li>Fitness</li>
-            <li>Randonnée en terrils et forêts</li>
-            <li>Arts et mythologies</li>
+          <ul className="list-disc ml-5 space-y-1 text-gray-100">
+            <li>Pédagogie et vulgarisation technique</li>
+            <li>Excellente relation client</li>
+            <li>Détermination et persévérance</li>
           </ul>
         </section>
       </div>
+
+      {/* --------- GLOSSAIRE - SECTION SÉPARÉE ---------  */}
+      <div className="p-8 max-w-4xl mx-auto m-4">
+        <h2 className="text-3xl font-bold mb-6 text-white">Glossaire</h2>
+        <div className="space-y-2 text-white">
+          <p>
+            <span className="font-semibold">RGAA</span> : Référentiel Général
+            d'Amélioration de l'Accessibilité
+          </p>
+          <p>
+            <span className="font-semibold">RAAM</span> : Référentiel
+            d'Accessibilité des Applications Mobiles
+          </p>
+          <p>
+            <span className="font-semibold" lang="en">
+              WCAG
+            </span>{" "}
+            : <span lang="en">Web Content Accessibility Guidelines</span>
+          </p>
+          <p>
+            <span className="font-semibold" lang="en">
+              ARIA
+            </span>{" "}
+            : <span lang="en">Accessible Rich Internet Applications</span>{" "}
+            (attributs d'accessibilité <span lang="en">HTML</span>)
+          </p>
+          <p>
+            <span className="font-semibold" lang="en">
+              UX
+            </span>{" "}
+            : Expérience utilisateur
+          </p>
+          <p>
+            <span className="font-semibold" lang="en">
+              UI
+            </span>{" "}
+            : Interface utilisateur
+          </p>
+          <p>
+            <span className="font-semibold" lang="en">
+              NVDA
+            </span>{" "}
+            : <span lang="en">NonVisual Desktop Access</span> (lecteur d'écran
+            Windows)
+          </p>
+          <p>
+            <span className="font-semibold" lang="en">
+              JAWS
+            </span>{" "}
+            : <span lang="en">Job Access With Speech</span>
+          </p>
+          <p>
+            <span className="font-semibold" lang="en">
+              VoiceOver
+            </span>{" "}
+            : Lecteur d'écran natif <span lang="en">Apple</span>
+          </p>
+        </div>
+      </div>
+
       {/* --- Retour à la page profil --- */}
       <div className="flex justify-center mt-4">
         <Link

@@ -7,10 +7,10 @@ import { MdDownload, MdDeveloperMode } from "react-icons/md";
 import { IoAccessibility } from "react-icons/io5";
 import { RxOpenInNewWindow } from "react-icons/rx";
 
-import oclock from "../assets/oclock.png";
-import urbi from "../assets/urbi.png";
-import thib from "../assets/thib.png";
-import CV from "../assets/CV-thibaut-raimond.pdf";
+import oclock from "../assets/png/oclock.png";
+import urbi from "../assets/png/urbi.png";
+import thib from "../assets/png/thib.png";
+import CV from "../assets/CV_Thibaut_Raimond_Conforme_WCAG.pdf";
 
 const ProfilPage = () => {
   return (
@@ -109,7 +109,7 @@ const ProfilPage = () => {
                 href={CV}
                 download
                 className="m-1"
-                aria-label="télécharger mon CV (présence d'une alternative accessible après le lien)"
+                aria-label="télécharger mon CV"
               >
                 <div
                   className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-3 px-4 hover:text-green-500 hover:underline hover:underline-thickness-2"
@@ -128,7 +128,7 @@ const ProfilPage = () => {
                 duration={500}
                 className="text-[#07ed66] hover:text-[#00D14B] underline mt-4"
               >
-                CV Accessible
+                CV en ligne
               </Link>
             </div>
             {/* fin Section Desktop - Image et bouton CV */}
@@ -153,7 +153,7 @@ const ProfilPage = () => {
           to="/cvaccessible"
           className="text-[#07ed66] hover:text-[#00D14B] underline mt-2 profile:hidden"
         >
-          CV Accessible
+          CV en ligne
         </Link>
         {/* ----- Fin de bouton mobile ----- */}
 

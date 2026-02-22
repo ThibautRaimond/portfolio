@@ -24,7 +24,7 @@ const Breadcrumb = () => {
           aria-current="page"
           className="text-[#07ed66] cursor-default p-0 m-0"
         >
-          CV accessible
+          CV en ligne
         </li>
       </ol>
     </nav>

@@ -4,14 +4,14 @@ import { Helmet } from "react-helmet";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { HiArrowNarrowLeft } from "react-icons/hi";
 
-import CSS from "../assets/css.png";
-import HTML from "../assets/html.png";
-import JavaScript from "../assets/javascript.png";
-import ReactImg from "../assets/react.png";
-import Node from "../assets/node.png";
-import Sequelize from "../assets/sequelize.png";
-import PSQL from "../assets/psql.png";
-import GitHub from "../assets/github.png";
+import CSS from "../assets/png/css.png";
+import HTML from "../assets/png/html.png";
+import JavaScript from "../assets/png/javascript.png";
+import ReactImg from "../assets/png/react.png";
+import Node from "../assets/png/node.png";
+import Sequelize from "../assets/png/sequelize.png";
+import PSQL from "../assets/png/psql.png";
+import GitHub from "../assets/png/github.png";
 
 const CompetencesPage = () => {
 	return (

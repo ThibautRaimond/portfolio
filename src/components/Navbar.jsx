@@ -4,7 +4,7 @@ import { FaBars } from "react-icons/fa";
 import { IoAccessibility } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-import Logo from "../assets/logo.png";
+import Logo from "../assets/png/logo.png";
 import MobileNavMenu from "./MobileNavMenu";
 
 const Navbar = () => {

@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^7.6.6",
+    "pdfkit": "^0.17.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
@@ -24,7 +25,8 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate-cv-pdf": "node scripts/generateAccessibleCvPdf.js"
   },
   "eslintConfig": {
     "extends": [
@@ -49,7 +51,9 @@
     "autoprefixer": "^10.4.12",
     "eslint": "^8.26.0",
     "gh-pages": "^4.0.0",
+    "pdf-lib": "^1.17.1",
     "postcss": "^8.4.18",
+    "puppeteer": "^24.37.5",
     "tailwindcss": "^3.2.1"
   }
 }
