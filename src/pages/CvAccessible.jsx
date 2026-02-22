@@ -63,11 +63,15 @@ function CvAccessible() {
             Profil
           </h3>
           <p className="text-gray-100 mb-4">
-            Consultant accessibilité pour grands comptes via Urbilog, spécialisé
-            dans les référentiels RGAA et RAAM, j'aide les équipes{" "}
-            <span lang="en">UX</span> <span aria-hidden="true">/</span>{" "}
-            <span lang="en">UI</span> et les développeurs à concevoir des
-            contenus inclusifs et accessibles.
+            Après six ans d’expérience dans la vente de produits de luxe, j’ai
+            choisi d’effectuer une reconversion vers le développement web et
+            l’accessibilité numérique.
+            <br />
+            Désormais, consultant accessibilité pour grands comptes via Urbilog,
+            spécialisé dans les référentiels RGAA et RAAM, j’accompagne les
+            équipes <span lang="en">UX</span> <span aria-hidden="true">/</span>
+            <span lang="en">UI</span> ainsi que les développeurs dans la
+            conception de contenus inclusifs et accessibles.
             <br />
             Je combine expertise technique, pédagogie et aisance relationnelle
             pour renforcer durablement leurs compétences et contribuer à
@@ -88,10 +92,6 @@ function CvAccessible() {
             <p className="text-sm text-gray-400 mb-2">
               De décembre 2024 à aujourd'hui
             </p>
-            <p className="text-gray-100 mb-3">
-              Missions réalisées pour clients grands comptes :
-            </p>
-
             <div className="ml-4 mb-4">
               <h5 className="text-sky-400 font-semibold mb-2">SFR (2 ans)</h5>
               <ul className="list-disc ml-5 space-y-1 text-gray-100">
@@ -264,7 +264,9 @@ function CvAccessible() {
             <span className="font-semibold" lang="en">
               WCAG
             </span>{" "}
-            : <span lang="en">Web Content Accessibility Guidelines</span> (standard international du <span lang="en">World Wide Web Consortium</span>)
+            : <span lang="en">Web Content Accessibility Guidelines</span>{" "}
+            (standard international du{" "}
+            <span lang="en">World Wide Web Consortium</span>)
           </p>
           <p>
             <span className="font-semibold" lang="en">
@@ -296,7 +298,8 @@ function CvAccessible() {
             <span className="font-semibold" lang="en">
               JAWS
             </span>{" "}
-            : <span lang="en">Job Access With Speech</span> (lecteur d'écran Windows)
+            : <span lang="en">Job Access With Speech</span> (lecteur d'écran
+            Windows)
           </p>
           <p>
             <span className="font-semibold" lang="en">

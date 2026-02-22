@@ -10,12 +10,12 @@ const fs = require('fs');
 const path = require('path');
 const { PDFDocument, PDFName } = require('pdf-lib');
 
-const outputDir = path.join(__dirname, '../public/cv');
+const outputDir = path.join(__dirname, '../src/assets');
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
 
-const outputPath = path.join(outputDir, 'Thibaut_Raimond_CV_WCAG.pdf');
+const outputPath = path.join(outputDir, 'CV_Thibaut_Raimond_Conforme_WCAG.pdf');
 
 const pdfMetadata = {
     title: 'CV - Thibaut Raimond - Consultant en Accessibilité Numérique',
@@ -277,7 +277,9 @@ const cvHtml = `
     <section>
         <h2>Profil</h2>
         <p>
-            Consultant accessibilité pour grands comptes via Urbilog, spécialisé dans les référentiels RGAA et RAAM, j'aide les équipes <span lang="en">UX</span> / <span lang="en">UI</span> et les développeurs à concevoir des contenus inclusifs et accessibles.
+            Après six ans d’expérience dans la vente de produits de luxe, j’ai choisi de me reconvertir vers le développement web et l’accessibilité numérique.
+            <br />
+            Désormais, Consultant accessibilité pour grands comptes via Urbilog, spécialisé dans les référentiels RGAA et RAAM, j'aide les équipes <span lang="en">UX</span> / <span lang="en">UI</span> et les développeurs à concevoir des contenus inclusifs et accessibles.
             <br />
             Je combine expertise technique, pédagogie et aisance relationnelle pour renforcer durablement leurs compétences et contribuer à l'élévation de l'expertise des collaborateurs en interne.
         </p>
@@ -290,8 +292,6 @@ const cvHtml = `
         <article>
             <h3>Consultant Accessibilité Numérique Urbilog</h3>
             <p class="meta">De décembre 2024 à aujourd'hui</p>
-            <p>Missions réalisées pour clients grands comptes :</p>
-
             <h4>SFR (2 ans)</h4>
             <ul>
                 <li>• Recettes RGAA sur parcours clients web et applicatifs</li>
