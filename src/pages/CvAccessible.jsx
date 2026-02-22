@@ -249,12 +249,12 @@ function CvAccessible() {
       </div>
 
       {/* --------- GLOSSAIRE - SECTION SÉPARÉE ---------  */}
-      <div className="p-8 max-w-4xl mx-auto m-4">
+      <div className="p-8 max-w-4xl mx-auto m-4 border border-white">
         <h2 className="text-3xl font-bold mb-6 text-white">Glossaire</h2>
         <div className="space-y-2 text-white">
           <p>
             <span className="font-semibold">RGAA</span> : Référentiel Général
-            d'Amélioration de l'Accessibilité
+            d'Amélioration de l'Accessibilité (cadre légal français)
           </p>
           <p>
             <span className="font-semibold">RAAM</span> : Référentiel
@@ -264,7 +264,7 @@ function CvAccessible() {
             <span className="font-semibold" lang="en">
               WCAG
             </span>{" "}
-            : <span lang="en">Web Content Accessibility Guidelines</span>
+            : <span lang="en">Web Content Accessibility Guidelines</span> (standard international du <span lang="en">World Wide Web Consortium</span>)
           </p>
           <p>
             <span className="font-semibold" lang="en">
@@ -296,7 +296,7 @@ function CvAccessible() {
             <span className="font-semibold" lang="en">
               JAWS
             </span>{" "}
-            : <span lang="en">Job Access With Speech</span>
+            : <span lang="en">Job Access With Speech</span> (lecteur d'écran Windows)
           </p>
           <p>
             <span className="font-semibold" lang="en">

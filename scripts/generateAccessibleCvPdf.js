@@ -378,7 +378,7 @@ const cvHtml = `
 
         <dl class="glossary-entry">
             <dt>RGAA :</dt>
-            <dd>Référentiel Général d'Amélioration de l'Accessibilité</dd>
+            <dd>Référentiel Général d'Amélioration de l'Accessibilité (cadre légal français)</dd>
         </dl>
 
         <dl class="glossary-entry">
@@ -388,7 +388,7 @@ const cvHtml = `
 
         <dl class="glossary-entry">
             <dt><span lang="en">WCAG :</span></dt>
-            <dd><span lang="en">Web Content Accessibility Guidelines</span></dd>
+            <dd><span lang="en">Web Content Accessibility Guidelines</span> (standard international du <span lang="en">World Wide Web Consortium</span>)</dd>
         </dl>
 
         <dl class="glossary-entry">
@@ -413,7 +413,7 @@ const cvHtml = `
 
         <dl class="glossary-entry">
             <dt><span lang="en">JAWS :</span></dt>
-            <dd><span lang="en">Job Access With Speech</span></dd>
+            <dd><span lang="en">Job Access With Speech</span> (lecteur d'écran Windows)</dd>
         </dl>
 
         <dl class="glossary-entry">
