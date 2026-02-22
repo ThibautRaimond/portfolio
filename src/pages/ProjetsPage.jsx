@@ -30,9 +30,9 @@ const ProjetsPage = () => {
             <p className="py-6"> Présentation de mes projets</p>
           </div>
 
-          <ul className="flex justify-center items-stretch flex-wrap gap-6 md:flex-nowrap">
+          <ul className="flex justify-center items-stretch flex-wrap gap-10 md:flex-nowrap">
             {/* Projet 1 code du dev */}
-            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default mb-8 md:mb-0 w-full max-w-[600px] min-h-[420px] sm:min-h-[440px]">
+            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-105 duration-500 rounded-md cursor-default mb-8 md:mb-0 w-full max-w-[600px] min-h-[420px] sm:min-h-[440px]">
               <div className="text-center flex justify-between items-center flex-col h-full">
                 <div
                   aria-label="Projet le code du dev (lien indisponible)"
@@ -78,7 +78,7 @@ const ProjetsPage = () => {
             </li>
 
             {/* Projet 2 pokedex */}
-            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default mb-8 md:mb-0 w-full max-w-[600px] min-h-[420px] sm:min-h-[440px]">
+            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-105 duration-500 rounded-md cursor-default mb-8 md:mb-0 w-full max-w-[600px] min-h-[420px] sm:min-h-[440px]">
               <div className="text-center flex justify-between items-center flex-col h-full">
                 <a
                   href="https://thibautraimond.github.io/pokedex/"
