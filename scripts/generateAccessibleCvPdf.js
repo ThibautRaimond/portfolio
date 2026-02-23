@@ -271,18 +271,26 @@ const cvHtml = `
         h2 {
           font-size: 1.4em;
           color: #2a2a2a;
-          margin-top: 1px;
-          margin-bottom: 1px;
-          padding-top: 2px;
+          margin-top: 10px;
+          margin-bottom: 8px;
+          padding-top: 6px;
           border-top: 2px solid #1a3a52;
           font-weight: 700;
         }
+          h2#pratique-personnelle-title {
+            border-top: none !important;
+            margin-top: 32px !important;
+          }
         h2#glossaire-title {
           color: #2a2a2a !important;
           border-top: none !important;
         }
         #access-competences-title {
+          border-top: 2px solid #1a3a52 !important;
+        }
+        h2#pratique-personnelle-title {
           border-top: none !important;
+          margin-top: 18px !important;
         }
         @media print {
           body {
@@ -349,10 +357,8 @@ const cvHtml = `
         }
 
         /* GLOSSAIRE */
-        .glossary-page {
-            page-break-before: always !important;
-            break-before: page !important;
-            margin-top: 0;
+          .glossary-page {
+          margin-top: 60px !important;
           }
 
           .glossary-page ul {
@@ -448,7 +454,7 @@ const cvHtml = `
             <h4>Accompagnement France Télévisions depuis mai 2025</h4>
             <ul>
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Recettes  RGAA et RAAM sur plateformes médias à forte audience</li>
-                <li><span role="presentation" style="font-size:0.9em;">•</span> Tests lecteurs d'écran et scénarios utilisateurs réels</li>
+                <li><span role="presentation" style="font-size:0.9em;">•</span> Optimisation de l’accessibilité au-delà de la conformité réglementaire</li>
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Recommandations <span lang="en">UX</span> inclusives et solutions techniques concrètes</li>
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Participation à la montée en expertise des équipes design et développement</li>
             </ul>
@@ -463,32 +469,20 @@ const cvHtml = `
         </div>
     </section>
 
-    <!-- FORMATIONS -->
-    <section>
-      <h2>Formations</h2>
-      <ul>
-        <li><span role="presentation" style="font-size:0.9em;">•</span> Formation Consultant Accessibilité Numérique – Compethance</li>
-        <li><span role="presentation" style="font-size:0.9em;">•</span> Titre Pro Développeur FullStack Web &amp; Mobile – O'Clock</li>
-        <li><span role="presentation" style="font-size:0.9em;">•</span> Diplomé Technicien Supérieur Management des Unités Commerciales – Saint Jude</li>
-      </ul>
-    </section>
-
     <!-- COMPÉTENCES -->
     <section>
       <h2 id="access-competences-title">Compétences Clés Accessibilité</h2>
         <ul>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> Audits complets RGAA et RAAM</li>
             <li><span role="presentation" style="font-size:0.9em;">•</span> Tests lecteurs d'écran : <span lang="en">NVDA, JAWS, VoiceOver</span></li>
             <li><span role="presentation" style="font-size:0.9em;">•</span> Sémantique <span lang="en">HTML</span>, <span lang="en">ARIA</span>, gestion du focus, navigation clavier</li>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> Correction de composants <span lang="en">UI</span> &amp; design systems</li>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> Accompagnement <span lang="en">UX</span> / <span lang="en">UI</span> &amp; développeurs</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span> Correction de composants <span lang="en">UI</span> et design systems</li>
             <li><span role="presentation" style="font-size:0.9em;">•</span> Approche pragmatique orientée solutions</li>
         </ul>
     </section>
 
     <!-- PRATIQUE PERSONNELLE -->
     <section>
-        <h2>Pratique Personnelle &amp; Veille</h2>
+        <h2 id="pratique-personnelle-title" style="padding-top: 40px;">Pratique Personnelle et Veille</h2>
         <ul>
             <li><span role="presentation" style="font-size:0.9em;">•</span> Mise en accessibilité de mes projets web personnels</li>
             <li><span role="presentation" style="font-size:0.9em;">•</span> Expérimentation continue des contraintes réelles (code, UX, choix design)</li>
@@ -507,6 +501,14 @@ const cvHtml = `
     </section>
 
     <!-- FORMATIONS -->
+    <section>
+      <h2>Formations</h2>
+      <ul>
+        <li><span role="presentation" style="font-size:0.9em;">•</span> Formation Consultant Accessibilité Numérique – Compethance</li>
+        <li><span role="presentation" style="font-size:0.9em;">•</span> Titre Pro Développeur FullStack Web et Mobile – O'Clock</li>
+        <li><span role="presentation" style="font-size:0.9em;">•</span> Diplomé Technicien Supérieur Management des Unités Commerciales – Saint Jude</li>
+      </ul>
+    </section>
 
     <!-- ATOUTS COMPLÉMENTAIRES -->
     <section>
@@ -514,15 +516,15 @@ const cvHtml = `
         <ul>
             <li><span role="presentation" style="font-size:0.9em;">•</span> Pédagogie et vulgarisation technique</li>
             <li><span role="presentation" style="font-size:0.9em;">•</span> Excellente relation client</li>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> Détermination et persévérance</li>
+            <li style="margin-bottom: 30px;"><span role="presentation" style="font-size:0.9em;">•</span> Détermination et persévérance</li>
         </ul>
     </section>
-        <section style="border: 1px solid black; padding: 10px; margin-top: 20px;">
+        <section style="border: 1px solid black; padding: 10px">
           <h2 id="glossaire-title">Glossaire</h2>
           <ul>
             <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">RGAA</span> : Référentiel Général d'Amélioration de l'Accessibilité (standard français)</li>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">RAAM</span> : Référentiel d'Amélioration de l'Accessibilité Mobile (standard français pour mobile)</li>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">WCAG</span> : <span lang="en">Web Content Accessibility Guidelines</span> (standard international du <span lang="en">World Wide Web Consortium</span>)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">RAAM</span> : Référentiel d'Amélioration de l'Accessibilité Mobile (standard pour mobile)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">WCAG</span> : <span lang="en">Web Content Accessibility Guidelines</span> (standard international)</li>
             <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">ARIA</span> : <span lang="en">Accessible Rich Internet Applications</span> (attributs d'accessibilité <span lang="en">HTML</span>)</li>
             <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">UX</span> : Expérience utilisateur</li>
             <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">UI</span> : Interface utilisateur</li>

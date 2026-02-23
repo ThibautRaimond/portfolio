@@ -120,7 +120,7 @@ function CvAccessible() {
                 <li>
                   Recettes RGAA et RAAM sur plateformes médias à forte audience
                 </li>
-                <li>Tests lecteurs d'écran et scénarios utilisateurs réels</li>
+                <li>Optimisation de l’accessibilité au-delà de la conformité réglementaire</li>
                 <li>
                   Recommandations <span lang="en">UX</span> inclusives et
                   solutions techniques concrètes
@@ -159,7 +159,6 @@ function CvAccessible() {
             Compétences Clés Accessibilité
           </h3>
           <ul className="list-disc ml-5 space-y-1 text-gray-100">
-            <li>Audits complets RGAA et RAAM</li>
             <li>
               Tests lecteurs d'écran :{" "}
               <span lang="en">NVDA, JAWS, VoiceOver</span>
@@ -169,22 +168,17 @@ function CvAccessible() {
               <span lang="en">ARIA</span>, gestion du focus, navigation clavier
             </li>
             <li>
-              Correction de composants <span lang="en">UI</span> & design
+              Correction de composants <span lang="en">UI</span> et design
               systems
-            </li>
-            <li>
-              Accompagnement <span lang="en">UX</span>{" "}
-              <span aria-hidden="true">/</span> <span lang="en">UI</span> &
-              développeurs
             </li>
             <li>Approche pragmatique orientée solutions</li>
           </ul>
         </section>
 
-        {/* --------- PRATIQUE PERSONNELLE & VEILLE ---------  */}
+        {/* --------- PRATIQUE PERSONNELLE et VEILLE ---------  */}
         <section className="mb-8">
           <h3 className="text-2xl font-semibold mb-4 border-t-2 border-gray-700 pt-2 text-[#FFA500]">
-            Pratique Personnelle & Veille
+            Pratique Personnelle et Veille
           </h3>
           <ul className="list-disc ml-5 space-y-1 text-gray-100">
             <li>Mise en accessibilité de mes projets web personnels</li>
@@ -232,7 +226,7 @@ function CvAccessible() {
           </h3>
           <ul className="list-disc ml-5 space-y-2 text-gray-100">
             <li>Formation Consultant Accessibilité Numérique – Compethance</li>
-            <li>Titre Pro Développeur FullStack Web & Mobile – O'Clock</li>
+            <li>Titre Pro Développeur FullStack Web et Mobile – O'Clock</li>
             <li>
               Diplomé Technicien Supérieur Management des Unités Commerciales –
               Saint Jude
