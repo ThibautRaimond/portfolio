@@ -112,7 +112,7 @@ const ProfilPage = () => {
                 aria-label="télécharger mon CV"
               >
                 <div
-                  className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-3 px-4 hover:text-green-500 hover:underline hover:underline-thickness-2"
+                  className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-3 px-4 hover:scale-110 duration-500 rounded-md cursor-pointer"
                   type="button"
                 >
                   <div className="flex justify-center align-center">
@@ -126,7 +126,7 @@ const ProfilPage = () => {
                 to="/cvaccessible"
                 mooth={true}
                 duration={500}
-                className="text-[#07ed66] hover:text-[#00D14B] underline mt-4"
+                className="text-[#07ed66] hover:scale-125 duration-500 rounded-md cursor-pointer underline mt-4"
               >
                 CV en ligne
               </Link>

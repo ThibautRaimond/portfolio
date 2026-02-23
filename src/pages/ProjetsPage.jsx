@@ -31,7 +31,50 @@ const ProjetsPage = () => {
           </div>
 
           <ul className="flex justify-center items-stretch flex-wrap gap-10 md:flex-nowrap">
-            {/* Projet 1 code du dev */}
+            {/* Projet 1 pokedex */}
+            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-105 duration-500 rounded-md cursor-default mb-8 md:mb-0 w-full max-w-[600px] min-h-[420px] sm:min-h-[440px]">
+              <div className="text-center flex justify-between items-center flex-col h-full">
+                <a
+                  href="https://thibautraimond.github.io/pokedex/"
+                  rel="noreferrer"
+                  aria-label="Projet pokedex (nouvel onglet)"
+                  className="p-1 after:absolute after:inset-0 after:content-['']"
+                >
+                  <h2 className="text-2xl md:text-3xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">
+                    Pokedex
+                  </h2>
+                </a>
+                <p className="text-base md:text-lg">
+                  <span className="font-bold">Languages : </span>
+                  React{" "}
+                  <span aria-hidden="true" className="text-[#07ed66]">
+                    /
+                  </span>{" "}
+                  CSS
+                </p>
+                <p className="m-1 text-base md:text-lg text-[#95F3A4]">
+                  Projet perso
+                </p>
+                <p
+                  className="mt-2 text-base md:text-lg text-gray-300 w-full max-w-[500px] break-words hyphens-auto mb-[6px]"
+                  lang="fr"
+                >
+                  Application Pokedex gérée par{" "}
+                  <span className="font-semibold">l'API </span> PokeApi. Permet
+                  de rechercher les pokémons par nom ou par type, et d'afficher
+                  leurs caractéristiques.
+                </p>
+                <div className="w-full max-w-[550px] h-[360px] flex justify-center items-center px-4">
+                  <img
+                    src={pokedex}
+                    alt=""
+                    className="w-full h-full object-cover pb-[4px] rounded"
+                  />
+                </div>
+              </div>
+            </li>
+
+            {/* Projet 2 code du dev */}
             <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-105 duration-500 rounded-md cursor-default mb-8 md:mb-0 w-full max-w-[600px] min-h-[420px] sm:min-h-[440px]">
               <div className="text-center flex justify-between items-center flex-col h-full">
                 <div
@@ -60,51 +103,23 @@ const ProjetsPage = () => {
                   </span>{" "}
                   CSS
                 </p>
-                <p className="m-1 text-base md:text-lg text-[#95F3A4]">Projet de groupe</p>
-                <p className="text-base md:text-lg text-gray-300 w-full max-w-[500px] break-words hyphens-auto mb-[6px]" lang="fr">
-                  Projet destiné à proposer des quiz sur différents sujets liés au
-                  développement web. Le site respecte les exigences
-                  <span lang="en"><span className="font-semibold"> CRUD</span> (Create, Read,
-                  Update, Delete).</span>
+                <p className="m-1 text-base md:text-lg text-[#95F3A4]">
+                  Projet de groupe
+                </p>
+                <p
+                  className="text-base md:text-lg text-gray-300 w-full max-w-[500px] break-words hyphens-auto mb-[6px]"
+                  lang="fr"
+                >
+                  Projet destiné à proposer des quiz sur différents sujets liés
+                  au développement web. Le site respecte les exigences
+                  <span lang="en">
+                    <span className="font-semibold"> CRUD</span> (Create, Read,
+                    Update, Delete).
+                  </span>
                 </p>
                 <div className="w-full max-w-[550px] h-[360px] flex justify-center items-center px-4">
                   <img
                     src={CodeDuDev}
-                    alt=""
-                    className="w-full h-full object-cover pb-[4px] rounded"
-                  />
-                </div>
-              </div>
-            </li>
-
-            {/* Projet 2 pokedex */}
-            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-105 duration-500 rounded-md cursor-default mb-8 md:mb-0 w-full max-w-[600px] min-h-[420px] sm:min-h-[440px]">
-              <div className="text-center flex justify-between items-center flex-col h-full">
-                <a
-                  href="https://thibautraimond.github.io/pokedex/"
-                  rel="noreferrer"
-                  aria-label="Projet pokedex (nouvel onglet)"
-                  className="p-1 after:absolute after:inset-0 after:content-['']"
-                >
-                  <h2 className="text-2xl md:text-3xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">
-                    Pokedex
-                  </h2>
-                </a>
-                <p className="text-base md:text-lg">
-                  <span className="font-bold">Languages : </span>
-                  React{" "}
-                  <span aria-hidden="true" className="text-[#07ed66]">
-                    /
-                  </span>{" "}
-                  CSS
-                </p>
-                <p className="m-1 text-base md:text-lg text-[#95F3A4]">Projet perso</p>
-                <p className="mt-2 text-base md:text-lg text-gray-300 w-full max-w-[500px] break-words hyphens-auto mb-[6px]" lang="fr">
-                  Application Pokedex géré par <span className="font-semibold">l'API </span> PokeApi. Permet de rechercher les pokémons par nom ou par type, et d'afficher leurs caractéristiques.
-                </p>
-                <div className="w-full max-w-[550px] h-[360px] flex justify-center items-center px-4">
-                  <img
-                    src={pokedex}
                     alt=""
                     className="w-full h-full object-cover pb-[4px] rounded"
                   />

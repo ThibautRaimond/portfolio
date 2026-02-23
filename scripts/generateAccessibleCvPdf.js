@@ -277,8 +277,17 @@ const cvHtml = `
           border-top: 2px solid #1a3a52;
           font-weight: 700;
         }
+        h2#glossaire-title {
+          color: #2a2a2a !important;
+          border-top: none !important;
+        }
         #access-competences-title {
           border-top: none !important;
+        }
+        @media print {
+          body {
+            padding-top: 15px !important;
+          }
         }
 
         h3 {
@@ -290,11 +299,11 @@ const cvHtml = `
         }
 
         h4 {
-            font-size: 1em;
-            color: #1a3a52;
-            margin-top: 8px;
-            margin-bottom: 1px;
-            font-weight: 700;
+          font-size: 1em;
+          color: #0051A8;
+          margin-top: 8px;
+          margin-bottom: 1px;
+          font-weight: 700;
         }
 
         h5 {
@@ -359,9 +368,12 @@ const cvHtml = `
         }
 
         .glossary-entry dt {
-            font-weight: 700;
-            color: #1a3a52;
-            display: inline;
+          font-weight: 700;
+          color: #1a3a52;
+          display: inline;
+        }
+        .font-semibold[lang="en"], .font-semibold {
+          color: #1a3a52 !important;
         }
 
         .glossary-entry dd {
@@ -411,7 +423,7 @@ const cvHtml = `
     <section>
         <h2>Profil</h2>
         <p>
-            Après six ans d’expérience dans la vente de produits de luxe, j’ai choisi de me reconvertir vers l’accessibilité numérique.
+            Après six ans d’expérience dans la vente de produits de luxe, j’ai choisi d’effectuer une reconversion vers le développement web et l’accessibilité numérique.
             <br />
             Désormais, je suis Consultant accessibilité pour grands comptes via Urbilog, spécialisé dans les référentiels RGAA et RAAM, j'aide les équipes <span lang="en">UX</span> / <span lang="en">UI</span> et les développeurs à concevoir des contenus inclusifs et accessibles.
             <br />
@@ -423,17 +435,17 @@ const cvHtml = `
     <section>
         <h2>Expérience Professionnelle</h2>
         
-        <article>
+        <div>
             <h3>Consultant Accessibilité Numérique <span role="presentation">|</span> Urbilog <span role="presentation">|</span> Décembre 2024 à aujourd'hui</h3>
-            <h4>SFR depuis mars 2024</h4>
+            <h4>Accompagnement SFR depuis mars 2024</h4>
             <ul>
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Recettes RGAA sur parcours clients web et applicatifs</li>
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Corrections sémantiques, navigation clavier, composants accessibles</li>
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Collaboration quotidienne avec <span lang="en">UX</span> / <span lang="en">UI</span> et développeurs front</li>
-                <li><span role="presentation" style="font-size:0.9em;">•</span> Accompagnement des équipes vers l'autonomie</li>
+                <li><span role="presentation" style="font-size:0.9em;">•</span> Montée en autonomie des équipes</li>
             </ul>
 
-            <h4>France Télévisions depuis mai 2025</h4>
+            <h4>Accompagnement France Télévisions depuis mai 2025</h4>
             <ul>
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Recettes  RGAA et RAAM sur plateformes médias à forte audience</li>
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Tests lecteurs d'écran et scénarios utilisateurs réels</li>
@@ -448,7 +460,7 @@ const cvHtml = `
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Partage de bonnes pratiques et diffusion d'une culture accessibilité</li>
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Animation de formations et ateliers en accessibilité numérique</li>
             </ul>
-        </article>
+        </div>
     </section>
 
     <!-- FORMATIONS -->
@@ -457,7 +469,7 @@ const cvHtml = `
       <ul>
         <li><span role="presentation" style="font-size:0.9em;">•</span> Formation Consultant Accessibilité Numérique – Compethance</li>
         <li><span role="presentation" style="font-size:0.9em;">•</span> Titre Pro Développeur FullStack Web &amp; Mobile – O'Clock</li>
-        <li><span role="presentation" style="font-size:0.9em;">•</span> BTS Management des Unités Commerciales</li>
+        <li><span role="presentation" style="font-size:0.9em;">•</span> Diplomé Technicien Supérieur Management des Unités Commerciales – Saint Jude</li>
       </ul>
     </section>
 
@@ -505,21 +517,20 @@ const cvHtml = `
             <li><span role="presentation" style="font-size:0.9em;">•</span> Détermination et persévérance</li>
         </ul>
     </section>
-        <section>
-   
-            <h2>Glossaire</h2>
-                <ul>
-                    <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">RGAA</span> : Référentiel Général d'Amélioration de l'Accessibilité (standard français)</li>
-                    <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">RAAM</span> : Référentiel d'Amélioration de l'Accessibilité Mobile (standard français pour mobile)</li>
-                    <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">WCAG</span> : <span lang="en">Web Content Accessibility Guidelines</span> (standard international du <span lang="en">World Wide Web Consortium</span>)</li>
-                    <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">ARIA</span> : <span lang="en">Accessible Rich Internet Applications</span> (attributs d'accessibilité <span lang="en">HTML</span>)</li>
-                    <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">UX</span> : Expérience utilisateur</li>
-                    <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">UI</span> : Interface utilisateur</li>
-                    <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">NVDA</span> : <span lang="en">NonVisual Desktop Access</span> (lecteur d'écran Windows)</li>
-                    <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">JAWS</span> : <span lang="en">Job Access With Speech</span> (lecteur d'écran Windows)</li>
-                    <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">VoiceOver</span> : Lecteur d'écran natif <span lang="en">Apple</span></li>
-                    </ul>
-            </section>
+        <section style="border: 1px solid black; padding: 10px; margin-top: 20px;">
+          <h2 id="glossaire-title">Glossaire</h2>
+          <ul>
+            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">RGAA</span> : Référentiel Général d'Amélioration de l'Accessibilité (standard français)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">RAAM</span> : Référentiel d'Amélioration de l'Accessibilité Mobile (standard français pour mobile)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">WCAG</span> : <span lang="en">Web Content Accessibility Guidelines</span> (standard international du <span lang="en">World Wide Web Consortium</span>)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">ARIA</span> : <span lang="en">Accessible Rich Internet Applications</span> (attributs d'accessibilité <span lang="en">HTML</span>)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">UX</span> : Expérience utilisateur</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">UI</span> : Interface utilisateur</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">NVDA</span> : <span lang="en">NonVisual Desktop Access</span> (lecteur d'écran Windows)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">JAWS</span> : <span lang="en">Job Access With Speech</span> (lecteur d'écran Windows)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">VoiceOver</span> : Lecteur d'écran natif <span lang="en">Apple</span></li>
+          </ul>
+        </section>
 </body>
 </html>
 `;
