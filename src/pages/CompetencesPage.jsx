@@ -42,21 +42,21 @@ const CompetencesPage = () => {
 				<ul className="text-center flex flex-wrap align-middle justify-center">
 					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
+					bg-[#0000006e] shadow-md shadow-[#040c16] rounded-md cursor-default"
 					>
 						<img alt="" className="w-20 mx-auto" src={HTML} />
 						<p className="mt-[1em]">HTML 5</p>
 					</li>
 					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
+					bg-[#0000006e] shadow-md shadow-[#040c16] rounded-md cursor-default"
 					>
 						<img alt="" className="w-20 mx-auto" src={CSS} />
 						<p className="mt-[1em]">CSS 3</p>
 					</li>
 					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
+					bg-[#0000006e] shadow-md shadow-[#040c16] rounded-md cursor-default"
 
 					>
 						<img alt=""
@@ -67,7 +67,7 @@ const CompetencesPage = () => {
 					</li>
 					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
+					bg-[#0000006e] shadow-md shadow-[#040c16] rounded-md cursor-default"
 
 					>
 						<img alt="" className="w-20 mx-auto" src={ReactImg} />
@@ -75,7 +75,7 @@ const CompetencesPage = () => {
 					</li>
 					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
+					bg-[#0000006e] shadow-md shadow-[#040c16] rounded-md cursor-default"
 
 					>
 						<img alt="" className="w-20 mx-auto" src={Node} />
@@ -83,7 +83,7 @@ const CompetencesPage = () => {
 					</li>
 					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
+					bg-[#0000006e] shadow-md shadow-[#040c16] rounded-md cursor-default"
 
 					>
 						<img alt=""
@@ -94,14 +94,14 @@ const CompetencesPage = () => {
 					</li>
 					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default"
+					bg-[#0000006e] shadow-md shadow-[#040c16] rounded-md cursor-default"
 					>
-						<img alt="" className="w-20 mx-auto" src={PSQL} alt="" />
+						<img alt="" className="w-20 mx-auto" src={PSQL} />
 						<p className="mt-[1em]">PSQL</p>
 					</li>
 					<li
 						className="flex flex-col align-middle justify-center m-[1em] w-[110px] pt-[1em] pb-[0.5em] px-[1em]
-					bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-md cursor-default">
+					bg-[#0000006e] shadow-md shadow-[#040c16] rounded-md cursor-default">
 						<img alt="" className="w-20 mx-auto" src={GitHub} />
 						<p className="mt-[1em]">Github</p>
 					</li>

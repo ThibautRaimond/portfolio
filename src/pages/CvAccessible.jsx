@@ -109,7 +109,7 @@ function CvAccessible() {
                   <span aria-hidden="true">/</span> <span lang="en">UI</span> et
                   développeurs front
                 </li>
-                <li>Accompagnement des équipes vers l'autonomie</li>
+                <li>Montée en autonomie des équipes</li>
               </ul>
             </div>
             <div className="ml-4 mb-4">

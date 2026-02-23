@@ -4,29 +4,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { RxOpenInNewWindow } from "react-icons/rx";
 
 const Contact = () => {
-  function handleInputChange() {
-    const input = document.getElementById('mail');
-    const helperText = document.getElementById('mailText');
-
-    // Si le champ contient du texte ou est en focus, on déplace le texte flottant
-    if (input.value.trim() !== '' || document.activeElement === input) {
-      helperText.classList.add('scale-75', 'translate-y-6', 'text-gray-300');  // Color change to gray-200
-      helperText.classList.remove('scale-100', 'translate-y-0', 'text-gray-800');
+  // Ajoute dynamiquement la classe 'not-empty' à l'input si il y a du texte
+  function handleInputChange(e) {
+    const input = e.target;
+    if (input.value.trim() !== '') {
+      input.classList.add('not-empty');
     } else {
-      // Si le champ est vide et pas en focus, on réinitialise et place le texte au centre
-      helperText.classList.remove('scale-75', 'translate-y-6', 'text-gray-300');
-      helperText.classList.add('scale-100', 'translate-y-0', 'text-gray-800');  // Color back to gray-800
-    }
-  }
-
-  function handleBlur() {
-    const input = document.getElementById('mail');
-    const helperText = document.getElementById('mailText');
-
-    // Vérifie si le champ est vide lorsqu'il perd le focus
-    if (input.value.trim() === '') {
-      helperText.classList.remove('scale-75', 'translate-y-6', 'text-gray-300');
-      helperText.classList.add('scale-100', 'translate-y-0', 'text-gray-800');  // Texte centré et couleur normale
+      input.classList.remove('not-empty');
     }
   }
 
@@ -74,25 +58,30 @@ const Contact = () => {
 
             <span className="m-3"></span>
 
-            <div className="relative">
+            <div className="relative flex flex-col">
               <label htmlFor="mail" className="text-[white]">Mail :</label>
-              <input
-                id="mail"
-                autocomplete="email"
-                name="email"
-                type="email"
-                aria-describedby="mailText"
-                className="w-full bg-gray-50 block peer border border-[1px] border-black"
-                placeholder=" "
-                onInput={handleInputChange}
-                onBlur={handleBlur} // Gérer le focus perdu
-              />
-              <p
-                id="mailText"
-                className="text-gray-800 absolute duration-300 transform scale-100 bottom-0 z-10 origin-[0] start-1 peer-focus:scale-75 peer-focus:translate-y-6.5 pointer-events-none">
-                <span className="sr-only">Exemple</span>
-                Votre_mail@domaine.com
-              </p>
+              <div className="relative w-full">
+                    <input
+                  id="mail"
+                  autoComplete="email"
+                  name="email"
+                  type="email"
+                  aria-describedby="mailText"
+                  className="w-full bg-gray-50 block peer border border-[1px] border-black placeholder-transparent focus:placeholder-transparent"
+                  placeholder="Votre_mail@domaine.com"
+                  onInput={handleInputChange}
+                />
+                    <span
+                  id="mailText"
+                  className="pointer-events-none select-none absolute left-[2px] top-1/2 -translate-y-1/2 text-gray-800 text-sm transition-all duration-300
+                    peer-focus:top-full peer-focus:translate-y-1 peer-focus:text-gray-300 peer-focus:text-sm peer-focus:scale-100
+                    peer-[.not-empty]:top-full peer-[.not-empty]:translate-y-1 peer-[.not-empty]:text-gray-300 peer-[.not-empty]:text-sm peer-[.not-empty]:scale-100"
+                  style={{lineHeight: 1, letterSpacing: 0, wordSpacing: 0, fontSize: '1em'}}
+                >
+                  <span className="sr-only">Exemple</span>
+                  Votre_mail@domaine.com
+                </span>
+              </div>
             </div>
 
             <span className="m-3"></span>

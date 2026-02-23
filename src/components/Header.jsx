@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-import { IoAccessibility } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 import Logo from "../assets/png/logo.png";
@@ -67,7 +66,7 @@ const Header = () => {
             {isActive("/") ? (
               <p className="cursor-default">Accueil</p>
             ) : (
-              <Link to="/">Accueil</Link>
+              <Link to="/" className="inline-block hover:scale-125 duration-500 transition-transform">Accueil</Link>
             )}
           </li>
           <li
@@ -78,7 +77,7 @@ const Header = () => {
             {isActive("/profil") ? (
               <p className="cursor-default">Profil</p>
             ) : (
-              <Link to="/profil">Profil</Link>
+              <Link to="/profil" className="inline-block hover:scale-125 duration-500 transition-transform">Profil</Link>
             )}
           </li>
           <li
@@ -93,7 +92,7 @@ const Header = () => {
             {isActive("/competences") ? (
               <p className="cursor-default">Compétences</p>
             ) : (
-              <Link to="/competences">Compétences</Link>
+              <Link to="/competences" className="inline-block hover:scale-125 duration-500 transition-transform">Compétences</Link>
             )}
           </li>
           <li
@@ -104,7 +103,7 @@ const Header = () => {
             {isActive("/projets") ? (
               <p className="cursor-default">Projets</p>
             ) : (
-              <Link to="/projets">Projets</Link>
+              <Link to="/projets" className="inline-block hover:scale-125 duration-500 transition-transform">Projets</Link>
             )}
           </li>
           <li
@@ -115,7 +114,7 @@ const Header = () => {
             {isActive("/contact") ? (
               <p className="cursor-default">Contact</p>
             ) : (
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" className="inline-block hover:scale-125 duration-500 transition-transform">Contact</Link>
             )}
           </li>
         </ul>
