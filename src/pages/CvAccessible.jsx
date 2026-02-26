@@ -107,7 +107,7 @@ function CvAccessible() {
                 <li>
                   Collaboration quotidienne avec <span lang="en">UX</span>{" "}
                   <span aria-hidden="true">/</span> <span lang="en">UI</span> et
-                  développeurs front
+                  développeurs
                 </li>
                 <li>Montée en autonomie des équipes</li>
               </ul>
@@ -161,7 +161,7 @@ function CvAccessible() {
           <ul className="list-disc ml-5 space-y-1 text-gray-100">
             <li>
               Tests lecteurs d'écran :{" "}
-              <span lang="en">NVDA, JAWS, VoiceOver</span>
+              <span lang="en">NVDA, JAWS, VoiceOver, TalkBack</span>
             </li>
             <li>
               Sémantique <span lang="en">HTML</span>,{" "}
@@ -305,6 +305,12 @@ function CvAccessible() {
               VoiceOver
             </span>{" "}
             : Lecteur d'écran natif <span lang="en">Apple</span>
+          </p>
+          <p>
+            <span className="font-semibold" lang="en">
+              TalkBack
+            </span>{" "}
+            : Lecteur d'écran natif Android
           </p>
         </div>
       </div>

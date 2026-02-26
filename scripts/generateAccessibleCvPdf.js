@@ -447,7 +447,7 @@ const cvHtml = `
             <ul>
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Recettes RGAA sur parcours clients web et applicatifs</li>
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Corrections sémantiques, navigation clavier, composants accessibles</li>
-                <li><span role="presentation" style="font-size:0.9em;">•</span> Collaboration quotidienne avec <span lang="en">UX</span> / <span lang="en">UI</span> et développeurs front</li>
+                <li><span role="presentation" style="font-size:0.9em;">•</span> Collaboration quotidienne avec <span lang="en">UX</span> / <span lang="en">UI</span> et développeurs</li>
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Montée en autonomie des équipes</li>
             </ul>
 
@@ -473,7 +473,7 @@ const cvHtml = `
     <section>
       <h2 id="access-competences-title">Compétences Clés Accessibilité</h2>
         <ul>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> Tests lecteurs d'écran : <span lang="en">NVDA, JAWS, VoiceOver</span></li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span> Tests lecteurs d'écran : <span lang="en">NVDA, JAWS, VoiceOver, TalkBack</span></li>
             <li><span role="presentation" style="font-size:0.9em;">•</span> Sémantique <span lang="en">HTML</span>, <span lang="en">ARIA</span>, gestion du focus, navigation clavier</li>
             <li><span role="presentation" style="font-size:0.9em;">•</span> Correction de composants <span lang="en">UI</span> et design systems</li>
             <li><span role="presentation" style="font-size:0.9em;">•</span> Approche pragmatique orientée solutions</li>
@@ -522,15 +522,16 @@ const cvHtml = `
         <section style="border: 1px solid black; padding: 10px">
           <h2 id="glossaire-title">Glossaire</h2>
           <ul>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">RGAA</span> : Référentiel Général d'Amélioration de l'Accessibilité (standard français)</li>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">RAAM</span> : Référentiel d'Amélioration de l'Accessibilité Mobile (standard pour mobile)</li>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">WCAG</span> : <span lang="en">Web Content Accessibility Guidelines</span> (standard international)</li>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">ARIA</span> : <span lang="en">Accessible Rich Internet Applications</span> (attributs d'accessibilité <span lang="en">HTML</span>)</li>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">UX</span> : Expérience utilisateur</li>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">UI</span> : Interface utilisateur</li>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">NVDA</span> : <span lang="en">NonVisual Desktop Access</span> (lecteur d'écran Windows)</li>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">JAWS</span> : <span lang="en">Job Access With Speech</span> (lecteur d'écran Windows)</li>
-            <li><span role="presentation" style="font-size:0.9em;">•</span> <span class="font-semibold" lang="en">VoiceOver</span> : Lecteur d'écran natif <span lang="en">Apple</span></li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span>&nbsp;<span class="font-semibold" lang="en">RGAA</span> : Référentiel Général d'Amélioration de l'Accessibilité (standard français)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span>&nbsp;<span class="font-semibold" lang="en">RAAM</span> : Référentiel d'Amélioration de l'Accessibilité Mobile (standard pour mobile)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span>&nbsp;<span class="font-semibold" lang="en">WCAG</span> : <span lang="en">Web Content Accessibility Guidelines</span> (standard international)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span>&nbsp;<span class="font-semibold" lang="en">ARIA</span> : <span lang="en">Accessible Rich Internet Applications</span> (attributs d'accessibilité <span lang="en">HTML</span>)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span>&nbsp;<span class="font-semibold" lang="en">UX</span> : Expérience utilisateur</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span>&nbsp;<span class="font-semibold" lang="en">UI</span> : Interface utilisateur</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span>&nbsp;<span class="font-semibold" lang="en">NVDA</span> : <span lang="en">NonVisual Desktop Access</span> (lecteur d'écran Windows)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span>&nbsp;<span class="font-semibold" lang="en">JAWS</span> : <span lang="en">Job Access With Speech</span> (lecteur d'écran Windows)</li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span>&nbsp;<span class="font-semibold" lang="en">VoiceOver</span> : Lecteur d'écran natif <span lang="en">Apple</span></li>
+            <li><span role="presentation" style="font-size:0.9em;">•</span>&nbsp;<span class="font-semibold" lang="en">TalkBack</span> : Lecteur d'écran natif Android</li>
           </ul>
         </section>
 </body>
