@@ -66,7 +66,7 @@ const Header = () => {
             {isActive("/") ? (
               <p className="cursor-default">Accueil</p>
             ) : (
-              <Link to="/" className="inline-block hover:scale-110 duration-500 transition-transform">Accueil</Link>
+              <Link to="/" className="inline-block hover:text-white transition-colors duration-200">Accueil</Link>
             )}
           </li>
           <li
@@ -77,7 +77,7 @@ const Header = () => {
             {isActive("/profil") ? (
               <p className="cursor-default">Profil</p>
             ) : (
-              <Link to="/profil" className="inline-block hover:scale-110 duration-500 transition-transform">Profil</Link>
+              <Link to="/profil" className="inline-block hover:text-white transition-colors duration-200">Profil</Link>
             )}
           </li>
           <li
@@ -92,7 +92,7 @@ const Header = () => {
             {isActive("/competences") ? (
               <p className="cursor-default">Compétences</p>
             ) : (
-              <Link to="/competences" className="inline-block hover:scale-110 duration-500 transition-transform">Compétences</Link>
+              <Link to="/competences" className="inline-block hover:text-white transition-colors duration-200">Compétences</Link>
             )}
           </li>
           <li
@@ -103,7 +103,7 @@ const Header = () => {
             {isActive("/projets") ? (
               <p className="cursor-default">Projets</p>
             ) : (
-              <Link to="/projets" className="inline-block hover:scale-110 duration-500 transition-transform">Projets</Link>
+              <Link to="/projets" className="inline-block hover:text-white transition-colors duration-200">Projets</Link>
             )}
           </li>
           <li
@@ -114,7 +114,7 @@ const Header = () => {
             {isActive("/contact") ? (
               <p className="cursor-default">Contact</p>
             ) : (
-              <Link to="/contact" className="inline-block hover:scale-110 duration-500 transition-transform">Contact</Link>
+              <Link to="/contact" className="inline-block hover:text-white transition-colors duration-200">Contact</Link>
             )}
           </li>
         </ul>

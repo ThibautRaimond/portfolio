@@ -68,7 +68,6 @@ const Contact = () => {
                   type="email"
                   aria-describedby="mailText"
                   className="w-full bg-gray-50 block peer border border-[1px] border-black placeholder-transparent focus:placeholder-transparent"
-                  placeholder="Votre_mail@domaine.com"
                   onInput={handleInputChange}
                 />
                     <span
@@ -78,8 +77,7 @@ const Contact = () => {
                     peer-[.not-empty]:top-full peer-[.not-empty]:translate-y-1 peer-[.not-empty]:text-gray-300 peer-[.not-empty]:text-sm peer-[.not-empty]:scale-100"
                   style={{lineHeight: 1, letterSpacing: 0, wordSpacing: 0, fontSize: '1em'}}
                 >
-                  <span className="sr-only">Exemple</span>
-                  Votre_mail@domaine.com
+                  Exemple@domaine.com
                 </span>
               </div>
             </div>

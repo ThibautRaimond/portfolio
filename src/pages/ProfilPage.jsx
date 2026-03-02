@@ -108,11 +108,11 @@ const ProfilPage = () => {
               <a
                 href={CV}
                 download
-                className="m-1"
+                className="m-1 inline-block hover:scale-[1.04] transition-transform duration-200 ease-out"
                 aria-label="télécharger mon CV"
               >
                 <div
-                  className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-3 px-4 hover:scale-110 duration-500 rounded-md cursor-pointer"
+                  className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-3 px-4 rounded-md cursor-pointer"
                   type="button"
                 >
                   <div className="flex justify-center align-center">
@@ -126,7 +126,7 @@ const ProfilPage = () => {
                 to="/cvaccessible"
                 mooth={true}
                 duration={500}
-                className="text-[#07ed66] hover:scale-125 duration-500 rounded-md cursor-pointer underline mt-4"
+                className="text-[#07ed66] inline-block hover:scale-105 transition-transform duration-200 ease-out rounded-md cursor-pointer underline mt-4"
               >
                 CV en ligne
               </Link>
@@ -151,7 +151,7 @@ const ProfilPage = () => {
         <Link
           download
           to="/cvaccessible"
-          className="text-[#07ed66] hover:text-[#00D14B] underline mt-2 profile:hidden"
+          className="text-[#07ed66] inline-block hover:scale-105 transition-transform duration-200 ease-out underline mt-2 profile:hidden"
         >
           CV en ligne
         </Link>

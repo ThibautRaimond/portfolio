@@ -10,10 +10,10 @@ function CvAccessible() {
       {/* --------- COORDONNÉES ---------  */}
       <div className="bg-gray-900 text-gray-100 p-8 max-w-4xl mx-auto m-4 flex flex-col justify-center align-center">
         <div className="text-center mb-8">
-          <h1 className="text-4xl text-sky-400 font-bold mb-2">
+          <h1 className="text-4xl text-gray-100 font-bold mb-2">
             Thibaut Raimond
           </h1>
-          <h2 className="text-3xl text-sky-400 font-semibold mb-4 text-gray-200">
+          <h2 className="text-3xl text-sky-400 font-semibold mb-4 text-[#FFA500]">
             Consultant en Accessibilité Numérique
           </h2>
           <img
@@ -95,7 +95,7 @@ function CvAccessible() {
               <span aria-hidden="true">|</span> Décembre 2024 à aujourd'hui
             </h4>
             <div className="ml-4 mb-4">
-              <h5 className="text-sky-400 font-semibold mb-2">
+              <h5 className="font-semibold mb-2" style={{ color: '#7ee9ff' }}>
                 Accompagnement SFR depuis mars 2024
               </h5>
               <ul className="list-disc ml-5 space-y-1 text-gray-100">
@@ -113,7 +113,7 @@ function CvAccessible() {
               </ul>
             </div>
             <div className="ml-4 mb-4">
-              <h5 className="text-sky-400 font-semibold mb-2">
+              <h5 className="font-semibold mb-2" style={{ color: '#7ee9ff' }}>
                 Accompagnement France Télévisions depuis mai 2025
               </h5>
               <ul className="list-disc ml-5 space-y-1 text-gray-100">
@@ -132,7 +132,7 @@ function CvAccessible() {
               </ul>
             </div>
             <div className="ml-4">
-              <h5 className="text-sky-400 font-semibold mb-2">
+              <h5 className="font-semibold mb-2" style={{ color: '#7ee9ff' }}>
                 Activités transverses :
               </h5>
               <ul className="list-disc ml-5 space-y-1 text-gray-100">
