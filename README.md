@@ -1,71 +1,124 @@
-# Getting Started with Create React App
+# Thibaut Raimond Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Professional portfolio built with React and Tailwind CSS, designed to showcase my profile, skills, projects, and expertise in digital accessibility.
 
-## Available Scripts
+The site emphasizes smooth navigation, polished page transitions, and careful attention to accessible content, including a dedicated accessible CV page and a PDF generation script.
 
-In the project directory, you can run:
+## Overview
+
+- Live site: https://thibautraimond.github.io/portfolio
+- Purpose: highlight the profile of a digital accessibility consultant and front-end developer
+- Target audience: recruiters, clients, product teams, design teams, and development teams
+
+## Features
+
+- Home page with a concise introduction
+- Profile page describing the career path and professional positioning
+- Skills page focused on technical capability and accessibility expertise
+- Projects page to present completed work
+- Contact page
+- Dedicated accessible CV page
+- CV download via a Node.js script
+- Animated page transitions with Framer Motion
+- SEO metadata managed with React Helmet
+
+## Tech stack
+
+- React 18
+- React Router DOM
+- Tailwind CSS
+- Framer Motion
+- React Icons
+- React Helmet
+- Puppeteer
+- pdf-lib
+
+## Project structure
+
+```text
+src/
+	components/      Structural and navigation components
+	pages/           Main portfolio pages
+	assets/          Images, PDF, and static assets
+scripts/
+	generateAccessibleCvPdf.js   Accessible CV PDF generation
+public/            Static public files
+build/             Production build output
+```
+
+## Run locally
+
+### Prerequisites
+
+- Node.js 18+ recommended
+- npm
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start development server
+
+```bash
+npm start
+```
+
+The app is then available at http://localhost:3000.
+
+## Available scripts
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Starts the development server with hot reload.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production into the `build/` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm run deploy`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app and deploys it to GitHub Pages.
 
-### `npm run eject`
+### `npm run test`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Runs tests using the Create React App test environment.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `npm run generate-cv-pdf`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Generates the accessible CV PDF using the project’s Node.js script.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Accessibility
 
-## Learn More
+This portfolio follows a digital accessibility-first approach.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Key accessibility elements included in the project:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- clear navigation structure
+- accessible labels and alt text where needed
+- identifiable external links
+- dedicated accessible CV page
+- PDF generation with metadata and specialized post-processing
 
-### Code Splitting
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The project is configured for deployment on GitHub Pages using the `homepage` field in `package.json` and the `deploy` script.
 
-### Analyzing the Bundle Size
+Run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm run deploy
+```
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Thibaut Raimond**  
+Digital Accessibility Consultant
 
-### Advanced Configuration
+- LinkedIn: http://www.linkedin.com/in/thibaut-raimond-0a46791ab
+- GitHub: https://github.com/ThibautRaimond
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
- portfolio 
+This project is presented for professional and demonstration purposes.
