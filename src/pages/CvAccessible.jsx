@@ -1,5 +1,6 @@
 ﻿import React from "react";
 import { Link } from "react-router-dom";
+import { RxOpenInNewWindow } from "react-icons/rx";
 import Breadcrumb from "../components/Breadcrumb";
 import thib2 from "../assets/thib2.jpg";
 
@@ -47,20 +48,24 @@ function CvAccessible() {
             <a
               href="http://www.linkedin.com/in/thibaut-raimond-0a46791ab"
               target="_blank"
-              rel="noreferrer"
-              className="underline"
+              rel="noreferrer noopener"
+              className="underline inline-flex items-center gap-0.5"
               aria-label="LinkedIn nouveau onglet"
             >
               LinkedIn
+              <RxOpenInNewWindow aria-hidden="true" className="text-xs relative -top-[5px]" />
+              <span className="sr-only">Onglet externe</span>
             </a>
             <a
               href="https://github.com/ThibautRaimond"
               target="_blank"
-              rel="noreferrer"
-              className="underline"
+              rel="noreferrer noopener"
+              className="underline inline-flex items-center gap-0.5"
               aria-label="GitHub nouveau onglet"
             >
               GitHub
+              <RxOpenInNewWindow aria-hidden="true" className="text-xs relative -top-[5px]" />
+              <span className="sr-only">Onglet externe</span>
             </a>
           </div>
         </div>
