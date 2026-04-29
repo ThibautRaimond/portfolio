@@ -75,19 +75,21 @@ const ProjetsPage = () => {
             </li>
 
             {/* Projet 2 code du dev */}
-            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] rounded-md cursor-default mb-8 md:mb-0 w-full max-w-[600px] min-h-[420px] sm:min-h-[440px]">
+            <li className="relative flex justify-center items-stretch p-3 bg-[#0000006e] shadow-md shadow-[#040c16] hover:scale-105 duration-500 rounded-md cursor-default mb-8 md:mb-0 w-full max-w-[600px] min-h-[420px] sm:min-h-[440px]">
               <div className="text-center flex justify-between items-center flex-col h-full">
-                <div
-                  aria-label="Projet le code du dev (lien indisponible)"
-                  className="p-1"
+                <a
+                  href="https://yannou.philoucorp.fr/"
+                  rel="noreferrer"
+                  aria-label="Projet le code du dev (nouvel onglet)"
+                  className="p-1 after:absolute after:inset-0 after:content-['']"
                 >
-                  <h2 className="text-2xl md:text-3xl text-[#07ed66] font-bold">
+                  <h2 className="text-2xl md:text-3xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">
                     Le code du dev
                   </h2>
                   <p className="text-sm md:text-base text-red-400">
-                    Le site n'est plus disponible en ligne.
+                    Le site ne respecte pas les normes d'accessibilité numérique.
                   </p>
-                </div>
+                </a>
                 <p className="text-base md:text-lg">
                   <span className="font-bold">Languages : </span>EJS{" "}
                   <span aria-hidden="true" className="text-[#07ed66]">
