@@ -49,6 +49,7 @@ function CvAccessible() {
               target="_blank"
               rel="noreferrer"
               className="underline"
+              aria-label="LinkedIn nouveau onglet"
             >
               LinkedIn
             </a>
@@ -57,6 +58,7 @@ function CvAccessible() {
               target="_blank"
               rel="noreferrer"
               className="underline"
+              aria-label="GitHub nouveau onglet"
             >
               GitHub
             </a>
