@@ -6,6 +6,7 @@ import { HiArrowNarrowRight, HiArrowNarrowLeft } from "react-icons/hi";
 import { MdDownload, MdDeveloperMode } from "react-icons/md";
 import { IoAccessibility } from "react-icons/io5";
 import { RxOpenInNewWindow } from "react-icons/rx";
+import { FaRegFilePdf } from "react-icons/fa6";
 
 import oclock from "../assets/png/oclock.png";
 import urbi from "../assets/png/urbi.png";
@@ -109,15 +110,14 @@ const ProfilPage = () => {
                 href={CV}
                 download
                 className="m-1 inline-block hover:scale-[1.04] transition-transform duration-200 ease-out"
-                aria-label="télécharger mon CV"
+                aria-label="Télécharger mon CV PDF"
               >
                 <div
                   className="bg-[#121614] overflow-hidden relative no-underline text-white border-[#07ed66] border-[1.5px] py-3 px-4 rounded-md cursor-pointer"
-                  type="button"
                 >
-                  <div className="flex justify-center align-center">
+                  <div className="flex justify-center align-center" >
                     Télécharger mon CV{" "}
-                    <MdDownload className="w-[20px] h-[20px] mt-1" />
+                    <FaRegFilePdf className="w-[18px] h-[18px] ml-1.5 mt-0.5" aria-hidden="true" />
                   </div>
                 </div>
               </a>
@@ -145,6 +145,7 @@ const ProfilPage = () => {
           <div className="flex justify-center align-center">
             Télécharger mon CV{" "}
             <MdDownload className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
+            <FaRegFilePdf className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
           </div>
         </a>
 
