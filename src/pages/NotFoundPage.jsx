@@ -30,26 +30,26 @@ const NotFoundPage = () => {
 						</h1>
 					</div>
 					<p className="max-w-md text-base leading-7 text-gray-300 sm:text-lg">
-						La page demandee n&apos;existe pas ou n&apos;est plus disponible. Vous pouvez revenir sur les sections principales du portfolio.
+						La page demandée n&apos;existe pas ou n&apos;est plus disponible. Vous pouvez revenir sur les sections principales du portfolio.
 					</p>
 				</div>
 
 				<div className="grid gap-4 md:grid-cols-[minmax(0,1.2fr)_minmax(260px,0.8fr)]">
 					<div className="rounded-md border border-[#1d3a26] bg-[linear-gradient(145deg,rgba(7,237,102,0.14),rgba(14,17,17,0.35))] p-5 shadow-[0_18px_45px_rgba(0,0,0,0.22)]">
 						<p className="mb-3 text-sm uppercase tracking-[0.2em] text-[#FFFED6]">
-							Chemin demande
+							Chemin demandé
 						</p>
 						<p className="break-all text-lg font-semibold text-white sm:text-xl">
 							{location.pathname}
 						</p>
 						<p className="mt-4 max-w-2xl text-sm leading-7 text-gray-300 sm:text-base">
-							Si vous avez suivi un ancien lien, le contenu a peut-etre change d&apos;emplacement. Les raccourcis ci-contre permettent de reprendre une navigation normale sans repasser par la page d&apos;accueil du navigateur.
+							Si vous avez suivi un ancien lien, le contenu a peut-être changé d&apos;emplacement. Les raccourcis ci-contre permettent de reprendre une navigation normale sans repasser par la page d&apos;accueil du navigateur.
 						</p>
 					</div>
 
 					<div className="rounded-md border border-white/10 bg-[#121614] p-5">
 						<p className="mb-4 text-sm uppercase tracking-[0.2em] text-[#07ed66]">
-							Acces rapides
+							Accès rapides
 						</p>
 						<div className="flex flex-col gap-3">
 							<Link
