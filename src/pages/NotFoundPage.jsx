@@ -19,7 +19,7 @@ const NotFoundPage = () => {
 				<meta name="description" content="Page introuvable du portfolio de Thibaut Raimond." />
 			</Helmet>
 
-			<section className="card w-full max-w-4xl rounded-md bg-[#0e1111] px-5 py-8 sm:px-8 md:px-12 md:py-10">
+			<div className="card w-full max-w-4xl rounded-md bg-[#0e1111] px-5 py-8 sm:px-8 md:px-12 md:py-10">
 				<div className="mb-8 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
 					<div>
 						<p className="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-[#07ed66]">
@@ -77,7 +77,7 @@ const NotFoundPage = () => {
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 		</motion.div>
 	);
 };

@@ -86,10 +86,10 @@ const ProjetsPage = () => {
                   <h2 className="text-2xl md:text-3xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">
                     Le code du dev
                   </h2>
+                </a>
                   <p className="text-sm md:text-base text-red-400">
                     Le site ne respecte pas les normes d'accessibilité numérique.
                   </p>
-                </a>
                 <p className="text-base md:text-lg">
                   <span className="font-bold">Languages : </span>EJS{" "}
                   <span aria-hidden="true" className="text-[#07ed66]">
