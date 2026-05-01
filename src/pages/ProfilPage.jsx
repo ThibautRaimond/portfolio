@@ -144,8 +144,7 @@ const ProfilPage = () => {
         >
           <div className="flex justify-center align-center">
             Télécharger mon CV{" "}
-            <MdDownload className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
-            <FaRegFilePdf className="w-[15px] h-[15px] ml-0.5 mt-0.5" />
+            <FaRegFilePdf className="w-[15px] h-[15px] ml-1 mt-0.5" />
           </div>
         </a>
 
