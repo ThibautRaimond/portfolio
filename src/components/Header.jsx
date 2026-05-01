@@ -42,7 +42,7 @@ const Header = () => {
 
       <div className="h-[70px] w-[70px] p-[5px] rounded-md flex justify-center">
         <Link to="/" aria-hidden="true" tabIndex="-1">
-          <img alt="Page accueil" src={Logo} style={{ width: "65px" }} />
+          <img alt="Page accueil" src={Logo} style={{ width: "55px" }} />
         </Link>
       </div>
 
