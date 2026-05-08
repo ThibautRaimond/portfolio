@@ -61,47 +61,65 @@ const MobileNavMenu = ({ closeMenu, isActive }) => {
         <nav className="w-full max-w-full">
           <ul className="py-4 max-w-full">
             <li
-              className={`py-4 sm:py-6 mt-6 sm:mt-10 text-4xl max-w-full break-words ${isActive("/") ? "activeLinkClass" : ""}`}
+              className="py-4 sm:py-6 mt-6 sm:mt-10 text-4xl max-w-full break-words"
               aria-current={isActive("/") ? "page" : undefined}
             >
-              <Link ref={firstLinkRef} onClick={closeMenu} to="/">
+              <Link
+                ref={firstLinkRef}
+                onClick={closeMenu}
+                to="/"
+                className={isActive("/") ? "activeLinkClass" : "underline decoration-1 underline-offset-4"}
+              >
                 Accueil
               </Link>
             </li>
             <li
-              className={`py-4 sm:py-6 text-4xl max-w-full break-words ${isActive("/profil") ? "activeLinkClass" : ""}`}
+              className="py-4 sm:py-6 text-4xl max-w-full break-words"
               aria-current={isActive("/profil") ? "page" : undefined}
             >
-              <Link onClick={closeMenu} to="/profil">
+              <Link
+                onClick={closeMenu}
+                to="/profil"
+                className={isActive("/profil") ? "activeLinkClass" : "underline decoration-1 underline-offset-4"}
+              >
                 Profil
               </Link>
             </li>
             <li
-              className={`py-4 sm:py-6 text-4xl max-w-full break-words ${isActive("/competences") ? "activeLinkClass" : ""}`}
+              className="py-4 sm:py-6 text-4xl max-w-full break-words"
               aria-current={
                 isActive("/competences") ? "page" : undefined
               }
             >
-              <Link onClick={closeMenu} to="/competences">
+              <Link
+                onClick={closeMenu}
+                to="/competences"
+                className={isActive("/competences") ? "activeLinkClass" : "underline decoration-1 underline-offset-4"}
+              >
                 Compétences
               </Link>
             </li>
             <li
-              className={`py-4 sm:py-6 text-4xl max-w-full break-words ${isActive("/projets") ? "activeLinkClass" : ""}`}
+              className="py-4 sm:py-6 text-4xl max-w-full break-words"
               aria-current={isActive("/projets") ? "page" : undefined}
             >
-              <Link onClick={closeMenu} to="/projets">
+              <Link
+                onClick={closeMenu}
+                to="/projets"
+                className={isActive("/projets") ? "activeLinkClass" : "underline decoration-1 underline-offset-4"}
+              >
                 Projets
               </Link>
             </li>
             <li
-              className={`py-4 sm:py-6 mb-2 text-4xl max-w-full break-words ${isActive("/contact") ? "activeLinkClass" : ""}`}
+              className="py-4 sm:py-6 mb-2 text-4xl max-w-full break-words"
               aria-current={isActive("/contact") ? "page" : undefined}
             >
               <Link
                 ref={lastLinkRef}
                 onClick={closeMenu}
                 to="/contact"
+                className={isActive("/contact") ? "activeLinkClass" : "underline decoration-1 underline-offset-4"}
               >
                 Contact
               </Link>
