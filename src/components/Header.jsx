@@ -14,6 +14,8 @@ const Header = () => {
     return location.pathname === pathname;
   };
 
+  const linkClasses = "inline-block underline decoration-1 underline-offset-4 hover:text-white transition-colors duration-200";
+
   const openMobileNav = () => {
     setIsMobileNavOpen(true);
   };
@@ -50,71 +52,49 @@ const Header = () => {
 
       <nav aria-label="Menu principal" className="hidden nav:block">
         <ul className="flex">
-          <li
-            className={
-              isActive("/")
-                ? "activeLinkClass"
-                : ""
-            }
-            aria-label="Retour vers la page d'accueil"
-            aria-current={
-              isActive("/")
-                ? "page"
-                : undefined
-            }
-          >
+          <li className={isActive("/") ? "activeLinkClass" : ""}>
             {isActive("/") ? (
-              <p className="cursor-default">Accueil</p>
+              <span aria-current="page" className="cursor-default">Accueil</span>
             ) : (
-              <Link to="/" className="inline-block hover:text-white transition-colors duration-200">Accueil</Link>
+              <Link to="/" className={linkClasses}>Accueil</Link>
             )}
           </li>
           <li
             className={isActive("/profil") ? "activeLinkClass" : ""}
-            aria-label="Page profil"
-            aria-current={isActive("/profil") ? "page" : undefined}
           >
             {isActive("/profil") ? (
-              <p className="cursor-default">Profil</p>
+              <span aria-current="page" className="cursor-default">Profil</span>
             ) : (
-              <Link to="/profil" className="inline-block hover:text-white transition-colors duration-200">Profil</Link>
+              <Link to="/profil" className={linkClasses}>Profil</Link>
             )}
           </li>
           <li
             className={
               isActive("/competences") ? "activeLinkClass" : ""
             }
-            aria-label="Page compétences"
-            aria-current={
-              isActive("/competences") ? "page" : undefined
-            }
           >
             {isActive("/competences") ? (
-              <p className="cursor-default">Compétences</p>
+              <span aria-current="page" className="cursor-default">Compétences</span>
             ) : (
-              <Link to="/competences" className="inline-block hover:text-white transition-colors duration-200">Compétences</Link>
+              <Link to="/competences" className={linkClasses}>Compétences</Link>
             )}
           </li>
           <li
             className={isActive("/projets") ? "activeLinkClass" : ""}
-            aria-label="Lien vers la page projets"
-            aria-current={isActive("/projets") ? "page" : undefined}
           >
             {isActive("/projets") ? (
-              <p className="cursor-default">Projets</p>
+              <span aria-current="page" className="cursor-default">Projets</span>
             ) : (
-              <Link to="/projets" className="inline-block hover:text-white transition-colors duration-200">Projets</Link>
+              <Link to="/projets" className={linkClasses}>Projets</Link>
             )}
           </li>
           <li
             className={isActive("/contact") ? "activeLinkClass" : ""}
-            aria-label="Lien vers la page contact"
-            aria-current={isActive("/contact") ? "page" : undefined}
           >
             {isActive("/contact") ? (
-              <p className="cursor-default">Contact</p>
+              <span aria-current="page" className="cursor-default">Contact</span>
             ) : (
-              <Link to="/contact" className="inline-block hover:text-white transition-colors duration-200">Contact</Link>
+              <Link to="/contact" className={linkClasses}>Contact</Link>
             )}
           </li>
         </ul>

@@ -60,65 +60,53 @@ const MobileNavMenu = ({ closeMenu, isActive }) => {
         </button>
         <nav className="w-full max-w-full">
           <ul className="py-4 max-w-full">
-            <li
-              className="py-4 sm:py-6 mt-6 sm:mt-10 text-4xl max-w-full break-words"
-              aria-current={isActive("/") ? "page" : undefined}
-            >
+            <li className="py-4 sm:py-6 mt-6 sm:mt-10 text-4xl max-w-full break-words">
               <Link
                 ref={firstLinkRef}
                 onClick={closeMenu}
                 to="/"
+                aria-current={isActive("/") ? "page" : undefined}
                 className={isActive("/") ? "activeLinkClass" : "underline decoration-1 underline-offset-4"}
               >
                 Accueil
               </Link>
             </li>
-            <li
-              className="py-4 sm:py-6 text-4xl max-w-full break-words"
-              aria-current={isActive("/profil") ? "page" : undefined}
-            >
+            <li className="py-4 sm:py-6 text-4xl max-w-full break-words">
               <Link
                 onClick={closeMenu}
                 to="/profil"
+                aria-current={isActive("/profil") ? "page" : undefined}
                 className={isActive("/profil") ? "activeLinkClass" : "underline decoration-1 underline-offset-4"}
               >
                 Profil
               </Link>
             </li>
-            <li
-              className="py-4 sm:py-6 text-4xl max-w-full break-words"
-              aria-current={
-                isActive("/competences") ? "page" : undefined
-              }
-            >
+            <li className="py-4 sm:py-6 text-4xl max-w-full break-words">
               <Link
                 onClick={closeMenu}
                 to="/competences"
+                aria-current={isActive("/competences") ? "page" : undefined}
                 className={isActive("/competences") ? "activeLinkClass" : "underline decoration-1 underline-offset-4"}
               >
                 Compétences
               </Link>
             </li>
-            <li
-              className="py-4 sm:py-6 text-4xl max-w-full break-words"
-              aria-current={isActive("/projets") ? "page" : undefined}
-            >
+            <li className="py-4 sm:py-6 text-4xl max-w-full break-words">
               <Link
                 onClick={closeMenu}
                 to="/projets"
+                aria-current={isActive("/projets") ? "page" : undefined}
                 className={isActive("/projets") ? "activeLinkClass" : "underline decoration-1 underline-offset-4"}
               >
                 Projets
               </Link>
             </li>
-            <li
-              className="py-4 sm:py-6 mb-2 text-4xl max-w-full break-words"
-              aria-current={isActive("/contact") ? "page" : undefined}
-            >
+            <li className="py-4 sm:py-6 mb-2 text-4xl max-w-full break-words">
               <Link
                 ref={lastLinkRef}
                 onClick={closeMenu}
                 to="/contact"
+                aria-current={isActive("/contact") ? "page" : undefined}
                 className={isActive("/contact") ? "activeLinkClass" : "underline decoration-1 underline-offset-4"}
               >
                 Contact

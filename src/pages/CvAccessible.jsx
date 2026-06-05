@@ -50,22 +50,20 @@ function CvAccessible() {
               target="_blank"
               rel="noreferrer noopener"
               className="underline inline-flex items-center gap-0.5"
-              aria-label="LinkedIn nouveau onglet"
+              aria-label="Linkedin onglet externe"
             >
               LinkedIn
               <RxOpenInNewWindow aria-hidden="true" className="text-xs relative -top-[5px]" />
-              <span className="sr-only">Onglet externe</span>
             </a>
             <a
               href="https://github.com/ThibautRaimond"
               target="_blank"
               rel="noreferrer noopener"
               className="underline inline-flex items-center gap-0.5"
-              aria-label="GitHub nouveau onglet"
+              aria-label="GitHub onglet externe"
             >
               GitHub
               <RxOpenInNewWindow aria-hidden="true" className="text-xs relative -top-[5px]" />
-              <span className="sr-only">Onglet externe</span>
             </a>
           </div>
         </div>
