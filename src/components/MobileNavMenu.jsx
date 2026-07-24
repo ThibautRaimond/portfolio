@@ -45,7 +45,7 @@ const MobileNavMenu = ({ closeMenu, isActive }) => {
     <div className="fixed inset-0 z-30 bg-black">
       <div
         role="dialog"
-        aria-label="Menu de navigation"
+        aria-label="Menu navigation principale"
         aria-modal="true"
         ref={menuRef}
         className="absolute top-0 left-0 w-full h-full bg-[#0e1111d3] text-center flex justify-center items-center overflow-y-auto overflow-x-hidden px-4"

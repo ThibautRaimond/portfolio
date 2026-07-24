@@ -101,8 +101,8 @@ const Header = () => {
       </nav>
 
       {/* Bouton en mode mobile pour ouvrir la modale */}
-      <button className="nav:hidden z-20" onClick={openMobileNav}>
-        <FaBars size={30} aria-label="Ouvrir le menu pour changer de page" />
+      <button className="nav:hidden z-20" onClick={openMobileNav} aria-haspopup="dialog" aria-label="Menu principal">
+        <FaBars size={30} aria-hidden="true" />
       </button>
 
       {/* Afficher la modale si elle est ouverte */}
