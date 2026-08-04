@@ -28,7 +28,7 @@ const Contact = () => {
       
       <div className="card rounded-md flex flex-col justify-center items-center mx-6 my-6 py-4 md:p-8 ">
         <form
-          aria-label="formulaire de contact"
+          aria-label="Contacter Thibaut Raimond"
           method="POST"
           action="https://getform.io/f/b647f9b9-5752-4f82-a5c5-7e42ed277826"
           className="flex flex-col max-w-[600px] w-full mx-auto px-2"
