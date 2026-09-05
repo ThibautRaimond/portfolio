@@ -60,7 +60,7 @@ const ProjetsPage = () => {
                   lang="fr"
                 >
                   Application Pokedex gérée par{" "}
-                  <span className="font-semibold">PokeApi </span>. Permet
+                  <span className="font-semibold">PokeApi</span>. Permet
                   de rechercher les pokémons par nom ou par type, et d'afficher
                   leurs caractéristiques.
                 </p>

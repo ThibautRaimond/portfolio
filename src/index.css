@@ -19,14 +19,6 @@
 	height: 100vh;
 }
 
-/* ------ */
-*:focus-visible {
-    outline: 3px solid #000;
-    outline-offset: 2px;
-    box-shadow: 0 0 0 5px #fff;
-}
-/* ------ */
-
 .flex-grow{
 	display: flex;
 	align-items: center;

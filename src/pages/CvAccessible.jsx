@@ -1,12 +1,17 @@
 ﻿import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import Breadcrumb from "../components/Breadcrumb";
 import thib2 from "../assets/thib2.jpg";
 
 function CvAccessible() {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.75 }}
+    >
       <Breadcrumb />
       {/* --------- COORDONNÉES ---------  */}
       <div className="bg-gray-900 text-gray-100 p-8 max-w-4xl mx-auto m-4 flex flex-col justify-center align-center">
@@ -331,7 +336,7 @@ function CvAccessible() {
           Retour à la page profil
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
