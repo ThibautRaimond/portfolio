@@ -1,6 +1,7 @@
 ﻿import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import Breadcrumb from "../components/Breadcrumb";
 import thib2 from "../assets/thib2.jpg";
@@ -12,6 +13,11 @@ function CvAccessible() {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.75 }}
     >
+      <Helmet>
+        <title>CV en ligne Portfolio de Thibaut Raimond</title>
+        <meta name="description" content="CV en ligne de Thibaut Raimond, consultant en accessibilité numérique" />
+      </Helmet>
+
       <Breadcrumb />
       {/* --------- COORDONNÉES ---------  */}
       <div className="bg-gray-900 text-gray-100 p-8 max-w-4xl mx-auto m-4 flex flex-col justify-center align-center">
@@ -58,7 +64,10 @@ function CvAccessible() {
               aria-label="Linkedin onglet externe"
             >
               LinkedIn
-              <RxOpenInNewWindow aria-hidden="true" className="text-xs relative -top-[5px]" />
+              <RxOpenInNewWindow
+                aria-hidden="true"
+                className="text-xs relative -top-[5px]"
+              />
             </a>
             <a
               href="https://github.com/ThibautRaimond"
@@ -68,7 +77,10 @@ function CvAccessible() {
               aria-label="GitHub onglet externe"
             >
               GitHub
-              <RxOpenInNewWindow aria-hidden="true" className="text-xs relative -top-[5px]" />
+              <RxOpenInNewWindow
+                aria-hidden="true"
+                className="text-xs relative -top-[5px]"
+              />
             </a>
           </div>
         </div>
@@ -105,7 +117,7 @@ function CvAccessible() {
               <span aria-hidden="true">|</span> Décembre 2024 à aujourd'hui
             </h4>
             <div className="ml-4 mb-4">
-              <h5 className="font-semibold mb-2" style={{ color: '#7ee9ff' }}>
+              <h5 className="font-semibold mb-2" style={{ color: "#7ee9ff" }}>
                 Accompagnement SFR depuis mars 2024
               </h5>
               <ul className="list-disc ml-5 space-y-1 text-gray-100">
@@ -123,14 +135,17 @@ function CvAccessible() {
               </ul>
             </div>
             <div className="ml-4 mb-4">
-              <h5 className="font-semibold mb-2" style={{ color: '#7ee9ff' }}>
+              <h5 className="font-semibold mb-2" style={{ color: "#7ee9ff" }}>
                 Accompagnement France Télévisions depuis mai 2025
               </h5>
               <ul className="list-disc ml-5 space-y-1 text-gray-100">
                 <li>
                   Recettes RGAA et RAAM sur plateformes médias à forte audience
                 </li>
-                <li>Optimisation de l’accessibilité au-delà de la conformité réglementaire</li>
+                <li>
+                  Optimisation de l’accessibilité au-delà de la conformité
+                  réglementaire
+                </li>
                 <li>
                   Recommandations <span lang="en">UX</span> inclusives et
                   solutions techniques concrètes
@@ -142,7 +157,7 @@ function CvAccessible() {
               </ul>
             </div>
             <div className="ml-4">
-              <h5 className="font-semibold mb-2" style={{ color: '#7ee9ff' }}>
+              <h5 className="font-semibold mb-2" style={{ color: "#7ee9ff" }}>
                 Activités transverses :
               </h5>
               <ul className="list-disc ml-5 space-y-1 text-gray-100">
