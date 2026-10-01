@@ -114,7 +114,7 @@ function CvAccessible() {
             <h4 className="text-sky-400 text-xl font-bold mt-0 mb-2">
               Consultant Accessibilité Numérique{" "}
               <span aria-hidden="true">|</span> Urbilog{" "}
-              <span aria-hidden="true">|</span> Décembre 2024 à aujourd'hui
+              <span aria-hidden="true">|</span> Décembre 2023 à aujourd'hui
             </h4>
             <div className="ml-4 mb-4">
               <h5 className="font-semibold mb-2" style={{ color: "#7ee9ff" }}>

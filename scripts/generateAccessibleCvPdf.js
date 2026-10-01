@@ -442,7 +442,7 @@ const cvHtml = `
         <h2>Expérience Professionnelle</h2>
         
         <div>
-            <h3>Consultant Accessibilité Numérique <span role="presentation">|</span> Urbilog <span role="presentation">|</span> Décembre 2024 à aujourd'hui</h3>
+            <h3>Consultant Accessibilité Numérique <span role="presentation">|</span> Urbilog <span role="presentation">|</span> Décembre 2023 à aujourd'hui</h3>
             <h4>Accompagnement SFR depuis mars 2024</h4>
             <ul>
                 <li><span role="presentation" style="font-size:0.9em;">•</span> Recettes RGAA sur parcours clients web et applicatifs</li>
