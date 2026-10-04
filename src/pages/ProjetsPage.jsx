@@ -84,7 +84,7 @@ const ProjetsPage = () => {
                     Le code du dev
                   </h2>
                 </a>
-                <p className="text-sm md:text-base text-red-400">
+                <p className="text-sm md:text-base text-[#f28282]">
                   Le site ne respecte pas les normes d'accessibilité numérique.
                 </p>
                 <p className="text-base md:text-lg">
