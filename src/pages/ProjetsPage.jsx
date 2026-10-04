@@ -55,13 +55,10 @@ const ProjetsPage = () => {
                 <p className="m-1 text-base md:text-lg text-[#95F3A4]">
                   Projet perso
                 </p>
-                <p
-                  className="mt-2 text-base md:text-lg text-gray-300 w-full max-w-[500px] break-words hyphens-auto mb-[6px]"
-                  lang="fr"
-                >
+                <p className="mt-2 text-base md:text-lg text-gray-300 w-full max-w-[500px] break-words hyphens-auto mb-[6px]">
                   Application Pokedex gérée par{" "}
-                  <span className="font-semibold">PokeApi</span>. Permet
-                  de rechercher les pokémons par nom ou par type, et d'afficher
+                  <span className="font-semibold">PokeApi</span>. Permet de
+                  rechercher les pokémons par nom ou par type, et d'afficher
                   leurs caractéristiques.
                 </p>
                 <div className="w-full max-w-[550px] h-[360px] flex justify-center items-center px-4">
@@ -87,9 +84,9 @@ const ProjetsPage = () => {
                     Le code du dev
                   </h2>
                 </a>
-                  <p className="text-sm md:text-base text-red-400">
-                    Le site ne respecte pas les normes d'accessibilité numérique.
-                  </p>
+                <p className="text-sm md:text-base text-red-400">
+                  Le site ne respecte pas les normes d'accessibilité numérique.
+                </p>
                 <p className="text-base md:text-lg">
                   <span className="font-bold">Languages : </span>EJS{" "}
                   <span aria-hidden="true" className="text-[#07ed66]">
@@ -108,10 +105,7 @@ const ProjetsPage = () => {
                 <p className="m-1 text-base md:text-lg text-[#95F3A4]">
                   Projet de groupe
                 </p>
-                <p
-                  className="text-base md:text-lg text-gray-300 w-full max-w-[500px] break-words hyphens-auto mb-[6px]"
-                  lang="fr"
-                >
+                <p className="text-base md:text-lg text-gray-300 w-full max-w-[500px] break-words hyphens-auto mb-[6px]">
                   Projet destiné à proposer des quiz sur différents sujets liés
                   au développement web. Le site respecte les exigences
                   <span lang="en">

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Générateur de CV PDF Accessible conforme PDF/UA et WCAG 2.1 AA
+ * Générateur de CV PDF conforme WCAG sur PAC.
  * Utilise Puppeteer pour convertir du HTML en PDF avec structure sémantique
  */
 

@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full h-[85px] flex justify-between items-center pr-4 pl-3 bg-[#0e1111d3] text-gray-300 shadow-md shadow-[#040c16] z-50">
+    <header className="w-full h-[85px] flex justify-between items-center pr-4 pl-3 bg-[#0e1111d3] text-gray-300 shadow-md shadow-[#040c16] z-50">
       {/* Lien d'accès rapide au main */}
       <a
         href="#main-content"
@@ -109,7 +109,7 @@ const Header = () => {
       {isMobileNavOpen && (
         <MobileNavMenu closeMenu={closeMobileNav} isActive={isActive} />
       )}
-    </div>
+    </header>
   );
 };
 

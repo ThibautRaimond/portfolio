@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
 	return (
 		<div className="flex flex-col full-height">
 			<Header />
-			<main lang="fr" id="main-content" tabIndex="-1" className="flex-grow">
+			<main id="main-content" tabIndex="-1" className="flex-grow">
 				{children}
 			</main>
 		</div>
