@@ -47,35 +47,7 @@ const NotFoundPage = () => {
 						</p>
 					</div>
 
-					<div className="rounded-md border border-white/10 bg-[#121614] p-5">
-						<p className="mb-4 text-sm uppercase tracking-[0.2em] text-[#07ed66]">
-							Accès rapides
-						</p>
-						<div className="flex flex-col gap-3">
-							<Link
-								to="/"
-								className="leftNavButton flex min-h-[58px] items-center justify-between rounded-md border border-[#3e7c48] bg-gradient-to-b from-green-900 to-green-800 px-4 text-white transition-colors duration-200 hover:border-[#fff]"
-							>
-								<span className="flex items-center">
-									<HiArrowNarrowLeft className="leftNavArrow mr-3" aria-hidden="true" />
-									Accueil
-								</span>
-							</Link>
-							<Link
-								to="/profil"
-								className="rightNavButton flex min-h-[58px] items-center justify-between rounded-md border border-[#3e7c48] bg-[#121614] px-4 text-white transition-colors duration-200 hover:border-[#fff]"
-							>
-								<span>Voir le profil</span>
-								<HiArrowNarrowRight className="rightNavArrow ml-3" aria-hidden="true" />
-							</Link>
-							<Link
-								to="/contact"
-								className="rounded-md border border-[#07ed66] px-4 py-4 text-center text-[#07ed66] transition-colors duration-200 hover:bg-[#07ed66] hover:text-[#0e1111]"
-							>
-								Contacter Thibaut
-							</Link>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</motion.div>

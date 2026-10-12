@@ -63,7 +63,9 @@
     transition: transform 0.2s ease;
 }
 
-.rightNavButton:hover .rightNavArrow {
+.rightNavButton:hover .rightNavArrow,
+.rightNavButton:focus-within .rightNavArrow,
+a:focus-visible .rightNavButton .rightNavArrow {
     transform: translateX(10px); 
 }
 
@@ -71,6 +73,8 @@
     transition: transform 0.2s ease;
 }
 
-.leftNavButton:hover .leftNavArrow {
+.leftNavButton:hover .leftNavArrow,
+.leftNavButton:focus-within .leftNavArrow,
+a:focus-visible .leftNavButton .leftNavArrow {
     transform: translateX(-10px); 
 }
