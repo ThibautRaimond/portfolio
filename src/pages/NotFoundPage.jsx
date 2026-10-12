@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 
@@ -41,7 +41,7 @@ const NotFoundPage = () => {
 						</p>
 					</div>
 					<p className="max-w-2xl pt-6 text-sm leading-7 text-gray-300 sm:text-base">
-						Si vous avez suivi un ancien lien, le contenu a peut-être changé d&apos;emplacement. Les raccourcis ci-contre permettent de reprendre une navigation normale sans repasser par la page d&apos;accueil du navigateur.
+						Si vous avez suivi un ancien lien, le contenu a peut-être changé d&apos;emplacement. Vous pouvez revenir à l&apos;<Link to="/" className="underline decoration-1 underline-offset-4 transition-colors duration-200 hover:text-white">accueil</Link> du portfolio.
 					</p>
 				</div>
 			</div>
