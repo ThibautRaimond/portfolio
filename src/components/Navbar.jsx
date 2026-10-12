@@ -15,7 +15,8 @@ const Navbar = () => {
     return location.pathname === pathname;
   };
 
-  const linkClasses = "underline decoration-1 underline-offset-4 hover:text-white transition-colors duration-200";
+  const linkClasses =
+    "underline decoration-1 underline-offset-4 hover:text-white transition-colors duration-200";
 
   const openMobileNav = () => {
     setIsMobileNavOpen(true);
@@ -27,22 +28,6 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-[85px] flex justify-between items-center pr-4 pl-3 bg-[#0e1111d3] text-gray-300 shadow-md shadow-[#040c16]">
-      {/* Lien d'accès rapide au main */}
-      <a
-        href="#main-content"
-        className="hidden nav:flex fixed top-[-60px] left-20 z-[300] ml-2 px-4 py-2 justify-center items-center bg-black border-[#07ed66] border-[2px] rounded-lg text-white text-center transition-all duration-300 focus:top-4 "
-        onClick={(event) => {
-          event.preventDefault();
-          const mainContent = document.getElementById("main-content");
-          if (mainContent) {
-            mainContent.focus();
-            mainContent.scrollIntoView({ block: "start" });
-          }
-        }}
-      >
-        Accéder au contenu principal
-      </a>
-
       <div className="h-[70px] w-[70px] p-[5px] rounded-md flex justify-center">
         <Link to="/" aria-hidden="true" tabIndex="-1">
           <img alt="Logo passion DEV" src={Logo} style={{ width: "65px" }} />
@@ -55,47 +40,57 @@ const Navbar = () => {
         <ul className="flex">
           <li className={isActive("/") ? "activeLinkClass" : ""}>
             {isActive("/") ? (
-              <span aria-current="page" className="cursor-default">Accueil</span>
+              <span aria-current="page" className="cursor-default">
+                Accueil
+              </span>
             ) : (
-              <Link to="/" className={linkClasses}>Accueil</Link>
+              <Link to="/" className={linkClasses}>
+                Accueil
+              </Link>
             )}
           </li>
-          <li
-            className={isActive("/profil") ? "activeLinkClass" : ""}
-          >
+          <li className={isActive("/profil") ? "activeLinkClass" : ""}>
             {isActive("/profil") ? (
-              <span aria-current="page" className="cursor-default">Profil</span>
+              <span aria-current="page" className="cursor-default">
+                Profil
+              </span>
             ) : (
-              <Link to="/profil" className={linkClasses}>Profil</Link>
+              <Link to="/profil" className={linkClasses}>
+                Profil
+              </Link>
             )}
           </li>
-          <li
-            className={
-              isActive("/competences") ? "activeLinkClass" : ""
-            }
-          >
+          <li className={isActive("/competences") ? "activeLinkClass" : ""}>
             {isActive("/competences") ? (
-              <span aria-current="page" className="cursor-default">Compétences</span>
+              <span aria-current="page" className="cursor-default">
+                Compétences
+              </span>
             ) : (
-              <Link to="/competences" className={linkClasses}>Compétences</Link>
+              <Link to="/competences" className={linkClasses}>
+                Compétences
+              </Link>
             )}
           </li>
-          <li
-            className={isActive("/projets") ? "activeLinkClass" : ""}
-          >
+          <li className={isActive("/projets") ? "activeLinkClass" : ""}>
             {isActive("/projets") ? (
-              <span aria-current="page" className="cursor-default">Projets</span>
+              <span aria-current="page" className="cursor-default">
+                Projets
+              </span>
             ) : (
-              <Link to="/projets" className={linkClasses}>Projets</Link>
+              <Link to="/projets" className={linkClasses}>
+                Projets
+              </Link>
             )}
           </li>
-          <li
-            className={isActive("/contact") ? "activeLinkClass" : ""}
-          >
+          <li className={isActive("/contact") ? "activeLinkClass" : ""}>
             {isActive("/contact") ? (
-              <span aria-current="page" className="cursor-default">Contact</span>
+              <span aria-current="page" className="cursor-default">
+                Contact
+              </span>
             ) : (
-              <Link to="/contact" className={linkClasses}>Contact</Link>
+              <Link to="/contact" className={linkClasses}>
+                Contact
+              </Link>
             )}
           </li>
         </ul>

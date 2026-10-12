@@ -38,6 +38,11 @@ const Header = () => {
             mainContent.scrollIntoView({ block: "start" });
           }
         }}
+        onKeyDown={(event) => {
+          if (event.key === "Escape") {
+            event.currentTarget.blur();
+          }
+        }}
       >
         Accéder au contenu principal
       </a>
