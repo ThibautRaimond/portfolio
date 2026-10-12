@@ -29,7 +29,7 @@ const Header = () => {
       {/* Lien d'accès rapide au main */}
       <a
         href="#main-content"
-        className="hidden nav:flex fixed top-[-60px] left-20 z-[300] ml-2 px-4 py-2 justify-center items-center bg-black border-[#07ed66] border-[2px] rounded-lg text-white text-center transition-all duration-300 focus:top-4 "
+        className="hidden nav:flex fixed top-[-60px] left-20 z-[300] ml-22 px-2 py-1 text-[13px] min-[805px]:px-4 min-[805px]:py-2 min-[805px]:text-[15px] justify-center items-center bg-black border-[#07ed66] border-[2px] rounded-lg text-white text-center transition-all duration-300 focus:top-4 "
         onClick={(event) => {
           event.preventDefault();
           const mainContent = document.getElementById("main-content");
