@@ -37,6 +37,7 @@ const ProjetsPage = () => {
               <div className="text-center flex justify-between items-center flex-col h-full">
                 <a
                   href="https://thibautraimond.github.io/pokedex/"
+                  target="_blank"
                   rel="noreferrer"
                   aria-label="Projet pokedex (nouvel onglet)"
                   className="p-1 after:absolute after:inset-0 after:content-['']"
@@ -83,6 +84,7 @@ const ProjetsPage = () => {
               <div className="text-center flex justify-between items-center flex-col h-full">
                 <a
                   href="https://yannou.philoucorp.fr/"
+                  target="_blank"
                   rel="noreferrer"
                   aria-label="Projet le code du dev (nouvel onglet)"
                   className="p-1 after:absolute after:inset-0 after:content-['']"
