@@ -39,8 +39,8 @@ const ProfilPage = () => {
             <div className="min-w-[300px] md:min-w-[400px] lg:min-w-[500px] xl:min-w-[600px] 2xl:min-w-[700px]">
               <p className="text-xl text-left max-w-[800px] mt-4 md:mt-6">
                 Enchanté je m'appelle Thibaut, après avoir découvert une passion
-                pour le développement web, j'ai choisi de suivre la formation
-                FullStack JavaScript chez{" "}
+                pour le développement web, j'ai choisi de suivre la formation{" "}
+                <span lang="en">FullStack</span> JavaScript chez{" "}
                 <a
                   className="hover:text-[#07ed66] underline relative"
                   href="https://oclock.io/"
@@ -58,7 +58,8 @@ const ProfilPage = () => {
 
               <p className="py-4 text-xl text-left max-w-[800px] mt-5">
                 Suite à cela j'ai pu obtenir mon diplôme de Développeur
-                FullStack Web & Mobile de niveau RNCP (Répertoire National des
+                {" "}
+                <span lang="en">FullStack</span> Web & Mobile de niveau RNCP (Répertoire National des
                 Certifications Professionnelles) 5.
                 <br />
                 Au fil de mon apprentissage, j'ai développé une appétence
@@ -82,8 +83,7 @@ const ProfilPage = () => {
                 </a>
                 . Je maîtrise désormais les référentiels RGAA (Référentiel
                 Général d'Amélioration de l'Accessibilité), RAAM (Référentiel
-                d'Accessibilité des Applications Mobiles) et WCAG (Web Content
-                Accessibility Guidelines), et j'accompagne les équipes pour
+                d'Accessibilité des Applications Mobiles) et WCAG (<span lang="en">Web Content Accessibility Guidelines</span>), et j'accompagne les équipes pour
                 concevoir des interfaces accessibles et inclusives.
               </p>
             </div>

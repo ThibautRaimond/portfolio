@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { HiArrowNarrowLeft } from "react-icons/hi";
+import { RxOpenInNewWindow } from "react-icons/rx";
 
 import CodeDuDev from "../assets/projects/CodeDuDev.jpg";
 import pokedex from "../assets/projects/pokedex.jpg";
@@ -41,7 +42,13 @@ const ProjetsPage = () => {
                   className="p-1 after:absolute after:inset-0 after:content-['']"
                 >
                   <h2 className="text-2xl md:text-3xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">
-                    Pokedex
+                    <span className="relative inline-block">
+                      Pokedex
+                      <RxOpenInNewWindow
+                        className="absolute -top-1 -right-4 w-[14px] h-[14px] transition-transform hover:scale-110"
+                        aria-hidden="true"
+                      />
+                    </span>
                   </h2>
                 </a>
                 <p className="text-base md:text-lg">
@@ -81,8 +88,15 @@ const ProjetsPage = () => {
                   className="p-1 after:absolute after:inset-0 after:content-['']"
                 >
                   <h2 className="text-2xl md:text-3xl text-[#07ed66] font-bold hover:text-[#00D14B] underline">
-                    Le code du dev
+                    <span className="relative inline-block">
+                      Le code du dev
+                      <RxOpenInNewWindow
+                        className="absolute -top-1 -right-4 w-[14px] h-[14px] transition-transform hover:scale-110"
+                        aria-hidden="true"
+                      />
+                    </span>
                   </h2>
+
                 </a>
                 <p className="text-sm md:text-base text-[#f28282]">
                   Le site ne respecte pas les normes d'accessibilité numérique.
