@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"; 
-import { Helmet } from "react-helmet"; 
+import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { RxOpenInNewWindow } from "react-icons/rx";
 
@@ -11,13 +11,13 @@ const Contact = () => {
     input.setCustomValidity(
       input.validity.typeMismatch || input.validity.patternMismatch
         ? "L’adresse e-mail saisie n’est pas valide. Elle doit respecter le format nom@exemple.fr. Exemple : jean.dupont@exemple.fr"
-        : ""
+        : "",
     );
 
-    if (input.value.trim() !== '') {
-      input.classList.add('not-empty');
+    if (input.value.trim() !== "") {
+      input.classList.add("not-empty");
     } else {
-      input.classList.remove('not-empty');
+      input.classList.remove("not-empty");
     }
   }
 
@@ -32,7 +32,7 @@ const Contact = () => {
         <title>Contact Portfolio de Thibaut Raimond</title>
         <meta name="Contact" content="Contactez-moi par mail" />
       </Helmet>
-      
+
       <div className="card rounded-md flex flex-col justify-center items-center mx-6 my-6 py-4 md:p-8 ">
         <form
           aria-label="Contacter Thibaut Raimond"
@@ -49,26 +49,37 @@ const Contact = () => {
               envoyez moi directement un e-mail à l'adresse suivante :
               raimond.thibaut@gmail.com
             </p>
+            <p className="text-sm font-medium text-[#95F3A4]">
+              Tous les champs sont obligatoires.
+            </p>
           </div>
 
           <div className="flex flex-col px-4 md:px-12">
             <div className="relative">
-              <label htmlFor="name" className="text-[white]">Nom :</label>
+              <label htmlFor="name" className="text-[white]">
+                Nom et prénom :
+              </label>
               <input
                 id="name"
                 autocomplete="family-name"
                 type="text"
                 name="name"
                 className="w-full bg-gray-50 border border-[1px] border-black"
+                required
+                aria-required="true"
               />
             </div>
 
             <span className="m-3"></span>
 
             <div className="relative flex flex-col">
-              <label htmlFor="mail" className="text-[white]">Mail :</label>
+              <label htmlFor="mail" className="text-[white]">
+                Mail :
+              </label>
               <div className="relative w-full">
-                    <input
+                <input
+                  required
+                  aria-required="true"
                   id="mail"
                   autoComplete="email"
                   name="email"
@@ -79,12 +90,17 @@ const Contact = () => {
                   className="w-full bg-gray-50 block peer border border-[1px] border-black placeholder-transparent focus:placeholder-transparent"
                   onInput={handleInputChange}
                 />
-                    <span
+                <span
                   id="mailText"
                   className="pointer-events-none select-none absolute left-[2px] top-1/2 -translate-y-1/2 text-gray-800 text-sm transition-all duration-300
                     peer-focus:top-full peer-focus:translate-y-1 peer-focus:text-gray-300 peer-focus:text-sm peer-focus:scale-100
                     peer-[.not-empty]:top-full peer-[.not-empty]:translate-y-1 peer-[.not-empty]:text-gray-300 peer-[.not-empty]:text-sm peer-[.not-empty]:scale-100"
-                  style={{lineHeight: 1, letterSpacing: 0, wordSpacing: 0, fontSize: '1em'}}
+                  style={{
+                    lineHeight: 1,
+                    letterSpacing: 0,
+                    wordSpacing: 0,
+                    fontSize: "1em",
+                  }}
                 >
                   Exemple@domaine.com
                 </span>
@@ -94,8 +110,12 @@ const Contact = () => {
             <span className="m-3"></span>
 
             <div>
-              <label htmlFor="message" className="text-[white]">Message :</label>
+              <label htmlFor="message" className="text-[white]">
+                Message :
+              </label>
               <textarea
+                required
+                aria-required="true"
                 id="message"
                 name="message"
                 rows="10"
@@ -114,7 +134,7 @@ const Contact = () => {
             </button>
           </div>
         </form>
-        
+
         {/* Media Links */}
         <div className="flex justify-between mt-4">
           <li className="w-[60px] h-[60px] mx-1 flex bg-[#0A66C2] border border-white hover:scale-110 transition-transform relative">
@@ -127,7 +147,10 @@ const Contact = () => {
             >
               <FaLinkedin size={30} />
             </a>
-            <RxOpenInNewWindow className="w-4 h-4 absolute top-px right-0.5 text-gray-300" aria-hidden="true" />
+            <RxOpenInNewWindow
+              className="w-4 h-4 absolute top-px right-0.5 text-gray-300"
+              aria-hidden="true"
+            />
           </li>
           <li className="w-[60px] h-[60px] mx-0.5 flex justify-between bg-[#2d333b] border border-white hover:scale-110 transition-transform relative">
             <a
@@ -139,7 +162,10 @@ const Contact = () => {
             >
               <FaGithub size={30} />
             </a>
-            <RxOpenInNewWindow className="w-4 h-4 absolute top-px right-0.5 text-gray-300" aria-hidden="true" />
+            <RxOpenInNewWindow
+              className="w-4 h-4 absolute top-px right-0.5 text-gray-300"
+              aria-hidden="true"
+            />
           </li>
         </div>
       </div>
