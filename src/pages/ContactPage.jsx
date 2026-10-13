@@ -7,6 +7,13 @@ const Contact = () => {
   // Ajoute dynamiquement la classe 'not-empty' à l'input si il y a du texte
   function handleInputChange(e) {
     const input = e.target;
+
+    input.setCustomValidity(
+      input.validity.typeMismatch || input.validity.patternMismatch
+        ? "L’adresse e-mail saisie n’est pas valide. Elle doit respecter le format nom@exemple.fr. Exemple : jean.dupont@exemple.fr"
+        : ""
+    );
+
     if (input.value.trim() !== '') {
       input.classList.add('not-empty');
     } else {
@@ -66,6 +73,8 @@ const Contact = () => {
                   autoComplete="email"
                   name="email"
                   type="email"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                  title="L’adresse e-mail saisie n’est pas valide. Elle doit respecter le format nom@exemple.fr. Exemple : jean.dupont@exemple.fr"
                   aria-describedby="mailText"
                   className="w-full bg-gray-50 block peer border border-[1px] border-black placeholder-transparent focus:placeholder-transparent"
                   onInput={handleInputChange}
